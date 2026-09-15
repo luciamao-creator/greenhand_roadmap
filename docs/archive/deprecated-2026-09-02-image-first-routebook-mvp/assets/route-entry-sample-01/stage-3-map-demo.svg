@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
+  <title id="title">阶段三接近龙井示意图</title>
+  <desc id="desc">评审级处理过地图图像示意，展示接近龙井村时的主路线、游客分流岔路、终点休息点和下撤方向。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef3ea"/>
+      <stop offset="100%" stop-color="#fdf6e9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#294537" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .label { font: 600 28px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #22362a; }
+      .sub { font: 400 20px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #4f6454; }
+      .small { font: 500 18px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #36503d; }
+      .tag { font: 700 18px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #fff; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="1024" fill="url(#bg)"/>
+  <rect x="52" y="52" width="1336" height="920" rx="34" fill="#fffdf8" filter="url(#shadow)"/>
+
+  <g transform="translate(92 86)">
+    <text class="label" x="0" y="0">阶段 3 · 上行转折 - 龙井接近段</text>
+    <text class="sub" x="0" y="40">接近龙井时，人多不等于方向对；看到休息点后可补水并准备返回或下撤</text>
+    <rect x="950" y="-22" width="246" height="42" rx="21" fill="#d58846"/>
+    <text class="tag" x="1073" y="6" text-anchor="middle">目标：终点接近但仍要判断</text>
+  </g>
+
+  <g transform="translate(92 166)">
+    <rect x="0" y="0" width="864" height="738" rx="28" fill="#eef5e8" stroke="#dae5d3"/>
+    <path d="M110 594 C180 566, 250 519, 327 462 S464 355, 543 302 S701 208, 811 146" fill="none" stroke="#d9e7d2" stroke-width="152" stroke-linecap="round" opacity="0.6"/>
+    <path d="M108 592 C177 560, 246 512, 322 456 S457 349, 536 298 S696 209, 805 152" fill="none" stroke="#254f43" stroke-width="14" stroke-linecap="round"/>
+    <path d="M548 301 C616 330, 680 366, 759 420 S852 494, 900 562" fill="none" stroke="#cf6760" stroke-width="18" stroke-linecap="round" stroke-dasharray="16 12"/>
+    <path d="M548 301 C621 327, 686 358, 767 412 S863 489, 920 572" fill="none" stroke="#cf6760" stroke-width="64" stroke-linecap="round" opacity="0.15"/>
+    <path d="M112 592 C180 559, 246 513, 323 458 S459 351, 540 299 S700 208, 805 152" fill="none" stroke="#f08d49" stroke-width="20" stroke-linecap="round"/>
+    <polygon points="838,134 795,154 807,112" fill="#f08d49"/>
+
+    <circle cx="548" cy="301" r="18" fill="#fff" stroke="#254f43" stroke-width="6"/>
+    <circle cx="805" cy="152" r="18" fill="#fff" stroke="#254f43" stroke-width="6"/>
+    <circle cx="708" cy="246" r="14" fill="#fff" stroke="#c57b35" stroke-width="5"/>
+    <circle cx="512" cy="341" r="14" fill="#fff" stroke="#c57b35" stroke-width="5"/>
+
+    <g>
+      <rect x="584" y="263" width="244" height="92" rx="18" fill="#fff" stroke="#d9e3d0"/>
+      <text class="small" x="610" y="300">游客分流岔路</text>
+      <text class="label" x="610" y="334" font-size="22">人多不等于方向对</text>
+
+      <rect x="726" y="82" width="212" height="92" rx="18" fill="#fff" stroke="#d9e3d0"/>
+      <text class="small" x="752" y="119">终点</text>
+      <text class="label" x="752" y="153" font-size="22">龙井村休息点</text>
+
+      <rect x="300" y="356" width="220" height="82" rx="18" fill="#fff8ed" stroke="#efc58d"/>
+      <text class="small" x="326" y="392">下撤点 2</text>
+      <text class="label" x="326" y="424" font-size="20">村道路撤</text>
+    </g>
+
+    <g transform="translate(78 80)">
+      <rect x="0" y="0" width="250" height="78" rx="18" fill="#f4fbf5" stroke="#cfe2cf"/>
+      <text class="small" x="22" y="46">正确方向：继续朝休息点或常规下撤走</text>
+      <rect x="0" y="92" width="246" height="78" rx="18" fill="#fff5f5" stroke="#e1aba8"/>
+      <text class="small" x="22" y="138">错误方向：盲目跟随人流转入别的支路</text>
+    </g>
+  </g>
+
+  <g transform="translate(980 166)">
+    <rect x="0" y="0" width="358" height="738" rx="28" fill="#fbfcf8" stroke="#dde6d8"/>
+
+    <g transform="translate(28 28)">
+      <text class="label" x="0" y="0">真实图占位</text>
+      <rect x="0" y="30" width="302" height="214" rx="22" fill="#eef6ef"/>
+      <image href="./longjing-tea-plantation-real-wikimedia.jpg" x="16" y="16" width="126" height="182" preserveAspectRatio="xMidYMid slice"/>
+      <text class="small" x="160" y="64">当前用龙井茶园真实图</text>
+      <text class="small" x="160" y="98">帮助表达“已经接近龙井”</text>
+      <text class="small" x="160" y="132">正式版仍需替换为</text>
+      <text class="small" x="160" y="166">村落边缘分流点的近景实拍</text>
+    </g>
+
+    <g transform="translate(28 284)">
+      <rect x="0" y="0" width="302" height="140" rx="22" fill="#fff9ef" stroke="#ecd8b1"/>
+      <text class="label" x="18" y="38">为什么这里容易错</text>
+      <text class="small" x="18" y="76">临近终点时，用户会把“人多”误认为“方向对”</text>
+      <text class="small" x="18" y="110">所以需要把推荐方向画得更明确</text>
+    </g>
+
+    <g transform="translate(28 452)">
+      <rect x="0" y="0" width="302" height="220" rx="22" fill="#f6faf5" stroke="#dde6d8"/>
+      <text class="label" x="18" y="34">正式版表达要求</text>
+      <text class="small" x="18" y="72">- 必须基于真实地图 / 地形关系</text>
+      <text class="small" x="18" y="108">- 可用手绘覆盖表达村落边缘特征</text>
+      <text class="small" x="18" y="144">- 也可用 3D 地形强化“接近终点”</text>
+      <text class="small" x="18" y="180">- 但不能脱离真实路线和节点位置</text>
+    </g>
+  </g>
+</svg>

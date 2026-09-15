@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>样板线路 01 处理过地图图像预览</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f3f1e8;
+        --card: #fffdf7;
+        --line: #ddd7c8;
+        --text: #22362a;
+        --sub: #5f6d61;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+      .wrap {
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 32px 24px 56px;
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: 32px;
+      }
+      p {
+        margin: 0 0 24px;
+        color: var(--sub);
+        font-size: 16px;
+        line-height: 1.7;
+      }
+      .grid {
+        display: grid;
+        gap: 24px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 18px;
+        box-shadow: 0 8px 24px rgba(38, 50, 40, 0.06);
+      }
+      .meta {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: baseline;
+        margin-bottom: 14px;
+      }
+      .meta h2 {
+        margin: 0;
+        font-size: 22px;
+      }
+      .meta span {
+        color: var(--sub);
+        font-size: 14px;
+      }
+      object {
+        width: 100%;
+        min-height: 720px;
+        border: 1px solid #ece7db;
+        border-radius: 16px;
+        background: #faf8f2;
+      }
+      .hint {
+        margin-top: 12px;
+        color: var(--sub);
+        font-size: 14px;
+      }
+      @media (max-width: 900px) {
+        object { min-height: 520px; }
+        .meta { flex-direction: column; align-items: flex-start; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <h1>样板线路 01 处理过地图图像预览</h1>
+      <p>当前为评审级示意图，目的是先看见产品形态：总览图、阶段图、岔路重点图和禁区重点图是否成立。正式版必须基于真实地图或真实地形关系做处理，可采用手绘覆盖或 3D 地形表达，但不能脱离真实路线、节点和禁区位置。</p>
+
+      <section class="grid">
+        <article class="card">
+          <div class="meta">
+            <h2>总览图</h2>
+            <span>overview-map-demo.svg</span>
+          </div>
+          <object data="./overview-map-demo.svg" type="image/svg+xml"></object>
+          <div class="hint">看点：起终点、阶段分段、下撤点和禁区是否一眼可懂。</div>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <h2>阶段图 A</h2>
+            <span>stage-1-map-demo.svg</span>
+          </div>
+          <object data="./stage-1-map-demo.svg" type="image/svg+xml"></object>
+          <div class="hint">看点：新手是否能理解“这段先顺主线走，不要焦虑”。</div>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <h2>岔路重点图 A</h2>
+            <span>fork-a-map-demo.svg</span>
+          </div>
+          <object data="./fork-a-map-demo.svg" type="image/svg+xml"></object>
+          <div class="hint">看点：不读长文，也能看懂“开始上行，不要继续贴溪”。</div>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <h2>阶段图 C</h2>
+            <span>stage-3-map-demo.svg</span>
+          </div>
+          <object data="./stage-3-map-demo.svg" type="image/svg+xml"></object>
+          <div class="hint">看点：接近终点时，用户能否理解“人多不等于方向对”。</div>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <h2>岔路重点图 B</h2>
+            <span>fork-b-map-demo.svg</span>
+          </div>
+          <object data="./fork-b-map-demo.svg" type="image/svg+xml"></object>
+          <div class="hint">看点：用户是否能看懂推荐方向和游客分流方向的区别。</div>
+        </article>
+
+        <article class="card">
+          <div class="meta">
+            <h2>禁区重点图</h2>
+            <span>forbidden-zone-map-demo.svg</span>
+          </div>
+          <object data="./forbidden-zone-map-demo.svg" type="image/svg+xml"></object>
+          <div class="hint">看点：禁区是不是被表达成“明确不能进”，而不是“也许可以探索”。</div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

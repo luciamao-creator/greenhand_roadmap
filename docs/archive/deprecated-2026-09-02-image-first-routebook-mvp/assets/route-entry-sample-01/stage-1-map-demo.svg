@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
+  <title id="title">阶段一沿溪缓行示意图</title>
+  <desc id="desc">评审级处理过地图图像示意，展示九溪入口到沿溪石桥的缓行阶段、正确方向和参照物关系。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#edf5ef"/>
+      <stop offset="100%" stop-color="#fbf7ea"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1f3d2d" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .label { font: 600 28px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #22362a; }
+      .sub { font: 400 20px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #4a6250; }
+      .small { font: 500 18px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #36503d; }
+      .tag { font: 700 18px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #fff; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="1024" fill="url(#bg)"/>
+  <rect x="52" y="52" width="1336" height="920" rx="34" fill="#fdfcf7" filter="url(#shadow)"/>
+
+  <g transform="translate(92 86)">
+    <text class="label" x="0" y="0">阶段 1 · 九溪入口 - 溪谷缓行段</text>
+    <text class="sub" x="0" y="40">这段先不用焦虑，先沿成熟步道顺溪前进</text>
+    <rect x="986" y="-22" width="196" height="42" rx="21" fill="#5d8b67"/>
+    <text class="tag" x="1084" y="6" text-anchor="middle">目标：建立主线安全感</text>
+  </g>
+
+  <g transform="translate(92 166)">
+    <rect x="0" y="0" width="866" height="738" rx="28" fill="#eef5ea" stroke="#d9e5d4"/>
+    <path d="M114 570 C176 560, 219 515, 284 486 S382 449, 454 417 S556 357, 622 314 S711 284, 796 250" fill="none" stroke="#7eb9d3" stroke-width="42" stroke-linecap="round" opacity="0.55"/>
+    <path d="M109 567 C173 555, 216 514, 278 488 S377 454, 451 425 S552 364, 620 324 S710 292, 790 258" fill="none" stroke="#1f5648" stroke-width="14" stroke-linecap="round"/>
+    <path d="M200 130 C275 96, 349 111, 431 148 S570 239, 665 220" fill="none" stroke="#d5e7cb" stroke-width="134" stroke-linecap="round" opacity="0.6"/>
+    <path d="M558 534 C602 518, 642 520, 694 542" fill="none" stroke="#dde8d8" stroke-width="110" stroke-linecap="round" opacity="0.58"/>
+
+    <g>
+      <path d="M104 566 C168 553, 208 514, 274 485 S374 454, 445 426 S540 370, 616 333" fill="none" stroke="#38a169" stroke-width="18" stroke-linecap="round"/>
+      <polygon points="646,315 620,331 622,303" fill="#38a169"/>
+    </g>
+
+    <g>
+      <circle cx="109" cy="567" r="18" fill="#fff" stroke="#1f5648" stroke-width="6"/>
+      <circle cx="450" cy="426" r="15" fill="#fff" stroke="#1f5648" stroke-width="5"/>
+      <circle cx="616" cy="333" r="14" fill="#fff" stroke="#1f5648" stroke-width="5"/>
+    </g>
+
+    <g>
+      <rect x="52" y="607" width="210" height="96" rx="18" fill="#fff" stroke="#dbe3d5"/>
+      <text class="small" x="78" y="646">起点</text>
+      <text class="label" x="78" y="680" font-size="22">九溪入口</text>
+
+      <rect x="350" y="458" width="236" height="104" rx="18" fill="#fff" stroke="#dbe3d5"/>
+      <text class="small" x="376" y="497">安心参照物</text>
+      <text class="label" x="376" y="531" font-size="22">沿溪石桥</text>
+      <text class="small" x="376" y="558">看到石桥，说明你仍在主线</text>
+
+      <rect x="643" y="262" width="196" height="90" rx="18" fill="#fff" stroke="#dbe3d5"/>
+      <text class="small" x="669" y="298">下一阶段入口</text>
+      <text class="label" x="669" y="332" font-size="22">继续沿溪前进</text>
+    </g>
+
+    <g>
+      <rect x="70" y="58" width="236" height="76" rx="18" fill="#f4fbf5" stroke="#cfe2cf"/>
+      <text class="small" x="96" y="100">正确动作：顺着成熟步道前进</text>
+      <rect x="76" y="146" width="228" height="68" rx="18" fill="#fff7f0" stroke="#efc79f"/>
+      <text class="small" x="102" y="187">不要被入口外围零散小路带偏</text>
+    </g>
+  </g>
+
+  <g transform="translate(986 166)">
+    <rect x="0" y="0" width="352" height="738" rx="28" fill="#f9fbf5" stroke="#dde7d7"/>
+    <text class="label" x="28" y="42">这一张图怎么读</text>
+
+    <g transform="translate(28 86)">
+      <rect x="0" y="0" width="296" height="206" rx="22" fill="#eef6ef"/>
+      <image href="./jiuxi-sign-real-wikimedia.jpg" x="16" y="16" width="110" height="174" preserveAspectRatio="xMidYMid slice"/>
+      <text class="small" x="146" y="62">真实入口图</text>
+      <text class="small" x="146" y="98">用于让用户确认：</text>
+      <text class="small" x="146" y="132">“我已经从对的入口进来了”</text>
+      <text class="small" x="146" y="166">正式版可替换为更近景的入口牌示</text>
+    </g>
+
+    <g transform="translate(28 318)">
+      <rect x="0" y="0" width="296" height="206" rx="22" fill="#eef6ef"/>
+      <image href="./jiuxi-stream-real-wikimedia.jpg" x="16" y="16" width="110" height="174" preserveAspectRatio="xMidYMid slice"/>
+      <text class="small" x="146" y="62">真实溪谷图</text>
+      <text class="small" x="146" y="98">用于表达这条线的：</text>
+      <text class="small" x="146" y="132">溪谷感、林荫感、低门槛愉悦感</text>
+      <text class="small" x="146" y="166">后续可替换成沿溪石桥近景</text>
+    </g>
+
+    <g transform="translate(28 554)">
+      <rect x="0" y="0" width="296" height="136" rx="22" fill="#fffaf1" stroke="#eadab2"/>
+      <text class="label" x="18" y="34">产品语言测试</text>
+      <text class="small" x="18" y="68">先别着急判断，先顺着成熟步道走</text>
+      <text class="small" x="18" y="102">当你看到沿溪石桥，就说明仍在主线上</text>
+    </g>
+  </g>
+</svg>

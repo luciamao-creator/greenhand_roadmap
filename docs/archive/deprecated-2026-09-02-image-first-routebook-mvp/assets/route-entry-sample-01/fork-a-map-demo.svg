@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
+  <title id="title">岔路重点图 A 示意图</title>
+  <desc id="desc">评审级处理过地图图像示意，展示九溪样板线中最关键的方向判断点：需要离开纯沿溪方向，转入成熟上行步道。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f0f5ef"/>
+      <stop offset="100%" stop-color="#fdf8ee"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1f3d2d" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .label { font: 600 28px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #22362a; }
+      .sub { font: 400 20px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #4d6352; }
+      .small { font: 500 18px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #34513f; }
+      .tag { font: 700 18px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #fff; }
+      .big { font: 700 40px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #244236; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="1024" fill="url(#bg)"/>
+  <rect x="52" y="52" width="1336" height="920" rx="34" fill="#fefcf8" filter="url(#shadow)"/>
+
+  <g transform="translate(92 86)">
+    <text class="label" x="0" y="0">岔路重点图 A · 溪谷转上行岔路</text>
+    <text class="sub" x="0" y="40">这是整条样板线最关键的判断点：不要继续贴溪走小路</text>
+    <rect x="1010" y="-22" width="184" height="42" rx="21" fill="#cc6255"/>
+    <text class="tag" x="1102" y="6" text-anchor="middle">高风险提醒</text>
+  </g>
+
+  <g transform="translate(92 164)">
+    <rect x="0" y="0" width="820" height="748" rx="28" fill="#eef6ea" stroke="#d9e3d0"/>
+    <path d="M112 632 C208 578, 288 542, 366 500 S484 413, 580 313" fill="none" stroke="#7cb9d1" stroke-width="46" stroke-linecap="round" opacity="0.55"/>
+    <path d="M375 496 C319 544, 272 560, 210 590 S124 642, 86 696" fill="none" stroke="#df6c62" stroke-width="70" stroke-linecap="round" opacity="0.16"/>
+    <path d="M375 496 C438 468, 504 421, 564 356 S644 257, 713 187" fill="none" stroke="#38a169" stroke-width="22" stroke-linecap="round"/>
+    <polygon points="740,162 701,182 716,142" fill="#38a169"/>
+    <path d="M375 496 C303 548, 241 575, 161 618 S78 667, 46 714" fill="none" stroke="#cf5858" stroke-width="18" stroke-linecap="round" stroke-dasharray="16 12"/>
+    <polygon points="24,734 53,704 57,742" fill="#cf5858"/>
+
+    <circle cx="375" cy="496" r="18" fill="#fff" stroke="#244f44" stroke-width="6"/>
+    <circle cx="703" cy="195" r="16" fill="#fff" stroke="#244f44" stroke-width="5"/>
+    <circle cx="107" cy="666" r="16" fill="#fff" stroke="#cf5858" stroke-width="5"/>
+
+    <g>
+      <rect x="395" y="528" width="264" height="90" rx="18" fill="#f2fbf3" stroke="#cde5cf"/>
+      <text class="small" x="421" y="565">正确方向</text>
+      <text class="big" x="421" y="607">开始上行</text>
+
+      <rect x="82" y="706" width="274" height="96" rx="18" fill="#fff4f4" stroke="#e5a4a1"/>
+      <text class="small" x="108" y="742">错误方向</text>
+      <text class="label" x="108" y="777" font-size="22">继续贴溪走小路</text>
+    </g>
+
+    <g>
+      <rect x="500" y="124" width="244" height="96" rx="18" fill="#fff" stroke="#d9e3d0"/>
+      <text class="small" x="526" y="162">看到什么说明方向对</text>
+      <text class="label" x="526" y="196" font-size="22">成熟上行步道</text>
+
+      <rect x="114" y="436" width="220" height="86" rx="18" fill="#fff" stroke="#d9e3d0"/>
+      <text class="small" x="140" y="472">岔路口</text>
+      <text class="label" x="140" y="506" font-size="22">这里要判断</text>
+    </g>
+
+    <g transform="translate(480 650)">
+      <rect x="0" y="0" width="288" height="64" rx="18" fill="#fff9ee" stroke="#f0c98f"/>
+      <text class="small" x="22" y="40">新手误区：沿着水一直走更安全</text>
+    </g>
+  </g>
+
+  <g transform="translate(944 164)">
+    <rect x="0" y="0" width="394" height="748" rx="28" fill="#fafbf6" stroke="#dde6d8"/>
+
+    <g transform="translate(28 28)">
+      <text class="label" x="0" y="0">判读法则</text>
+      <rect x="0" y="28" width="338" height="138" rx="22" fill="#f1faf2"/>
+      <text class="small" x="18" y="64">1. 先找成熟上行步道</text>
+      <text class="small" x="18" y="98">2. 再看箭头，不跟随直觉继续贴溪</text>
+      <text class="small" x="18" y="132">3. 有疑虑时回到岔路口重新判断</text>
+    </g>
+
+    <g transform="translate(28 206)">
+      <rect x="0" y="0" width="338" height="230" rx="22" fill="#eef6ef"/>
+      <image href="./jiuxi-stream-real-wikimedia.jpg" x="16" y="16" width="132" height="198" preserveAspectRatio="xMidYMid slice"/>
+      <text class="small" x="168" y="58">真实摄影占位</text>
+      <text class="small" x="168" y="92">当前用溪谷实景图</text>
+      <text class="small" x="168" y="126">帮助确认这类场景会有</text>
+      <text class="small" x="168" y="160">溪流 + 林荫 + 转向判断压力</text>
+      <text class="small" x="168" y="194">正式版需替换为岔路近景实拍</text>
+    </g>
+
+    <g transform="translate(28 466)">
+      <rect x="0" y="0" width="338" height="118" rx="22" fill="#fff5f5" stroke="#e6b0ac"/>
+      <text class="label" x="18" y="38">一句提醒</text>
+      <text class="small" x="18" y="76">看到成熟上行步道时，请开始上行</text>
+      <text class="small" x="18" y="104">不要继续贴溪走小路</text>
+    </g>
+
+    <g transform="translate(28 612)">
+      <rect x="0" y="0" width="338" height="108" rx="22" fill="#f7faf7" stroke="#dbe3d5"/>
+      <text class="label" x="18" y="38">为什么这张图重要</text>
+      <text class="small" x="18" y="74">它决定新手会不会在第一次判断点开始慌</text>
+    </g>
+  </g>
+</svg>

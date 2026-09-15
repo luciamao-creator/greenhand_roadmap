@@ -1,0 +1,1831 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新手徒步路线库 后台静态原型 V1</title>
+    <style>
+      :root {
+        --bg: #eef1f5;
+        --surface: #ffffff;
+        --surface-soft: #f6f8fb;
+        --surface-strong: #fdfefe;
+        --text: #18202b;
+        --muted: #667389;
+        --line: rgba(24, 32, 43, 0.08);
+        --line-strong: rgba(24, 32, 43, 0.14);
+        --primary: #2358e8;
+        --primary-soft: rgba(35, 88, 232, 0.1);
+        --safe: #e9f6ee;
+        --warn: #fff4dd;
+        --danger: #ffe8e4;
+        --chip: #edf2f9;
+        --shadow: 0 18px 48px rgba(30, 44, 69, 0.08);
+        --radius-xl: 28px;
+        --radius-lg: 20px;
+        --radius-md: 14px;
+        --radius-sm: 10px;
+        --font-ui: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "PingFang SC",
+          "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        font-family: var(--font-ui);
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(35, 88, 232, 0.08), transparent 18%),
+          radial-gradient(circle at right, rgba(35, 88, 232, 0.06), transparent 20%),
+          linear-gradient(180deg, #f2f5f9 0%, #ebeff4 100%);
+      }
+
+      body {
+        padding: 20px;
+      }
+
+      button,
+      input,
+      select,
+      textarea {
+        font: inherit;
+      }
+
+      .app {
+        display: grid;
+        grid-template-columns: 280px minmax(0, 1fr);
+        gap: 20px;
+        max-width: 1560px;
+        margin: 0 auto;
+      }
+
+      .panel {
+        background: rgba(255, 255, 255, 0.86);
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(16px);
+      }
+
+      .sidebar {
+        padding: 24px 18px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        min-height: calc(100vh - 40px);
+      }
+
+      .eyebrow {
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      p {
+        margin: 0;
+      }
+
+      .brand {
+        display: grid;
+        gap: 10px;
+      }
+
+      .brand h1 {
+        font-size: 28px;
+        line-height: 1.16;
+        letter-spacing: -0.04em;
+      }
+
+      .brand p {
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 14px;
+      }
+
+      .nav-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .nav-item {
+        border: 1px solid transparent;
+        background: rgba(255, 255, 255, 0.78);
+        border-radius: 18px;
+        padding: 16px;
+        text-align: left;
+        cursor: pointer;
+        transition: 180ms ease;
+      }
+
+      .nav-item:hover,
+      .nav-item.active {
+        transform: translateY(-1px);
+        background: var(--surface);
+        border-color: rgba(35, 88, 232, 0.18);
+      }
+
+      .nav-item strong {
+        display: block;
+        font-size: 15px;
+        margin-bottom: 6px;
+      }
+
+      .nav-item span {
+        display: block;
+        color: var(--muted);
+        line-height: 1.6;
+        font-size: 13px;
+      }
+
+      .side-note {
+        margin-top: auto;
+        padding: 16px;
+        border-radius: 20px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(246, 248, 251, 0.96));
+        border: 1px solid var(--line);
+      }
+
+      .side-note ul {
+        margin: 10px 0 0;
+        padding-left: 18px;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.7;
+      }
+
+      .workspace {
+        min-height: calc(100vh - 40px);
+        padding: 18px;
+        display: grid;
+        gap: 16px;
+      }
+
+      .header {
+        padding: 18px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .breadcrumb {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .header-main {
+        display: grid;
+        gap: 8px;
+      }
+
+      .header-main h2 {
+        font-size: 28px;
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+      }
+
+      .header-meta {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 10px;
+        border-radius: 999px;
+        background: var(--chip);
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .chip.primary {
+        background: var(--primary-soft);
+        color: var(--primary);
+      }
+
+      .chip.safe {
+        background: var(--safe);
+        color: #2f7a4b;
+      }
+
+      .chip.warn {
+        background: var(--warn);
+        color: #986a11;
+      }
+
+      .chip.danger {
+        background: var(--danger);
+        color: #b3533d;
+      }
+
+      .header-actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .btn,
+      .btn-ghost {
+        border: 0;
+        cursor: pointer;
+        border-radius: 14px;
+        padding: 12px 14px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .btn {
+        background: var(--primary);
+        color: #fff;
+        box-shadow: 0 14px 30px rgba(35, 88, 232, 0.22);
+      }
+
+      .btn.secondary {
+        background: #18202b;
+        box-shadow: 0 14px 30px rgba(24, 32, 43, 0.18);
+      }
+
+      .btn-ghost {
+        background: var(--surface);
+        color: var(--text);
+        border: 1px solid var(--line);
+      }
+
+      .screen {
+        display: none;
+        gap: 16px;
+      }
+
+      .screen.active {
+        display: grid;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        gap: 16px;
+      }
+
+      .grid-3 {
+        display: grid;
+        grid-template-columns: 1.15fr 1fr 0.92fr;
+        gap: 16px;
+      }
+
+      .stack {
+        display: grid;
+        gap: 16px;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 18px;
+        box-shadow: 0 12px 28px rgba(30, 44, 69, 0.04);
+      }
+
+      .card h3 {
+        font-size: 18px;
+        letter-spacing: -0.03em;
+        margin-bottom: 12px;
+      }
+
+      .card h4 {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .caption {
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .toolbar {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .toolbar select,
+      .toolbar input {
+        min-height: 42px;
+        border-radius: 12px;
+        border: 1px solid var(--line);
+        background: var(--surface-strong);
+        padding: 0 12px;
+        color: var(--text);
+      }
+
+      .table-card {
+        overflow: hidden;
+        padding: 0;
+      }
+
+      .table-head,
+      .table-row {
+        display: grid;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 18px;
+      }
+
+      .table-head {
+        font-size: 12px;
+        color: var(--muted);
+        background: var(--surface-soft);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .table-row {
+        font-size: 14px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .table-row:last-child {
+        border-bottom: 0;
+      }
+
+      .table-row strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .candidate-table,
+      .review-table,
+      .publish-table,
+      .history-table {
+        grid-template-columns: 1.5fr 1fr 0.86fr 0.82fr 0.86fr 0.9fr;
+      }
+
+      .history-table {
+        grid-template-columns: 1.2fr 0.86fr 0.82fr 1fr 0.8fr 0.86fr;
+      }
+
+      .mini-actions {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .mini-btn {
+        border: 1px solid var(--line);
+        background: var(--surface);
+        color: var(--text);
+        border-radius: 10px;
+        padding: 8px 10px;
+        font-size: 12px;
+        cursor: pointer;
+      }
+
+      .metric-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .metric {
+        padding: 14px;
+        border-radius: 18px;
+        background: var(--surface-soft);
+        border: 1px solid rgba(24, 32, 43, 0.05);
+      }
+
+      .metric strong {
+        display: block;
+        font-size: 24px;
+        letter-spacing: -0.04em;
+        margin-bottom: 6px;
+      }
+
+      .progress-list,
+      .issue-list,
+      .bullet-list,
+      .section-list {
+        display: grid;
+        gap: 10px;
+      }
+
+      .progress-item,
+      .issue-item,
+      .bullet-item,
+      .section-item {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: flex-start;
+        padding: 12px 14px;
+        border-radius: 16px;
+        background: var(--surface-soft);
+      }
+
+      .progress-item strong,
+      .issue-item strong,
+      .section-item strong {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        margin-top: 6px;
+        flex: 0 0 auto;
+      }
+
+      .dot.primary {
+        background: var(--primary);
+      }
+
+      .dot.warn {
+        background: #f0b43f;
+      }
+
+      .dot.safe {
+        background: #35a465;
+      }
+
+      .dot.danger {
+        background: #e26b56;
+      }
+
+      .section-jump {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .jump-card {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: var(--surface);
+        padding: 16px;
+        cursor: pointer;
+        text-align: left;
+      }
+
+      .jump-card:hover {
+        border-color: rgba(35, 88, 232, 0.18);
+      }
+
+      .form-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.35fr) 320px;
+        gap: 16px;
+      }
+
+      .form-group {
+        display: grid;
+        gap: 12px;
+      }
+
+      .group-block {
+        padding: 16px;
+        border-radius: 18px;
+        background: var(--surface-soft);
+        border: 1px solid rgba(24, 32, 43, 0.05);
+      }
+
+      .group-block h4 {
+        margin-bottom: 12px;
+      }
+
+      .field-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .field {
+        display: grid;
+        gap: 6px;
+      }
+
+      .field label {
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .field input,
+      .field select,
+      .field textarea {
+        border: 1px solid var(--line);
+        background: var(--surface);
+        border-radius: 12px;
+        min-height: 42px;
+        padding: 10px 12px;
+        color: var(--text);
+      }
+
+      .field textarea {
+        min-height: 88px;
+        resize: vertical;
+      }
+
+      .aside-box {
+        padding: 16px;
+        border-radius: 18px;
+        background: var(--surface);
+        border: 1px solid var(--line);
+      }
+
+      .aside-box + .aside-box {
+        margin-top: 12px;
+      }
+
+      .aside-list {
+        display: grid;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .aside-item {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .sticky-bar {
+        position: sticky;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 14px 18px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 16px 32px rgba(30, 44, 69, 0.08);
+      }
+
+      .map-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) 360px;
+        gap: 16px;
+      }
+
+      .map-board {
+        position: relative;
+        min-height: 520px;
+        border-radius: 24px;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at top left, rgba(255, 255, 255, 0.6), transparent 24%),
+          linear-gradient(180deg, #edf5ef 0%, #dfece4 100%);
+        border: 1px solid var(--line);
+      }
+
+      .map-board svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .map-overlay {
+        position: absolute;
+        left: 16px;
+        right: 16px;
+        top: 16px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .map-tag,
+      .map-marker {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 12px 30px rgba(30, 44, 69, 0.08);
+        font-size: 12px;
+      }
+
+      .map-marker {
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+
+      .map-marker.primary {
+        background: rgba(35, 88, 232, 0.94);
+        color: #fff;
+      }
+
+      .review-layout {
+        display: grid;
+        grid-template-columns: 0.96fr 1.1fr 0.8fr;
+        gap: 16px;
+      }
+
+      .check-grid {
+        display: grid;
+        gap: 12px;
+      }
+
+      .check-section {
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 16px;
+        background: var(--surface);
+      }
+
+      .check-row {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+        color: var(--text);
+      }
+
+      .check-box {
+        width: 18px;
+        height: 18px;
+        border-radius: 6px;
+        border: 1.5px solid var(--line-strong);
+        background: #fff;
+        flex: 0 0 auto;
+      }
+
+      .check-row.done .check-box {
+        background: var(--primary);
+        border-color: var(--primary);
+        box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.88);
+      }
+
+      .decision-card {
+        display: grid;
+        gap: 12px;
+      }
+
+      .decision-box {
+        padding: 14px;
+        border-radius: 18px;
+        background: var(--surface-soft);
+        border: 1px solid rgba(24, 32, 43, 0.05);
+      }
+
+      .decision-box textarea {
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        min-height: 84px;
+        padding: 10px 12px;
+        background: var(--surface);
+      }
+
+      .review-actions {
+        display: grid;
+        gap: 10px;
+      }
+
+      .publish-layout {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 16px;
+      }
+
+      .summary-grid {
+        display: grid;
+        gap: 10px;
+      }
+
+      .summary-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 12px 14px;
+        border-radius: 16px;
+        background: var(--surface-soft);
+      }
+
+      .history-layout {
+        display: grid;
+        grid-template-columns: 1.2fr 320px;
+        gap: 16px;
+      }
+
+      @media (max-width: 1320px) {
+        .app {
+          grid-template-columns: 1fr;
+        }
+
+        .sidebar {
+          min-height: auto;
+        }
+
+        .grid-2,
+        .grid-3,
+        .form-layout,
+        .map-layout,
+        .review-layout,
+        .publish-layout,
+        .history-layout {
+          grid-template-columns: 1fr;
+        }
+
+        .section-jump,
+        .metric-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 900px) {
+        body {
+          padding: 12px;
+        }
+
+        .candidate-table,
+        .review-table,
+        .publish-table,
+        .history-table,
+        .field-grid,
+        .section-jump,
+        .metric-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .table-head {
+          display: none;
+        }
+
+        .table-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="panel sidebar">
+        <div class="brand">
+          <div class="eyebrow">Admin Prototype</div>
+          <h1>新手徒步路线库<br />后台静态原型 V1</h1>
+          <p>这一版只验证后台生产链路和页面骨架，不接真实接口、不做真实地图编辑能力。</p>
+        </div>
+
+        <div class="nav-list">
+          <button class="nav-item active" data-screen-target="candidate">
+            <strong>候选池</strong>
+            <span>从 30 条候选线里拉起正式录入任务。</span>
+          </button>
+          <button class="nav-item" data-screen-target="workbench">
+            <strong>路线工作台</strong>
+            <span>单条路线的总入口，先看进度，再看缺项。</span>
+          </button>
+          <button class="nav-item" data-screen-target="facts">
+            <strong>基础事实</strong>
+            <span>最小事实手填，基础参数由 Agent 预填。</span>
+          </button>
+          <button class="nav-item" data-screen-target="geometry">
+            <strong>几何与导航</strong>
+            <span>地图 API 真相 + 用户上报待审核。</span>
+          </button>
+          <button class="nav-item" data-screen-target="risk">
+            <strong>风险与 Checklist</strong>
+            <span>差异化核心页，录入让新手不慌的内容。</span>
+          </button>
+          <button class="nav-item" data-screen-target="evidence">
+            <strong>证据与 FAQ</strong>
+            <span>来源由 Agent 整理，人工核验后才生效。</span>
+          </button>
+          <button class="nav-item" data-screen-target="review">
+            <strong>审核中心</strong>
+            <span>只读聚合 + 审核清单 + 结论动作。</span>
+          </button>
+          <button class="nav-item" data-screen-target="publish">
+            <strong>发布中心</strong>
+            <span>生成 package、预览、确认发布。</span>
+          </button>
+          <button class="nav-item" data-screen-target="history">
+            <strong>发布记录</strong>
+            <span>查看历史版本和回退动作。</span>
+          </button>
+        </div>
+
+        <div class="side-note">
+          <div class="eyebrow">当前范围</div>
+          <ul>
+            <li>采用单文件静态 HTML/CSS/JS。</li>
+            <li>覆盖候选、录入、用户上报待审、审核、发布五大阶段。</li>
+            <li>页面跳转和路线上下文可点击演示。</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="panel workspace">
+        <header class="panel header">
+          <div class="header-main">
+            <div class="breadcrumb">候选池 / 路线工作台 / <span data-route-name>九溪到龙井轻徒步</span></div>
+            <h2 data-route-name>九溪到龙井轻徒步</h2>
+            <div class="header-meta">
+              <span class="chip" data-route-id>route_id: zj-hz-jiuxi-longjing-001</span>
+              <span class="chip">浙江 · 杭州</span>
+              <span class="chip primary" data-route-status>draft</span>
+              <span class="chip warn" data-route-credibility>可信度：待审</span>
+              <span class="chip">更新于 2026-09-05 10:30</span>
+            </div>
+          </div>
+          <div class="header-actions">
+            <button class="btn-ghost">返回列表</button>
+            <button class="btn-ghost">查看缺项</button>
+            <button class="btn-ghost">保存草稿</button>
+            <button class="btn" data-submit-action>提交审核</button>
+          </div>
+        </header>
+
+        <section class="screen active" data-screen="candidate">
+          <div class="card">
+            <div class="toolbar">
+              <button class="btn">新建草稿</button>
+              <select>
+                <option>浙江</option>
+                <option>四川</option>
+                <option>广东</option>
+                <option>福建</option>
+              </select>
+              <select>
+                <option>全部城市</option>
+                <option>杭州</option>
+                <option>成都</option>
+              </select>
+              <select>
+                <option>A1 / A2</option>
+                <option>A1</option>
+                <option>A2</option>
+              </select>
+              <select>
+                <option>建议状态</option>
+                <option>建议优先录入</option>
+                <option>候补补证据</option>
+              </select>
+              <input type="text" value="成熟公开线 / 半天可达" />
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="card table-card">
+              <div class="table-head candidate-table">
+                <div>路线</div>
+                <div>区域</div>
+                <div>层级</div>
+                <div>新手适配</div>
+                <div>建议状态</div>
+                <div>工作状态</div>
+              </div>
+
+              <div class="table-row candidate-table">
+                <div>
+                  <strong>九溪到龙井轻徒步</strong>
+                  <div class="caption">入口清楚，适合首次尝试</div>
+                </div>
+                <div>浙江 · 杭州</div>
+                <div><span class="chip primary">A1</span></div>
+                <div>高</div>
+                <div><span class="chip safe">建议优先录入</span></div>
+                <div class="mini-actions">
+                  <button class="mini-btn" data-screen-target="workbench" data-route-name="九溪到龙井轻徒步" data-route-id="zj-hz-jiuxi-longjing-001" data-route-status="draft" data-route-credibility="可信度：待审">创建录入任务</button>
+                </div>
+              </div>
+
+              <div class="table-row candidate-table">
+                <div>
+                  <strong>白云山城市入门线</strong>
+                  <div class="caption">交通方便，人流稳定</div>
+                </div>
+                <div>广东 · 广州</div>
+                <div><span class="chip primary">A1</span></div>
+                <div>中高</div>
+                <div><span class="chip safe">建议优先录入</span></div>
+                <div class="mini-actions">
+                  <button class="mini-btn" data-screen-target="workbench" data-route-name="白云山城市入门线" data-route-id="gd-gz-baiyun-001" data-route-status="draft" data-route-credibility="可信度：待审">创建录入任务</button>
+                </div>
+              </div>
+
+              <div class="table-row candidate-table">
+                <div>
+                  <strong>梅岭城市周边山线</strong>
+                  <div class="caption">体量小，回撤快</div>
+                </div>
+                <div>福建 · 福州</div>
+                <div><span class="chip">A2</span></div>
+                <div>中</div>
+                <div><span class="chip warn">候补补证据</span></div>
+                <div class="mini-actions">
+                  <button class="mini-btn">标记待补证据</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="stack">
+              <div class="card">
+                <h3>候选预览抽屉</h3>
+                <div class="section-list">
+                  <div class="section-item">
+                    <div>
+                      <strong>初步入选理由</strong>
+                      <div class="muted">路线逻辑简单、成熟步道明显、适合城市周边新手周末首试。</div>
+                    </div>
+                  </div>
+                  <div class="section-item">
+                    <div>
+                      <strong>风险备注</strong>
+                      <div class="muted">午后雷雨和中段岔路是最核心的保守提醒。</div>
+                    </div>
+                  </div>
+                  <div class="section-item">
+                    <div>
+                      <strong>建议优先级</strong>
+                      <div class="muted">A1，建议先录入并作为首批样板线路。</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h3>新建草稿最小录入</h3>
+                <div class="field-grid">
+                  <div class="field"><label>路线名</label><input value="雁荡山灵峰轻徒步" /></div>
+                  <div class="field"><label>省份 / 城市</label><input value="浙江 / 温州" /></div>
+                  <div class="field"><label>起点名称</label><input value="灵峰景区入口" /></div>
+                  <div class="field"><label>终点名称</label><input value="灵峰景区出口" /></div>
+                  <div class="field"><label>路线类型</label><select><option>loop</option></select></div>
+                  <div class="field"><label>地图检索关键词</label><input value="雁荡山 灵峰 徒步" /></div>
+                </div>
+                <div class="mini-actions" style="margin-top: 12px;">
+                  <button class="mini-btn">创建草稿并触发 Agent 预填</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="workbench">
+          <div class="metric-grid">
+            <div class="metric">
+              <strong>4 / 6</strong>
+              <span class="caption">分区已补齐</span>
+            </div>
+            <div class="metric">
+              <strong>72%</strong>
+              <span class="caption">字段完整度</span>
+            </div>
+            <div class="metric">
+              <strong>2</strong>
+              <span class="caption">当前关键缺项</span>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <div class="card">
+              <h3>进度总览</h3>
+              <div class="progress-list">
+                <div class="progress-item">
+                  <div>
+                    <strong>基础事实</strong>
+                    <div class="muted">最小事实已录入，基础参数由 Agent 补全完成待确认。</div>
+                  </div>
+                  <span class="chip safe">完成</span>
+                </div>
+                <div class="progress-item">
+                  <div>
+                    <strong>几何与导航</strong>
+                    <div class="muted">主轨迹与关键节点已存在，还缺一个下撤点。</div>
+                  </div>
+                  <span class="chip warn">缺失</span>
+                </div>
+                <div class="progress-item">
+                  <div>
+                    <strong>风险与天气</strong>
+                    <div class="muted">风险点和天气规则已写，但 checklist 画像待补一项。</div>
+                  </div>
+                  <span class="chip warn">待补证据</span>
+                </div>
+                <div class="progress-item">
+                  <div>
+                    <strong>证据与 FAQ</strong>
+                    <div class="muted">来源由 Agent 整理完成，FAQ 仍有 1 条未人工审核。</div>
+                  </div>
+                  <span class="chip warn">缺失</span>
+                </div>
+                <div class="progress-item">
+                  <div>
+                    <strong>用户上报待审核</strong>
+                    <div class="muted">当前有 2 条用户提议，涉及 1 个下撤点和 1 个风险点。</div>
+                  </div>
+                  <span class="chip warn">待审核</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>关键缺项</h3>
+              <div class="issue-list">
+                <div class="issue-item">
+                  <div>
+                    <strong>缺 1 个下撤点</strong>
+                    <div class="muted">提交审核门槛未满足，需回到几何页补结构化下撤点。</div>
+                  </div>
+                  <button class="mini-btn" data-screen-target="geometry">去补齐</button>
+                </div>
+                <div class="issue-item">
+                  <div>
+                    <strong>用户上报待处理</strong>
+                    <div class="muted">1 个备用下撤点与 1 个湿滑风险点提议还未决定是否合并。</div>
+                  </div>
+                  <button class="mini-btn" data-screen-target="geometry">去审核</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>工作台动作</h3>
+              <div class="stack">
+                <div class="aside-box">
+                  <strong>当前状态</strong>
+                  <div class="aside-list">
+                    <div class="aside-item"><span>状态</span><span>draft</span></div>
+                    <div class="aside-item"><span>可信度</span><span>待审</span></div>
+                    <div class="aside-item"><span>Agent 预填</span><span>已完成</span></div>
+                    <div class="aside-item"><span>最近操作</span><span>审核用户上报</span></div>
+                  </div>
+                </div>
+                <div class="mini-actions">
+                  <button class="mini-btn">保存草稿</button>
+                  <button class="mini-btn">重新触发 Agent 补全</button>
+                  <button class="mini-btn">查看历史变更</button>
+                  <button class="mini-btn">查看 package 预览</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-jump">
+            <button class="jump-card" data-screen-target="facts">
+              <strong>基础事实</strong>
+              <div class="muted">最小事实、Agent 参数建议、标签</div>
+            </button>
+            <button class="jump-card" data-screen-target="geometry">
+              <strong>几何导航</strong>
+              <div class="muted">地图真相、节点、下撤点、用户上报</div>
+            </button>
+            <button class="jump-card" data-screen-target="risk">
+              <strong>风险天气 & Checklist</strong>
+              <div class="muted">风险点、天气规则、物资画像</div>
+            </button>
+            <button class="jump-card" data-screen-target="evidence">
+              <strong>证据 & FAQ</strong>
+              <div class="muted">来源、FAQ、人工审核</div>
+            </button>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="facts">
+          <div class="form-layout">
+            <div class="stack">
+              <div class="card form-group">
+                <div class="group-block">
+                  <h4>A. 路线身份</h4>
+                  <div class="field-grid">
+                    <div class="field"><label>路线名</label><input value="九溪到龙井轻徒步" /></div>
+                    <div class="field"><label>route_slug</label><input value="jiuxi-longjing-light-hike" /></div>
+                    <div class="field"><label>省份</label><select><option>浙江</option></select></div>
+                    <div class="field"><label>城市/区域</label><input value="杭州" /></div>
+                    <div class="field"><label>景区/片区</label><input value="西湖区" /></div>
+                    <div class="field"><label>路线类型</label><select><option>one_way</option></select></div>
+                  </div>
+                </div>
+
+                <div class="group-block">
+                  <h4>B. 基本参数（Agent 建议）</h4>
+                  <div class="field-grid">
+                    <div class="field"><label>建议总时长</label><input value="150 分钟" /></div>
+                    <div class="field"><label>距离</label><input value="6.2 km" /></div>
+                    <div class="field"><label>累计爬升</label><input value="220 m" /></div>
+                    <div class="field"><label>最高海拔</label><input value="118 m" /></div>
+                    <div class="field"><label>推荐季节</label><input value="春秋优先，雨后谨慎" /></div>
+                    <div class="field"><label>参数来源</label><input value="地图 API 路径计算 / Agent 汇总" /></div>
+                  </div>
+                  <div class="mini-actions" style="margin-top: 12px;">
+                    <button class="mini-btn">接受建议值</button>
+                    <button class="mini-btn">标记异常</button>
+                    <button class="mini-btn">重新拉取地图结果</button>
+                  </div>
+                </div>
+
+                <div class="group-block">
+                  <h4>C. 新手判断</h4>
+                  <div class="field-grid">
+                    <div class="field"><label>一句话摘要</label><textarea>一条看得懂地形、也看得懂自己节奏的茶山溪谷入门线。</textarea></div>
+                    <div class="field"><label>为什么适合新手</label><textarea>入口清楚、节奏友好、收手成本低。AI 起草后需人工确认。</textarea></div>
+                    <div class="field"><label>什么人先别去</label><textarea>近期体能状态差、出发过晚、雷雨天气下不建议去。</textarea></div>
+                    <div class="field"><label>最容易慌的点</label><textarea>中段上行前会出现看起来更顺的支路，不要贴溪继续走。</textarea></div>
+                    <div class="field"><label>回撤逻辑摘要</label><textarea>若时间已晚或体力明显下降，应在中段及时原路回撤。</textarea></div>
+                    <div class="field"><label>主路径逻辑摘要</label><textarea>前段沿溪缓行，中段缓慢上行，后段进入龙井方向。</textarea></div>
+                  </div>
+                </div>
+
+                <div class="group-block">
+                  <h4>D. 交通与入口</h4>
+                  <div class="field-grid">
+                    <div class="field"><label>起点名称</label><input value="九溪入口" /></div>
+                    <div class="field"><label>终点名称</label><input value="龙井方向出口" /></div>
+                    <div class="field"><label>交通摘要</label><input value="地铁换公交可达，建议公共交通往返" /></div>
+                    <div class="field"><label>封面图 URL</label><input value="https://example.com/jiuxi.jpg" /></div>
+                    <div class="field"><label>最近核验时间</label><input value="2026-09-05 09:20" /></div>
+                  </div>
+                </div>
+
+                <div class="group-block">
+                  <h4>E. 路线标签</h4>
+                  <div class="field-grid">
+                    <div class="field"><label>景观审美标签</label><input value="溪谷感 / 茶山感" /></div>
+                    <div class="field"><label>安全感标签</label><input value="成熟步道 / 入口好找" /></div>
+                    <div class="field"><label>轻松成就标签</label><input value="首次可尝试" /></div>
+                    <div class="field"><label>核心标签</label><input value="成熟步道 / 首次可尝试" /></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sticky-bar">
+                <div class="muted">已进入基础事实页，当前可直接保存或去下一页。</div>
+                <div class="mini-actions">
+                  <button class="mini-btn">保存草稿</button>
+                  <button class="mini-btn" data-screen-target="workbench">返回工作台</button>
+                  <button class="btn" data-screen-target="geometry">下一步去几何导航</button>
+                </div>
+              </div>
+            </div>
+
+            <aside class="stack">
+              <div class="aside-box">
+                <strong>字段校验侧栏</strong>
+                <div class="aside-list">
+                  <div class="aside-item"><span>必填完成度</span><span>92%</span></div>
+                  <div class="aside-item"><span>Agent 参数状态</span><span>待确认</span></div>
+                  <div class="aside-item"><span>安全向标签</span><span>已补齐</span></div>
+                  <div class="aside-item"><span>核心标签</span><span>2 个</span></div>
+                  <div class="aside-item"><span>最近核验时间</span><span>有效</span></div>
+                </div>
+              </div>
+              <div class="aside-box">
+                <strong>前台影响模块</strong>
+                <div class="aside-list">
+                  <div class="aside-item"><span>首页/发现页</span><span>已可聚合</span></div>
+                  <div class="aside-item"><span>详情页</span><span>已可聚合</span></div>
+                  <div class="aside-item"><span>准备页</span><span>依赖后续 checklist</span></div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="geometry">
+          <div class="map-layout">
+            <div class="card map-board">
+              <svg viewBox="0 0 760 520" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="terrainFill" x1="0%" x2="0%" y1="0%" y2="100%">
+                    <stop offset="0%" stop-color="#d2e7d8"></stop>
+                    <stop offset="100%" stop-color="#edf6ef"></stop>
+                  </linearGradient>
+                </defs>
+                <path d="M0 420C90 372 142 334 212 278C278 224 342 210 390 158C450 95 535 74 760 24V520H0Z" fill="url(#terrainFill)"></path>
+                <path d="M0 342C112 306 170 254 242 214C318 172 388 154 760 58V520H0Z" fill="#dcebe0"></path>
+                <path d="M112 460 C160 410, 210 360, 282 298 C336 250, 406 218, 514 144 C590 92, 654 66, 706 42" fill="none" stroke="rgba(255,255,255,0.95)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M112 460 C160 410, 210 360, 282 298 C336 250, 406 218, 514 144 C590 92, 654 66, 706 42" fill="none" stroke="#2358e8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+
+              <div class="map-overlay">
+                <div class="map-tag">几何版本 v3</div>
+                <div class="map-tag">地图工作区</div>
+              </div>
+
+              <div class="map-marker primary" style="left: 18%; top: 88%;">起点</div>
+              <div class="map-marker" style="left: 38%; top: 64%;">关键岔路</div>
+              <div class="map-marker" style="left: 64%; top: 42%;">下撤点缺 1</div>
+              <div class="map-marker" style="left: 84%; top: 18%;">终点</div>
+            </div>
+
+            <div class="stack">
+              <div class="aside-box">
+                <strong>A. 几何信息</strong>
+                <div class="aside-list">
+                  <div class="aside-item"><span>主轨迹</span><span>已导入</span></div>
+                  <div class="aside-item"><span>起点坐标</span><span>已设置</span></div>
+                  <div class="aside-item"><span>终点坐标</span><span>已设置</span></div>
+                  <div class="aside-item"><span>海拔剖面</span><span>已采样</span></div>
+                  <div class="aside-item"><span>地图同步状态</span><span>completed</span></div>
+                </div>
+              </div>
+              <div class="aside-box">
+                <strong>B. 阶段列表</strong>
+                <div class="aside-list">
+                  <div class="aside-item"><span>第 1 段</span><span>沿溪缓行</span></div>
+                  <div class="aside-item"><span>第 2 段</span><span>缓慢上行</span></div>
+                  <div class="aside-item"><span>第 3 段</span><span>龙井方向</span></div>
+                </div>
+              </div>
+              <div class="aside-box">
+                <strong>C. 节点列表</strong>
+                <div class="aside-list">
+                  <div class="aside-item"><span>关键岔路</span><span>已录入</span></div>
+                  <div class="aside-item"><span>提示点</span><span>已录入</span></div>
+                  <div class="aside-item"><span>纠偏提示</span><span>已录入</span></div>
+                </div>
+              </div>
+              <div class="aside-box">
+                <strong>D. 下撤点列表</strong>
+                <div class="aside-list">
+                  <div class="aside-item"><span>主下撤点</span><span>已录入</span></div>
+                  <div class="aside-item"><span>次下撤点</span><span>缺失</span></div>
+                </div>
+              </div>
+              <div class="aside-box">
+                <strong>E. 用户上报待审核</strong>
+                <div class="aside-list">
+                  <div class="aside-item"><span>上报 01</span><span>备用下撤点</span></div>
+                  <div class="aside-item"><span>来源</span><span>用户截图 + 坐标</span></div>
+                  <div class="aside-item"><span>状态</span><span>pending</span></div>
+                </div>
+                <div class="mini-actions" style="margin-top: 12px;">
+                  <button class="mini-btn">接受并合并</button>
+                  <button class="mini-btn">驳回</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sticky-bar">
+            <div class="muted">几何页关键提醒：起终点已齐，但还缺 1 个次下撤点。</div>
+            <div class="mini-actions">
+              <button class="mini-btn">新增节点</button>
+              <button class="mini-btn">复制节点</button>
+              <button class="mini-btn" data-screen-target="workbench">返回工作台</button>
+              <button class="btn" data-screen-target="risk">下一步去风险天气页</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="risk">
+          <div class="grid-2">
+            <div class="stack">
+              <div class="card">
+                <h3>风险点与天气规则</h3>
+                <div class="section-list">
+                  <div class="section-item">
+                    <div>
+                      <strong>风险点 01 · 关键岔路</strong>
+                      <div class="muted">risk_type = fork_confusion，已写风险说明与保守建议。</div>
+                    </div>
+                    <span class="chip warn">medium</span>
+                  </div>
+                  <div class="section-item">
+                    <div>
+                      <strong>风险点 02 · 雨后湿滑石面</strong>
+                      <div class="muted">risk_type = slippery，已设置触发半径。</div>
+                    </div>
+                    <span class="chip warn">high</span>
+                  </div>
+                  <div class="section-item">
+                    <div>
+                      <strong>天气规则 · rain</strong>
+                      <div class="muted">午后雷雨概率升高时，建议尽早回撤。</div>
+                    </div>
+                    <span class="chip">warn</span>
+                  </div>
+                  <div class="section-item">
+                    <div>
+                      <strong>天气规则 · late_start</strong>
+                      <div class="muted">晚于 13:00 才出发时，不建议继续上行。</div>
+                    </div>
+                    <span class="chip">avoid</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <h3>用户上报风险待审</h3>
+                <div class="section-list">
+                  <div class="section-item">
+                    <div>
+                      <strong>提议：雨后石阶湿滑点</strong>
+                      <div class="muted">用户上报，附带截图与坐标，待审核后决定是否合并为正式风险点。</div>
+                    </div>
+                    <span class="chip warn">pending</span>
+                  </div>
+                </div>
+                <div class="mini-actions" style="margin-top: 12px;">
+                  <button class="mini-btn">接受并转正式风险点</button>
+                  <button class="mini-btn">驳回并写原因</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="stack">
+              <div class="card">
+                <h3>Checklist 画像</h3>
+                <div class="field-grid">
+                  <div class="field"><label>时长桶</label><select><option>half_day</option></select></div>
+                  <div class="field"><label>强度桶</label><select><option>easy</option></select></div>
+                  <div class="field"><label>地形标签</label><input value="溪谷 / 台阶 / 缓坡" /></div>
+                  <div class="field"><label>天气敏感标签</label><input value="雷雨 / 湿滑" /></div>
+                  <div class="field"><label>必带物资</label><textarea>water, powerbank, anti-slip-shoes</textarea></div>
+                  <div class="field"><label>加严物资</label><textarea>light_rain_jacket</textarea></div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h3>必验提醒</h3>
+                <div class="bullet-list">
+                  <div class="bullet-item">
+                    <span class="dot safe"></span>
+                    <div>
+                      <strong>高优先级风险点</strong>
+                      <div class="muted">已存在 1 个以上。</div>
+                    </div>
+                  </div>
+                  <div class="bullet-item">
+                    <span class="dot safe"></span>
+                    <div>
+                      <strong>天气规则</strong>
+                      <div class="muted">`rain` 与 `late_start` 均已存在。</div>
+                    </div>
+                  </div>
+                  <div class="bullet-item">
+                    <span class="dot warn"></span>
+                    <div>
+                      <strong>必带物资</strong>
+                      <div class="muted">还需确认一个补给相关物资是否纳入固定提醒。</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sticky-bar">
+            <div class="muted">这一页是产品差异化核心，优先保证风险和 checklist 的保守表达。</div>
+            <div class="mini-actions">
+              <button class="mini-btn">复制相似路线画像</button>
+              <button class="mini-btn" data-screen-target="workbench">返回工作台</button>
+              <button class="btn" data-screen-target="evidence">下一步去证据 FAQ 页</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="evidence">
+          <div class="grid-2">
+            <div class="card table-card">
+              <div class="table-head review-table">
+                <div>来源标题</div>
+                <div>来源类型</div>
+                <div>可信度</div>
+                <div>支撑字段</div>
+                <div>核验时间</div>
+                <div>动作</div>
+              </div>
+
+              <div class="table-row review-table">
+                <div>
+                  <strong>景区公开路线说明</strong>
+                  <div class="caption">支撑主路径、起终点、成熟步道判断</div>
+                </div>
+                <div>official</div>
+                <div>92</div>
+                <div>route_logic / start / end</div>
+                <div>2026-09-05</div>
+                <div class="mini-actions"><button class="mini-btn">查看摘要</button></div>
+              </div>
+
+              <div class="table-row review-table">
+                <div>
+                  <strong>地图路线公开标注</strong>
+                  <div class="caption">支撑节点、下撤点和路径一致性</div>
+                </div>
+                <div>map</div>
+                <div>86</div>
+                <div>geometry / nodes / exits</div>
+                <div>2026-09-05</div>
+                <div class="mini-actions"><button class="mini-btn">查看摘要</button></div>
+              </div>
+
+              <div class="table-row review-table">
+                <div>
+                  <strong>公开游记与短视频反馈</strong>
+                  <div class="caption">支撑新手容易慌的点和体感风险</div>
+                </div>
+                <div>travel_note</div>
+                <div>74</div>
+                <div>panic / risk / beginner_fit</div>
+                <div>2026-09-04</div>
+                <div class="mini-actions"><button class="mini-btn">查看摘要</button></div>
+              </div>
+            </div>
+
+            <div class="stack">
+              <div class="card">
+                <h3>证据覆盖提示</h3>
+                <div class="aside-list">
+                  <div class="aside-item"><span>官方类来源</span><span>Agent 已收集</span></div>
+                  <div class="aside-item"><span>地图类来源</span><span>Agent 已收集</span></div>
+                  <div class="aside-item"><span>体验类来源</span><span>人工已核验</span></div>
+                  <div class="aside-item"><span>两类三份</span><span>已满足</span></div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h3>FAQ 列表</h3>
+                <div class="section-list">
+                  <div class="section-item">
+                    <div>
+                      <strong>如果走到一半觉得累，还适合继续吗？</strong>
+                      <div class="muted">引用依据：exit_logic_summary / easiest_panic_point_text</div>
+                    </div>
+                    <span class="chip safe">已人工审核</span>
+                  </div>
+                  <div class="section-item">
+                    <div>
+                      <strong>雨后还能不能去？</strong>
+                      <div class="muted">AI 起草，等待人工审核。</div>
+                    </div>
+                    <span class="chip warn">未人工审核</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sticky-bar">
+            <div class="muted">FAQ 每条都必须依附已存在来源或结构化字段，否则不能过审。</div>
+            <div class="mini-actions">
+              <button class="mini-btn">新增来源</button>
+              <button class="mini-btn">AI 起草 FAQ</button>
+              <button class="mini-btn" data-screen-target="workbench">返回工作台</button>
+              <button class="btn" data-screen-target="review">提交审核前自检</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="review">
+          <div class="card">
+            <div class="toolbar">
+              <select>
+                <option>浙江</option>
+                <option>广东</option>
+              </select>
+              <select>
+                <option>FAQ 未审核</option>
+                <option>证据覆盖不足</option>
+                <option>风险缺失</option>
+              </select>
+              <input type="text" value="pending_review / 高风险优先" />
+            </div>
+          </div>
+
+          <div class="card table-card">
+            <div class="table-head review-table">
+              <div>路线</div>
+              <div>录入完整度</div>
+              <div>证据覆盖度</div>
+              <div>风险点数</div>
+              <div>建议可信度</div>
+              <div>动作</div>
+            </div>
+
+            <div class="table-row review-table">
+              <div>
+                <strong>九溪到龙井轻徒步</strong>
+                <div class="caption">提交时间：2026-09-05 10:30</div>
+              </div>
+              <div>92%</div>
+              <div>两类三份已满足</div>
+              <div>2</div>
+              <div>A</div>
+              <div class="mini-actions">
+                <button class="mini-btn">进入审核详情</button>
+                <button class="mini-btn">退回录入</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-layout">
+            <div class="card">
+              <h3>路线摘要</h3>
+              <div class="section-list">
+                <div class="section-item">
+                  <div>
+                    <strong>基础事实摘要</strong>
+                    <div class="muted">最小事实已录入，时长、距离、爬升来自 Agent + 地图结果并已确认。</div>
+                  </div>
+                </div>
+                <div class="section-item">
+                  <div>
+                    <strong>轨迹与节点概览</strong>
+                    <div class="muted">主轨迹已存在，关键岔路已表达，下撤点仍建议补 1 个备用点。</div>
+                  </div>
+                </div>
+                <div class="section-item">
+                  <div>
+                    <strong>证据摘要</strong>
+                    <div class="muted">官方类、地图类、体验类均已覆盖。</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>审核清单</h3>
+              <div class="check-grid">
+                <div class="check-section">
+                  <strong>A. 准入红线</strong>
+                  <div class="check-row done"><span class="check-box"></span><span>主路径明确</span></div>
+                  <div class="check-row done"><span class="check-box"></span><span>存在公共化迹象</span></div>
+                  <div class="check-row done"><span class="check-box"></span><span>不依赖野线成立</span></div>
+                </div>
+                <div class="check-section">
+                  <strong>B. 新手友好度</strong>
+                  <div class="check-row done"><span class="check-box"></span><span>可达性清楚</span></div>
+                  <div class="check-row done"><span class="check-box"></span><span>可退出性明确</span></div>
+                  <div class="check-row done"><span class="check-box"></span><span>风险可表达</span></div>
+                </div>
+                <div class="check-section">
+                  <strong>C. 证据充分性</strong>
+                  <div class="check-row done"><span class="check-box"></span><span>两类三份已满足</span></div>
+                  <div class="check-row"><span class="check-box"></span><span>FAQ 全部人工审核</span></div>
+                </div>
+                <div class="check-section">
+                  <strong>D. 用户上报处理</strong>
+                  <div class="check-row"><span class="check-box"></span><span>高优先级用户上报已处理</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card decision-card">
+              <h3>审核结论卡</h3>
+              <div class="decision-box">
+                <strong>通过</strong>
+                <div class="muted">设置 `credibility_level = A` 并进入 `approved`。</div>
+              </div>
+              <div class="decision-box">
+                <strong>退回补充</strong>
+                <textarea>建议补 1 个备用下撤点，并完成剩余 FAQ 人工审核。</textarea>
+              </div>
+              <div class="decision-box">
+                <strong>淘汰</strong>
+                <textarea>仅在命中明确淘汰项时填写。</textarea>
+              </div>
+              <div class="review-actions">
+                <button class="btn secondary" data-screen-target="publish" data-route-status="approved" data-route-credibility="可信度：A">通过并进入发布</button>
+                <button class="btn-ghost">退回录入</button>
+                <button class="btn-ghost">标记淘汰</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="publish">
+          <div class="publish-layout">
+            <div class="card table-card">
+              <div class="table-head publish-table">
+                <div>路线</div>
+                <div>几何版本</div>
+                <div>FAQ 版本</div>
+                <div>Checklist 版本</div>
+                <div>历史发布</div>
+                <div>动作</div>
+              </div>
+
+              <div class="table-row publish-table">
+                <div>
+                  <strong>九溪到龙井轻徒步</strong>
+                  <div class="caption">最新审核时间：2026-09-05 11:20</div>
+                </div>
+                <div>v3</div>
+                <div>v2</div>
+                <div>v2</div>
+                <div>1 个历史版本</div>
+                <div class="mini-actions">
+                  <button class="mini-btn">生成发布版本</button>
+                  <button class="mini-btn">查看历史</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="stack">
+              <div class="card">
+                <h3>当前版本与发布动作</h3>
+                <div class="summary-grid">
+                  <div class="summary-row"><span>publish_version_id</span><strong>pub_zj-hz-jiuxi_v3</strong></div>
+                  <div class="summary-row"><span>package_id</span><strong>pkg_zj-hz-jiuxi_v3</strong></div>
+                  <div class="summary-row"><span>schema_version</span><strong>1.0</strong></div>
+                  <div class="summary-row"><span>checksum</span><strong>e8f2...9a0c</strong></div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h3>发布前强校验</h3>
+                <div class="bullet-list">
+                  <div class="bullet-item">
+                    <span class="dot safe"></span>
+                    <div>
+                      <strong>状态必须为 approved</strong>
+                      <div class="muted">当前已满足。</div>
+                    </div>
+                  </div>
+                  <div class="bullet-item">
+                    <span class="dot safe"></span>
+                    <div>
+                      <strong>可信度必须为 A</strong>
+                      <div class="muted">当前已满足。</div>
+                    </div>
+                  </div>
+                  <div class="bullet-item">
+                    <span class="dot warn"></span>
+                    <div>
+                      <strong>FAQ 人工审核</strong>
+                      <div class="muted">仍建议确认最后一条 FAQ 的审核状态。</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mini-actions">
+                <button class="btn">生成发布版本</button>
+                <button class="btn secondary" data-screen-target="history" data-route-status="published" data-route-credibility="可信度：A">确认发布</button>
+                <button class="btn-ghost">预览 route package</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" data-screen="history">
+          <div class="history-layout">
+            <div class="card table-card">
+              <div class="table-head history-table">
+                <div>版本 ID</div>
+                <div>发布时间</div>
+                <div>发布人</div>
+                <div>checksum</div>
+                <div>状态</div>
+                <div>动作</div>
+              </div>
+
+              <div class="table-row history-table">
+                <div>
+                  <strong>pub_zj-hz-jiuxi_v3</strong>
+                  <div class="caption">当前生效版本</div>
+                </div>
+                <div>2026-09-05 11:40</div>
+                <div>admin</div>
+                <div>e8f2...9a0c</div>
+                <div><span class="chip safe">published</span></div>
+                <div class="mini-actions">
+                  <button class="mini-btn">查看快照</button>
+                  <button class="mini-btn">设为暂停推荐</button>
+                </div>
+              </div>
+
+              <div class="table-row history-table">
+                <div>
+                  <strong>pub_zj-hz-jiuxi_v2</strong>
+                  <div class="caption">上一稳定版本</div>
+                </div>
+                <div>2026-09-01 17:20</div>
+                <div>admin</div>
+                <div>d1aa...7f0b</div>
+                <div><span class="chip">rolled_back</span></div>
+                <div class="mini-actions">
+                  <button class="mini-btn">查看快照</button>
+                  <button class="mini-btn">恢复上一稳定版本</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="stack">
+              <div class="card">
+                <h3>右侧抽屉摘要</h3>
+                <div class="section-list">
+                  <div class="section-item">
+                    <div>
+                      <strong>package 摘要</strong>
+                      <div class="muted">包含基础事实、节点、风险点、天气规则、checklist 画像和 FAQ。</div>
+                    </div>
+                  </div>
+                  <div class="section-item">
+                    <div>
+                      <strong>版本说明</strong>
+                      <div class="muted">v3 增补了主下撤点和更保守的雨天规则。</div>
+                    </div>
+                  </div>
+                  <div class="section-item">
+                    <div>
+                      <strong>回退提醒</strong>
+                      <div class="muted">MVP 不做复杂 diff，但至少能看到版本摘要与恢复动作。</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mini-actions">
+                <button class="btn-ghost">标记无效版本</button>
+                <button class="btn secondary">恢复上一稳定版本</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const buttons = document.querySelectorAll("[data-screen-target]");
+      const navItems = document.querySelectorAll(".nav-item");
+      const screens = document.querySelectorAll(".screen");
+      const routeNameNodes = document.querySelectorAll("[data-route-name]");
+      const routeIdNodes = document.querySelectorAll("[data-route-id]");
+      const routeStatusNodes = document.querySelectorAll("[data-route-status]");
+      const routeCredibilityNodes = document.querySelectorAll("[data-route-credibility]");
+      const submitAction = document.querySelector("[data-submit-action]");
+
+      function activateScreen(target) {
+        screens.forEach((screen) => {
+          screen.classList.toggle("active", screen.dataset.screen === target);
+        });
+
+        navItems.forEach((item) => {
+          item.classList.toggle("active", item.dataset.screenTarget === target);
+        });
+
+        const publishMode = target === "publish" || target === "history";
+        if (submitAction) {
+          submitAction.textContent = publishMode ? "查看发布历史" : "提交审核";
+        }
+      }
+
+      function updateRouteContext(button) {
+        const routeName = button.dataset.routeName;
+        const routeId = button.dataset.routeId;
+        const routeStatus = button.dataset.routeStatus;
+        const routeCredibility = button.dataset.routeCredibility;
+
+        if (routeName) {
+          routeNameNodes.forEach((node) => {
+            node.textContent = routeName;
+          });
+        }
+
+        if (routeId) {
+          routeIdNodes.forEach((node) => {
+            node.textContent = "route_id: " + routeId;
+          });
+        }
+
+        if (routeStatus) {
+          routeStatusNodes.forEach((node) => {
+            node.textContent = routeStatus;
+          });
+        }
+
+        if (routeCredibility) {
+          routeCredibilityNodes.forEach((node) => {
+            node.textContent = routeCredibility;
+          });
+        }
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          updateRouteContext(button);
+          const target = button.dataset.screenTarget;
+          if (target) activateScreen(target);
+        });
+      });
+
+      activateScreen("candidate");
+    </script>
+  </body>
+</html>

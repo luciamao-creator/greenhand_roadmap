@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
+  <title id="title">九溪到龙井轻徒步总览示意图</title>
+  <desc id="desc">评审级处理过地图图像示意，展示九溪入口、沿溪主路线、上行转折口、龙井村休息点、下撤点与禁区。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f2eb"/>
+      <stop offset="100%" stop-color="#f7f2df"/>
+    </linearGradient>
+    <linearGradient id="terrain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bfd7b7"/>
+      <stop offset="100%" stop-color="#9ebb8d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#1f3d2d" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .label { font: 600 28px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #203126; }
+      .sub { font: 400 20px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #3d5747; }
+      .tag { font: 700 18px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #fff; }
+      .small { font: 500 18px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #314a39; }
+      .tiny { font: 500 16px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #5c735f; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="1024" fill="url(#bg)"/>
+  <rect x="48" y="48" width="1344" height="928" rx="34" fill="#fcfbf5" filter="url(#shadow)"/>
+
+  <g transform="translate(92 78)">
+    <text class="label" x="0" y="0">九溪 - 龙井轻徒步总览</text>
+    <text class="sub" x="0" y="40">评审级示意图：先沿溪，再上行，接近龙井时注意岔路分流</text>
+    <rect x="980" y="-22" width="210" height="42" rx="21" fill="#5d8b67"/>
+    <text class="tag" x="1085" y="6" text-anchor="middle">演示样例 · 非正式坐标</text>
+  </g>
+
+  <g transform="translate(92 160)">
+    <rect x="0" y="0" width="925" height="760" rx="28" fill="#eef4e7" stroke="#d7e3d1"/>
+    <path d="M120 620 C180 580, 170 480, 240 455 S330 365, 372 328 S430 228, 520 214 S664 260, 715 231 S780 162, 862 156" fill="none" stroke="#78b7d4" stroke-width="44" stroke-linecap="round" opacity="0.55"/>
+    <path d="M180 120 C300 60, 470 70, 560 135 S710 260, 835 235 S930 120, 880 50" fill="none" stroke="#dbe8d3" stroke-width="150" stroke-linecap="round" opacity="0.6"/>
+    <path d="M620 645 C708 590, 770 486, 855 455 S928 410, 950 332" fill="none" stroke="#dbe8d3" stroke-width="135" stroke-linecap="round" opacity="0.55"/>
+    <path d="M137 646 C200 604, 194 512, 256 476 S350 387, 396 340 S451 252, 526 239 S660 271, 730 246 S801 186, 872 178" fill="none" stroke="#244f44" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M622 636 C692 594, 760 503, 845 474 S913 433, 935 352" fill="none" stroke="#244f44" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g opacity="0.9">
+      <path d="M116 642 C180 603, 191 519, 250 484 S349 392, 394 349" fill="none" stroke="#38a169" stroke-width="18" stroke-linecap="round"/>
+      <path d="M394 349 C448 262, 514 246, 585 248 S701 261, 760 236" fill="none" stroke="#f5b942" stroke-width="18" stroke-linecap="round"/>
+      <path d="M760 236 C821 210, 873 191, 929 186" fill="none" stroke="#f08d49" stroke-width="18" stroke-linecap="round"/>
+    </g>
+
+    <path d="M518 268 C472 316, 422 350, 350 372 S235 425, 212 488" fill="none" stroke="#cf5858" stroke-width="22" stroke-linecap="round" stroke-dasharray="16 12" opacity="0.85"/>
+    <path d="M514 268 C465 333, 414 367, 338 386 S220 452, 196 514" fill="none" stroke="#cf5858" stroke-width="54" stroke-linecap="round" stroke-opacity="0.18"/>
+
+    <g>
+      <circle cx="137" cy="646" r="16" fill="#fff" stroke="#1e5742" stroke-width="6"/>
+      <circle cx="393" cy="349" r="13" fill="#f7faf7" stroke="#1e5742" stroke-width="5"/>
+      <circle cx="760" cy="236" r="13" fill="#f7faf7" stroke="#1e5742" stroke-width="5"/>
+      <circle cx="929" cy="186" r="16" fill="#fff" stroke="#1e5742" stroke-width="6"/>
+      <circle cx="555" cy="251" r="14" fill="#fff" stroke="#c7772f" stroke-width="5"/>
+      <circle cx="920" cy="260" r="14" fill="#fff" stroke="#c7772f" stroke-width="5"/>
+    </g>
+
+    <g>
+      <rect x="85" y="671" width="178" height="86" rx="18" fill="#ffffff" stroke="#d8e2d0"/>
+      <text class="small" x="111" y="708">起点</text>
+      <text class="label" x="111" y="742" font-size="22">九溪入口</text>
+
+      <rect x="315" y="276" width="228" height="96" rx="18" fill="#ffffff" stroke="#d8e2d0"/>
+      <text class="small" x="340" y="312">关键判断点</text>
+      <text class="label" x="340" y="346" font-size="22">溪谷转上行岔路</text>
+
+      <rect x="813" y="115" width="232" height="96" rx="18" fill="#ffffff" stroke="#d8e2d0"/>
+      <text class="small" x="838" y="151">终点</text>
+      <text class="label" x="838" y="185" font-size="22">龙井村休息点</text>
+    </g>
+
+    <g>
+      <rect x="558" y="270" width="186" height="62" rx="16" fill="#fff8ed" stroke="#f5c079"/>
+      <text class="small" x="582" y="309">下撤点 1 · 原路返回</text>
+      <rect x="938" y="272" width="176" height="62" rx="16" fill="#fff8ed" stroke="#f5c079"/>
+      <text class="small" x="962" y="311">下撤点 2 · 村道路撤</text>
+    </g>
+
+    <g>
+      <rect x="164" y="48" width="210" height="56" rx="16" fill="#fff" stroke="#d8e2d0"/>
+      <rect x="185" y="67" width="24" height="24" rx="12" fill="#38a169"/>
+      <text class="small" x="222" y="86">阶段 1 沿溪缓行</text>
+      <rect x="392" y="48" width="210" height="56" rx="16" fill="#fff" stroke="#d8e2d0"/>
+      <rect x="413" y="67" width="24" height="24" rx="12" fill="#f5b942"/>
+      <text class="small" x="450" y="86">阶段 2 转向上行</text>
+      <rect x="620" y="48" width="210" height="56" rx="16" fill="#fff" stroke="#d8e2d0"/>
+      <rect x="641" y="67" width="24" height="24" rx="12" fill="#f08d49"/>
+      <text class="small" x="678" y="86">阶段 3 接近龙井</text>
+    </g>
+
+    <g>
+      <rect x="645" y="538" width="228" height="118" rx="20" fill="#fff4f4" stroke="#e39696"/>
+      <text class="small" x="671" y="574">禁区重点标记</text>
+      <text class="label" x="671" y="608" font-size="22">不要继续贴溪走小路</text>
+      <text class="tiny" x="671" y="639">湿滑石面 + 非成熟支路，容易增加恐慌</text>
+    </g>
+  </g>
+
+  <g transform="translate(1054 170)">
+    <rect x="0" y="0" width="286" height="280" rx="24" fill="#fbfaf4" stroke="#dfe7d7"/>
+    <text class="label" x="26" y="38">这张图想解决什么</text>
+    <text class="small" x="26" y="88">1. 起点和终点一眼可见</text>
+    <text class="small" x="26" y="126">2. 先沿溪，再上行的逻辑清楚</text>
+    <text class="small" x="26" y="164">3. 两个下撤点不被忽略</text>
+    <text class="small" x="26" y="202">4. 禁区不是附注，而是主提醒</text>
+    <text class="tiny" x="26" y="244">下一步正式版需要替换为真实底图与标绘坐标</text>
+  </g>
+
+  <g transform="translate(1054 476)">
+    <rect x="0" y="0" width="286" height="234" rx="24" fill="#f4f7f1" stroke="#dfe7d7"/>
+    <text class="label" x="26" y="38">视觉图例</text>
+    <path d="M32 82 H95" stroke="#244f44" stroke-width="10" stroke-linecap="round"/>
+    <text class="small" x="112" y="89">成熟主路线</text>
+    <path d="M32 122 H95" stroke="#cf5858" stroke-width="10" stroke-linecap="round" stroke-dasharray="12 10"/>
+    <text class="small" x="112" y="129">禁区 / 错误方向</text>
+    <circle cx="45" cy="164" r="10" fill="#fff" stroke="#c7772f" stroke-width="4"/>
+    <text class="small" x="112" y="171">下撤点</text>
+    <rect x="28" y="196" width="74" height="20" rx="10" fill="#78b7d4" opacity="0.6"/>
+    <text class="small" x="112" y="212">溪流 / 水系</text>
+  </g>
+
+  <g transform="translate(1054 736)">
+    <rect x="0" y="0" width="286" height="184" rx="24" fill="#fffaf1" stroke="#ead8b2"/>
+    <text class="label" x="26" y="38">产品文案测试</text>
+    <text class="small" x="26" y="82">先沿溪建立安全感</text>
+    <text class="small" x="26" y="118">接着完成一次简单方向判断</text>
+    <text class="small" x="26" y="154">看到龙井休息点后就可以收束</text>
+  </g>
+</svg>

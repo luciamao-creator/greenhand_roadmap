@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1024" viewBox="0 0 1440 1024" role="img" aria-labelledby="title desc">
+  <title id="title">禁区重点图示意图</title>
+  <desc id="desc">评审级处理过地图图像示意，强调溪边湿滑石面与非成熟小土路属于不要进入的区域，并对比推荐主步道。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef5ea"/>
+      <stop offset="100%" stop-color="#fdf6eb"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#294537" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .label { font: 600 28px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #22362a; }
+      .sub { font: 400 20px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #4f6454; }
+      .small { font: 500 18px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #36503d; }
+      .tag { font: 700 18px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #fff; }
+      .big { font: 700 36px -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; fill: #244236; }
+    </style>
+    <pattern id="dangerPattern" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="22" height="22" fill="rgba(207,103,96,0.10)"/>
+      <rect width="10" height="22" fill="rgba(207,103,96,0.18)"/>
+    </pattern>
+  </defs>
+
+  <rect width="1440" height="1024" fill="url(#bg)"/>
+  <rect x="52" y="52" width="1336" height="920" rx="34" fill="#fffdf8" filter="url(#shadow)"/>
+
+  <g transform="translate(92 86)">
+    <text class="label" x="0" y="0">禁区重点图 · 溪边湿滑石面与非成熟小土路</text>
+    <text class="sub" x="0" y="40">不要离开成熟步道进入溪边湿滑区域，容易滑倒，也更容易走乱</text>
+    <rect x="1008" y="-22" width="188" height="42" rx="21" fill="#c95d55"/>
+    <text class="tag" x="1102" y="6" text-anchor="middle">高优先级禁入提醒</text>
+  </g>
+
+  <g transform="translate(92 166)">
+    <rect x="0" y="0" width="846" height="738" rx="28" fill="#eef5e8" stroke="#dae5d3"/>
+    <path d="M112 610 C182 558, 243 505, 322 468 S468 398, 553 355 S714 260, 801 190" fill="none" stroke="#7db9d2" stroke-width="52" stroke-linecap="round" opacity="0.52"/>
+    <path d="M106 604 C175 554, 237 505, 316 468 S462 399, 548 359 S709 267, 798 198" fill="none" stroke="#254f43" stroke-width="14" stroke-linecap="round"/>
+    <path d="M110 603 C175 553, 237 503, 314 467 S460 402, 546 361 S706 271, 794 203" fill="none" stroke="#38a169" stroke-width="18" stroke-linecap="round"/>
+    <polygon points="824,184 787,202 797,166" fill="#38a169"/>
+
+    <path d="M154 610 C230 571, 305 542, 384 517 S525 470, 603 430" fill="none" stroke="#cf6760" stroke-width="22" stroke-linecap="round" stroke-dasharray="18 12"/>
+    <path d="M170 648 C251 610, 329 579, 415 550 S554 501, 648 452" fill="none" stroke="#cf6760" stroke-width="20" stroke-linecap="round" stroke-dasharray="18 12"/>
+    <path d="M150 613 C229 573, 304 545, 384 520 S523 471, 601 433" fill="none" stroke="#cf6760" stroke-width="84" stroke-linecap="round" opacity="0.13"/>
+    <path d="M168 650 C248 611, 327 583, 412 553 S551 506, 645 457" fill="none" stroke="#cf6760" stroke-width="72" stroke-linecap="round" opacity="0.11"/>
+
+    <ellipse cx="436" cy="516" rx="210" ry="92" fill="url(#dangerPattern)" stroke="#dc827d" stroke-width="3"/>
+    <ellipse cx="506" cy="566" rx="162" ry="64" fill="url(#dangerPattern)" stroke="#dc827d" stroke-width="3"/>
+
+    <circle cx="110" cy="603" r="18" fill="#fff" stroke="#254f43" stroke-width="6"/>
+    <circle cx="546" cy="361" r="16" fill="#fff" stroke="#254f43" stroke-width="5"/>
+    <circle cx="794" cy="203" r="18" fill="#fff" stroke="#254f43" stroke-width="6"/>
+
+    <g>
+      <rect x="86" y="640" width="214" height="88" rx="18" fill="#fff" stroke="#d9e3d0"/>
+      <text class="small" x="112" y="678">推荐主步道</text>
+      <text class="big" x="112" y="713">留在成熟步道</text>
+
+      <rect x="386" y="468" width="306" height="118" rx="18" fill="#fff4f4" stroke="#e5a4a1"/>
+      <text class="small" x="412" y="505">禁区重点标记</text>
+      <text class="label" x="412" y="540" font-size="24">不要进入溪边湿滑石面</text>
+      <text class="small" x="412" y="572">也不要顺着非成熟小土路继续探</text>
+    </g>
+
+    <g transform="translate(88 78)">
+      <rect x="0" y="0" width="258" height="78" rx="18" fill="#f4fbf5" stroke="#cfe2cf"/>
+      <text class="small" x="22" y="46">正确动作：沿成熟石板路或主步道前进</text>
+      <rect x="0" y="92" width="280" height="78" rx="18" fill="#fff5f5" stroke="#e1aba8"/>
+      <text class="small" x="22" y="138">错误动作：看到溪边空地就下切或抄近路</text>
+    </g>
+  </g>
+
+  <g transform="translate(974 166)">
+    <rect x="0" y="0" width="364" height="738" rx="28" fill="#fbfcf8" stroke="#dde6d8"/>
+
+    <g transform="translate(28 28)">
+      <text class="label" x="0" y="0">真实图占位</text>
+      <rect x="0" y="30" width="308" height="222" rx="22" fill="#eef6ef"/>
+      <image href="./jiuxi-stream-real-wikimedia.jpg" x="16" y="16" width="132" height="190" preserveAspectRatio="xMidYMid slice"/>
+      <text class="small" x="168" y="66">当前用九溪溪谷图</text>
+      <text class="small" x="168" y="102">帮助表达“靠近水边容易想偏走”</text>
+      <text class="small" x="168" y="138">正式版应替换为禁区边界近景</text>
+      <text class="small" x="168" y="174">或湿滑石面现场图</text>
+    </g>
+
+    <g transform="translate(28 284)">
+      <rect x="0" y="0" width="308" height="154" rx="22" fill="#fff9ef" stroke="#ecd8b1"/>
+      <text class="label" x="18" y="38">用户要理解的不是</text>
+      <text class="small" x="18" y="76">“这里也许可以探索”</text>
+      <text class="small" x="18" y="110">而是“这里不属于推荐路径”</text>
+      <text class="small" x="18" y="142">“继续走只会更慌”</text>
+    </g>
+
+    <g transform="translate(28 468)">
+      <rect x="0" y="0" width="308" height="216" rx="22" fill="#f6faf5" stroke="#dde6d8"/>
+      <text class="label" x="18" y="34">正式版表达建议</text>
+      <text class="small" x="18" y="72">- 真实地图上描出禁区边界</text>
+      <text class="small" x="18" y="108">- 手绘斜线适合做“不可进入”</text>
+      <text class="small" x="18" y="144">- 3D 地形适合强化落差与湿滑风险</text>
+      <text class="small" x="18" y="180">- 推荐主路要比禁区更稳定清楚</text>
+    </g>
+  </g>
+</svg>

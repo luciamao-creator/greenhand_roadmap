@@ -1,0 +1,182 @@
+[
+  {
+    "route_name": "仰天窝健身步道",
+    "province_name": "四川",
+    "city_name": "成都",
+    "area_name": "龙泉驿区",
+    "start_point_name": "洛带古镇北门",
+    "end_point_name": "仰天窝观景台",
+    "route_type": "out_and_back",
+    "map_search_keyword": "成都 龙泉驿 仰天窝健身步道 洛带古镇"
+  },
+  {
+    "route_name": "金龙长城环线",
+    "province_name": "四川",
+    "city_name": "成都",
+    "area_name": "龙泉驿区",
+    "start_point_name": "金龙长城景区停车场",
+    "end_point_name": "金龙长城观景台",
+    "route_type": "loop",
+    "map_search_keyword": "成都 龙泉驿 金龙长城"
+  },
+  {
+    "route_name": "龙脊天路",
+    "province_name": "四川",
+    "city_name": "成都",
+    "area_name": "金堂县",
+    "start_point_name": "龙脊天路游客中心",
+    "end_point_name": "龙脊天路观景台",
+    "route_type": "out_and_back",
+    "map_search_keyword": "成都 金堂 龙脊天路"
+  },
+  {
+    "route_name": "白鹤山",
+    "province_name": "四川",
+    "city_name": "成都",
+    "area_name": "邛崃市",
+    "start_point_name": "白鹤山山门",
+    "end_point_name": "白鹤山观景平台",
+    "route_type": "out_and_back",
+    "map_search_keyword": "成都 邛崃 白鹤山"
+  },
+  {
+    "route_name": "中坝森林",
+    "province_name": "四川",
+    "city_name": "成都",
+    "area_name": "彭州市",
+    "start_point_name": "中坝森林入口",
+    "end_point_name": "中坝森林观景台",
+    "route_type": "out_and_back",
+    "map_search_keyword": "成都 彭州 中坝森林"
+  },
+  {
+    "route_name": "九溪十八涧",
+    "province_name": "浙江",
+    "city_name": "杭州",
+    "area_name": "西湖区",
+    "start_point_name": "九溪烟树",
+    "end_point_name": "龙井村",
+    "route_type": "one_way",
+    "map_search_keyword": "杭州 九溪十八涧 龙井村"
+  },
+  {
+    "route_name": "亭溪岭古道",
+    "province_name": "浙江",
+    "city_name": "宁波",
+    "area_name": "鄞州区",
+    "start_point_name": "亭溪村古道口",
+    "end_point_name": "亭溪岭观景点",
+    "route_type": "out_and_back",
+    "map_search_keyword": "宁波 鄞州 亭溪岭古道"
+  },
+  {
+    "route_name": "深溪盘山古道",
+    "province_name": "浙江",
+    "city_name": "宁波",
+    "area_name": "海曙区",
+    "start_point_name": "深溪村步道口",
+    "end_point_name": "龙鹫登山步道观景点",
+    "route_type": "loop",
+    "map_search_keyword": "宁波 海曙 深溪盘山古道 龙鹫登山步道"
+  },
+  {
+    "route_name": "云松岭—黄牛岭古道",
+    "province_name": "浙江",
+    "city_name": "绍兴",
+    "area_name": "越城区",
+    "start_point_name": "云松村古道口",
+    "end_point_name": "黄牛岭古道口",
+    "route_type": "one_way",
+    "map_search_keyword": "绍兴 越城 云松岭 黄牛岭古道"
+  },
+  {
+    "route_name": "岭南古道小环线",
+    "province_name": "浙江",
+    "city_name": "宁波",
+    "area_name": "东钱湖旅游度假区",
+    "start_point_name": "韩岭游客中心",
+    "end_point_name": "福泉山茶场步道口",
+    "route_type": "loop",
+    "map_search_keyword": "宁波 东钱湖 岭南古道 韩岭"
+  },
+  {
+    "route_name": "梅林后山绿道",
+    "province_name": "广东",
+    "city_name": "深圳",
+    "area_name": "福田区",
+    "start_point_name": "梅林水库",
+    "end_point_name": "梅林山顶观景平台",
+    "route_type": "out_and_back",
+    "map_search_keyword": "深圳 福田 梅林后山绿道 梅林水库"
+  },
+  {
+    "route_name": "塘朗山郊野公园",
+    "province_name": "广东",
+    "city_name": "深圳",
+    "area_name": "南山区",
+    "start_point_name": "塘朗山龙珠门",
+    "end_point_name": "塘朗山极目阁",
+    "route_type": "out_and_back",
+    "map_search_keyword": "深圳 南山 塘朗山郊野公园 龙珠门"
+  },
+  {
+    "route_name": "大南山步道",
+    "province_name": "广东",
+    "city_name": "深圳",
+    "area_name": "南山区",
+    "start_point_name": "大南山别墅登山口",
+    "end_point_name": "大南山山顶",
+    "route_type": "out_and_back",
+    "map_search_keyword": "深圳 南山 大南山步道"
+  },
+  {
+    "route_name": "帽峰山归林森林康养步道",
+    "province_name": "广东",
+    "city_name": "广州",
+    "area_name": "白云区",
+    "start_point_name": "帽峰山景区东门",
+    "end_point_name": "归林步道观景台",
+    "route_type": "out_and_back",
+    "map_search_keyword": "广州 白云 帽峰山归林森林康养步道"
+  },
+  {
+    "route_name": "广州绿脊东平防火站环线",
+    "province_name": "广东",
+    "city_name": "广州",
+    "area_name": "白云区",
+    "start_point_name": "东平防火站",
+    "end_point_name": "东平防火站",
+    "route_type": "loop",
+    "map_search_keyword": "广州 白云 东平防火站 绿脊精品环线"
+  },
+  {
+    "route_name": "厦门山海健康步道",
+    "province_name": "福建",
+    "city_name": "厦门",
+    "area_name": "思明区",
+    "start_point_name": "狐尾山公园入口",
+    "end_point_name": "梅海岭",
+    "route_type": "one_way",
+    "map_search_keyword": "厦门 山海健康步道 狐尾山 梅海岭"
+  },
+  {
+    "route_name": "鼓岭登山古道",
+    "province_name": "福建",
+    "city_name": "福州",
+    "area_name": "晋安区",
+    "start_point_name": "鼓岭旅游度假区游客中心",
+    "end_point_name": "鼓岭柱里步道口",
+    "route_type": "out_and_back",
+    "map_search_keyword": "福州 鼓岭登山古道"
+  },
+  {
+    "route_name": "清源山轻徒步线",
+    "province_name": "福建",
+    "city_name": "泉州",
+    "area_name": "丰泽区",
+    "start_point_name": "清源山游客中心",
+    "end_point_name": "老君岩",
+    "route_type": "out_and_back",
+    "map_search_keyword": "泉州 清源山 老君岩"
+  }
+]
