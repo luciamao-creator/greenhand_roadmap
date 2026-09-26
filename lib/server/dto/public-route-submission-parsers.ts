@@ -87,10 +87,8 @@ export function parseCreateRouteCandidateBody(body: unknown): CreateRouteCandida
     throw new Error("route_type is invalid");
   }
 
+  // 投稿面向全国，交由人工审核把关；此处仅做非空校验，不再限制省份白名单
   const provinceName = asNonEmptyString(input.province_name, "province_name", 32);
-  if (!["四川", "浙江", "广东", "福建"].includes(provinceName)) {
-    throw new Error("province_name is not supported in MVP");
-  }
 
   if (!Array.isArray(input.waypoints) || input.waypoints.length === 0) {
     throw new Error("waypoints is required");

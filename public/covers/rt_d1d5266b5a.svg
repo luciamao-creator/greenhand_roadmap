@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3e2c7"/><stop offset="1" stop-color="#f6efe2"/></linearGradient></defs>
+<rect width="800" height="500" fill="url(#sky)"/>
+<circle cx="640" cy="108" r="40" fill="#fff7e0" opacity="0.85"/>
+<path d="M0,250 L0,145 L40,145 L94,146 L157,187 L222,177 L279,171 L332,169 L381,146 L449,144 L516,153 L581,155 L643,151 L701,152 L746,174 L800,500 L0,500 Z" fill="#7d5f38"/>
+<path d="M0,310 L0,227 L44,266 L96,237 L163,245 L222,262 L266,227 L316,228 L364,265 L417,231 L465,227 L513,233 L565,226 L619,230 L659,234 L717,256 L758,227 L800,500 L0,500 Z" fill="#a9854f"/>
+<rect y="360" width="800" height="140" fill="#bfe0e6" opacity="0.55"/>
+<rect y="360" width="800" height="10" fill="#ffffff" opacity="0.4"/>
+<path d="M0,380 L0,325 L46,324 L115,309 L171,310 L235,344 L296,308 L351,318 L405,308 L456,331 L521,309 L562,327 L628,311 L681,341 L729,310 L781,314 L800,500 L0,500 Z" fill="#c9a36b"/>
+</svg>

@@ -1,0 +1,688 @@
+[
+  {
+    "route_name": "大黑山登山步道",
+    "province_name": "辽宁",
+    "city_name": "大连",
+    "area_name": "金州区",
+    "start_point_name": "大黑山景区正门",
+    "end_point_name": "唐王殿遗址",
+    "route_type": "out_and_back",
+    "map_search_keyword": "大连 金州 大黑山风景区",
+    "difficulty_band": "moderate",
+    "surface_tags": [
+      "石阶",
+      "山径"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "辽南名山，主景区路线清晰，是大连近郊最常走的进阶第一阶",
+    "summary_short": "辽南第一名山，登顶可同时望见黄海与渤海"
+  },
+  {
+    "route_name": "清源山轻徒步线",
+    "province_name": "福建",
+    "city_name": "泉州",
+    "area_name": "丰泽区",
+    "start_point_name": "清源山游客中心",
+    "end_point_name": "老君岩",
+    "route_type": "out_and_back",
+    "map_search_keyword": "泉州 清源山 老君岩",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区石阶"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季",
+      "冬季"
+    ],
+    "beginner_fit_reason": "景区化管理，路面全程修缮，人文景点密集随时可歇",
+    "summary_short": "文化名山景区线路，可将人文打卡与轻徒步结合"
+  },
+  {
+    "route_name": "紫金山蒋王庙登山道",
+    "province_name": "江苏",
+    "city_name": "南京",
+    "area_name": "玄武区",
+    "start_point_name": "蒋王庙登山口",
+    "end_point_name": "紫金山天文台",
+    "route_type": "out_and_back",
+    "map_search_keyword": "南京 玄武 紫金山 天文台",
+    "difficulty_band": "moderate",
+    "surface_tags": [
+      "登山道石阶",
+      "山径"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "南京最热门的城市登山道，人多路径明显，安全感强",
+    "summary_short": "南京城区核心登山线，登顶可俯瞰玄武湖与城市全景"
+  },
+  {
+    "route_name": "灵岩山登山步道",
+    "province_name": "江苏",
+    "city_name": "苏州",
+    "area_name": "吴中区",
+    "start_point_name": "灵岩山景区入口",
+    "end_point_name": "灵岩山寺",
+    "route_type": "out_and_back",
+    "map_search_keyword": "苏州 吴中 灵岩山景区",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区石阶"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "路程短爬升小，是苏州经典的晨练线路，二十分钟即可登顶",
+    "summary_short": "苏州近郊的低难度小山，山顶可观太湖远影"
+  },
+  {
+    "route_name": "仰天窝健身步道",
+    "province_name": "四川",
+    "city_name": "成都",
+    "area_name": "龙泉驿区",
+    "start_point_name": "洛带古镇北门",
+    "end_point_name": "仰天窝观景台",
+    "route_type": "out_and_back",
+    "map_search_keyword": "成都 龙泉驿 仰天窝健身步道 洛带古镇",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "石阶",
+      "林道"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "整段为修缮良好的石阶，坡度平缓，来回可随时折返",
+    "summary_short": "依托洛带古镇的低难度健身步道，适合半日轻徒步"
+  },
+  {
+    "route_name": "黄葛古道",
+    "province_name": "重庆",
+    "city_name": "重庆",
+    "area_name": "南岸区",
+    "start_point_name": "上新街古道口",
+    "end_point_name": "老厂",
+    "route_type": "one_way",
+    "map_search_keyword": "重庆 南岸 黄葛古道 老厂",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "青石板古道"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季",
+      "冬季"
+    ],
+    "beginner_fit_reason": "青石板路为主且坡度缓和，沿途有茶摊与村民散户方便补给",
+    "summary_short": "巴渝盐茶古道遗存，树荫浓密适合四季行走"
+  },
+  {
+    "route_name": "大南山步道",
+    "province_name": "广东",
+    "city_name": "深圳",
+    "area_name": "南山区",
+    "start_point_name": "大南山别墅登山口",
+    "end_point_name": "大南山龟山阁",
+    "route_type": "out_and_back",
+    "map_search_keyword": "深圳 南山 大南山 龟山阁 观景台",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "台阶",
+      "林道"
+    ],
+    "season_tags": [
+      "秋季",
+      "冬季"
+    ],
+    "beginner_fit_reason": "全程树荫良好，登顶可看海，单程一小时左右",
+    "summary_short": "蛇口片区的经典成熟台阶线路，观海视野极佳"
+  },
+  {
+    "route_name": "九溪十八涧",
+    "province_name": "浙江",
+    "city_name": "杭州",
+    "area_name": "西湖区",
+    "start_point_name": "九溪烟树",
+    "end_point_name": "满觉陇",
+    "route_type": "one_way",
+    "map_search_keyword": "杭州 西湖 满觉陇",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "石板路",
+      "溪畔小径"
+    ],
+    "season_tags": [
+      "春季",
+      "夏季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "需多次涉水过涧但无陡坡，路面湿滑是唯一注意点",
+    "summary_short": "沿溪流上行的经典入门线，终点可接龙井村茶山"
+  },
+  {
+    "route_name": "厦门山海健康步道",
+    "province_name": "福建",
+    "city_name": "厦门",
+    "area_name": "思明区",
+    "start_point_name": "狐尾山公园入口",
+    "end_point_name": "梅海岭",
+    "route_type": "one_way",
+    "map_search_keyword": "厦门 山海健康步道 狐尾山 梅海岭",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "空中钢构栈道"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季",
+      "冬季"
+    ],
+    "beginner_fit_reason": "城市空中步道全程平缓无障碍，几乎不存在爬升难度",
+    "summary_short": "贯穿城区的无障碍空中步道，山海城景一次性看够"
+  },
+  {
+    "route_name": "香山鬼笑石步道",
+    "province_name": "北京",
+    "city_name": "北京",
+    "area_name": "海淀区",
+    "start_point_name": "香山公园东门",
+    "end_point_name": "鬼笑石",
+    "route_type": "out_and_back",
+    "map_search_keyword": "北京 海淀 香山 鬼笑石 观景石",
+    "difficulty_band": "moderate",
+    "surface_tags": [
+      "景区石阶",
+      "山径"
+    ],
+    "season_tags": [
+      "秋季",
+      "春季"
+    ],
+    "beginner_fit_reason": "石阶密集但路径单一不易迷路，登顶后可俯瞰城区",
+    "summary_short": "北京最具代表性的入门登山线，秋季红叶季人流密集"
+  },
+  {
+    "route_name": "鼓岭登山古道",
+    "province_name": "福建",
+    "city_name": "福州",
+    "area_name": "晋安区",
+    "start_point_name": "鼓岭旅游度假区游客中心",
+    "end_point_name": "鼓岭柱里步道口",
+    "route_type": "out_and_back",
+    "map_search_keyword": "福州 鼓岭登山古道",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "古道石阶",
+      "林道"
+    ],
+    "season_tags": [
+      "夏季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "百年避暑胜地，古道维护良好且中途有村落可补给",
+    "summary_short": "福州传统避暑徒步线，古道与度假村落交错"
+  },
+  {
+    "route_name": "凤凰岭北线",
+    "province_name": "北京",
+    "city_name": "北京",
+    "area_name": "海淀区",
+    "start_point_name": "凤凰岭公园北门",
+    "end_point_name": "凤凰岭龙泉寺",
+    "route_type": "out_and_back",
+    "map_search_keyword": "北京 海淀 凤凰岭 龙泉寺",
+    "difficulty_band": "moderate",
+    "surface_tags": [
+      "景区石阶",
+      "山径"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "北线是景区内最平缓的一条，指示牌清晰且遮阴良好",
+    "summary_short": "景区三線中最适合新人的一条，以山谷与奇石景观为主"
+  },
+  {
+    "route_name": "云松岭—黄牛岭古道",
+    "province_name": "浙江",
+    "city_name": "绍兴",
+    "area_name": "越城区",
+    "start_point_name": "云松村古道口",
+    "end_point_name": "黄牛岭古道口",
+    "route_type": "one_way",
+    "map_search_keyword": "绍兴 越城 云松岭 黄牛岭古道",
+    "difficulty_band": "moderate",
+    "surface_tags": [
+      "古道石阶",
+      "山径"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "两村之间横穿，属单向穿越需安排接驳，但路况本身不难",
+    "summary_short": "村落串联型古道穿越，适合体验越野跑与徒步结合"
+  },
+  {
+    "route_name": "塘朗山郊野公园",
+    "province_name": "广东",
+    "city_name": "深圳",
+    "area_name": "南山区",
+    "start_point_name": "塘朗山龙珠门",
+    "end_point_name": "塘朗山极目阁",
+    "route_type": "out_and_back",
+    "map_search_keyword": "深圳 南山 塘朗山郊野公园 龙珠门",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "盘山公路",
+      "石阶"
+    ],
+    "season_tags": [
+      "秋季",
+      "冬季"
+    ],
+    "beginner_fit_reason": "可选择走盘山公路降低强度，是新手练手的经典地标",
+    "summary_short": "成熟郊野公园线路，可俯瞰深圳湾与城市天际线"
+  },
+  {
+    "route_name": "佘山登山道",
+    "province_name": "上海",
+    "city_name": "上海",
+    "area_name": "松江区",
+    "start_point_name": "东佘山南大门",
+    "end_point_name": "上海天文博物馆",
+    "route_type": "out_and_back",
+    "map_search_keyword": "上海 松江 佘山 天文博物馆",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区步道"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "上海少有的山地资源，爬升极小，半小时内即可登顶",
+    "summary_short": "爬升极小的入门线路，适合完全没有登山经验的新手"
+  },
+  {
+    "route_name": "亭溪岭古道",
+    "province_name": "浙江",
+    "city_name": "宁波",
+    "area_name": "鄞州区",
+    "start_point_name": "亭溪村古道口",
+    "end_point_name": "亭溪岭",
+    "route_type": "out_and_back",
+    "map_search_keyword": "宁波 鄞州 亭溪岭",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "古道石阶"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "历史古道，石阶连续且岔路少，上行约一小时强度适中",
+    "summary_short": "宁波近郊成熟的古道线路，文化气息浓厚"
+  },
+  {
+    "route_name": "梅林后山绿道",
+    "province_name": "广东",
+    "city_name": "深圳",
+    "area_name": "福田区",
+    "start_point_name": "梅林水库",
+    "end_point_name": "梅林山顶观景平台",
+    "route_type": "out_and_back",
+    "map_search_keyword": "深圳 福田 梅林后山绿道 梅林水库",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "绿道沥青路面",
+      "石阶"
+    ],
+    "season_tags": [
+      "秋季",
+      "冬季"
+    ],
+    "beginner_fit_reason": "从水库到山顶全程铺设成熟台阶，随时可折返",
+    "summary_short": "市区即达的台阶线路，可俯瞰城区，日落时段热门"
+  },
+  {
+    "route_name": "岳麓山穿石坡步道",
+    "province_name": "湖南",
+    "city_name": "长沙",
+    "area_name": "岳麓区",
+    "start_point_name": "湖南大学自卑亭",
+    "end_point_name": "云麓宫",
+    "route_type": "out_and_back",
+    "map_search_keyword": "长沙 岳麓 岳麓山 穿石坡 云麓宫",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区石阶",
+      "盘山公路"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "穿行大学城与山林之间，路网可选择范围大，累了可走公路下山",
+    "summary_short": "长沙文化地标线路，可串联岳麓书院与爱晚亭"
+  },
+  {
+    "route_name": "十里琅珰古道",
+    "province_name": "浙江",
+    "city_name": "杭州",
+    "area_name": "西湖区",
+    "start_point_name": "龙井村",
+    "end_point_name": "五云山",
+    "route_type": "one_way",
+    "map_search_keyword": "杭州 西湖 十里琅珰 龙井村 五云山",
+    "difficulty_band": "moderate",
+    "surface_tags": [
+      "古道石阶",
+      "山径"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "山脊横切为主，虽有起伏但无技术难点，岔路口均有标识",
+    "summary_short": "西湖群山最经典的山脊穿越线，两侧茶园连绵"
+  },
+  {
+    "route_name": "骊山登山步道",
+    "province_name": "陕西",
+    "city_name": "西安",
+    "area_name": "临潼区",
+    "start_point_name": "骊山国家森林公园入口",
+    "end_point_name": "烽火台",
+    "route_type": "out_and_back",
+    "map_search_keyword": "西安 临潼 骊山国家森林公园 烽火台",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区步道",
+      "石阶"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "景区步道维护良好，盘山与石阶路线可自由搭配",
+    "summary_short": "关中名山景区线，历史遗迹与轻徒步可一并体验"
+  },
+  {
+    "route_name": "抱犊寨登山步道",
+    "province_name": "河北",
+    "city_name": "石家庄",
+    "area_name": "鹿泉区",
+    "start_point_name": "抱犊寨景区入口",
+    "end_point_name": "抱犊寨南天门",
+    "route_type": "out_and_back",
+    "map_search_keyword": "石家庄 鹿泉 抱犊寨 南天门",
+    "difficulty_band": "moderate",
+    "surface_tags": [
+      "登山石阶"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "连续台阶强度不低但蜿蜒可控，体力不支可原路返回或乘坐缆车",
+    "summary_short": "台阶密集的太行山前线路，山顶为开阔寨台"
+  },
+  {
+    "route_name": "帽峰山步道",
+    "province_name": "广东",
+    "city_name": "广州",
+    "area_name": "白云区",
+    "start_point_name": "帽峰山森林公园北门",
+    "end_point_name": "帽峰山顶",
+    "route_type": "out_and_back",
+    "map_search_keyword": "广州 白云 帽峰山森林公园",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区石阶",
+      "山径"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季",
+      "冬季"
+    ],
+    "beginner_fit_reason": "广州近郊唯一千米高山，盘山步道成熟，登顶可俯瞰城景",
+    "summary_short": "广州最高峰，台阶直达山顶的城市登山线"
+  },
+  {
+    "route_name": "板障山步道",
+    "province_name": "广东",
+    "city_name": "珠海",
+    "area_name": "香洲区",
+    "start_point_name": "板障山公园入口",
+    "end_point_name": "板障山顶观景台",
+    "route_type": "out_and_back",
+    "map_search_keyword": "珠海 香洲 板障山",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "石阶"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季",
+      "冬季"
+    ],
+    "beginner_fit_reason": "城区即达，登顶可同时望见珠海与澳门海岸线",
+    "summary_short": "珠海市中心制高点，短途台阶线"
+  },
+  {
+    "route_name": "银湖山郊野公园",
+    "province_name": "广东",
+    "city_name": "深圳",
+    "area_name": "龙岗区",
+    "start_point_name": "银湖山郊野公园(坂田入口)",
+    "end_point_name": "银湖山鸡公顶",
+    "route_type": "out_and_back",
+    "map_search_keyword": "深圳 龙岗 银湖山 鸡公山",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "绿道",
+      "土路"
+    ],
+    "season_tags": [
+      "秋季",
+      "冬季"
+    ],
+    "beginner_fit_reason": "地铁直达，坡度平缓，是深圳首次徒步的首选线路",
+    "summary_short": "深圳中部城区绿廊，通勤族周末轻松线"
+  },
+  {
+    "route_name": "马峦山郊野径",
+    "province_name": "广东",
+    "city_name": "深圳",
+    "area_name": "坪山区",
+    "start_point_name": "马峦山郊野公园(碧岭入口)",
+    "end_point_name": "马峦山瀑布",
+    "route_type": "out_and_back",
+    "map_search_keyword": "深圳 坪山 马峦山郊野公园",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "绿道",
+      "溪畔小径"
+    ],
+    "season_tags": [
+      "夏季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "含瀑布与溪流景观，免费开放，亲子出游友好",
+    "summary_short": "深圳少有的瀑布景观步道，夏季清凉"
+  },
+  {
+    "route_name": "百望山步道",
+    "province_name": "北京",
+    "city_name": "北京",
+    "area_name": "海淀区",
+    "start_point_name": "百望山森林公园东门",
+    "end_point_name": "百望山顶(佘太原眺)",
+    "route_type": "out_and_back",
+    "map_search_keyword": "北京 海淀 百望山森林公园",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区石阶"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "两步路入门休闲线首位，约二十分钟可轻松登顶",
+    "summary_short": "北京近郊最短平易的登山线"
+  },
+  {
+    "route_name": "宝石山步道",
+    "province_name": "浙江",
+    "city_name": "杭州",
+    "area_name": "西湖区",
+    "start_point_name": "黄龙洞",
+    "end_point_name": "保俶塔",
+    "route_type": "one_way",
+    "map_search_keyword": "杭州 西湖 宝石山 黄龙洞 保俶塔",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "石阶",
+      "山径"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季",
+      "冬季"
+    ],
+    "beginner_fit_reason": "临湖平缓山径，串联黄龙洞与保俶塔等西湖地标",
+    "summary_short": "西湖边宝石山，登顶看断桥白堤"
+  },
+  {
+    "route_name": "青城山前山步道",
+    "province_name": "四川",
+    "city_name": "成都",
+    "area_name": "都江堰市",
+    "start_point_name": "青城山风景区山门",
+    "end_point_name": "上清宫",
+    "route_type": "out_and_back",
+    "map_search_keyword": "成都 都江堰 青城山前山",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区石阶"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "道教名山景区步道，沿途道观密集可随时歇脚",
+    "summary_short": "世界遗产级景区登山线"
+  },
+  {
+    "route_name": "东湖绿道",
+    "province_name": "湖北",
+    "city_name": "武汉",
+    "area_name": "武昌区",
+    "start_point_name": "东湖绿道(磨山入口)",
+    "end_point_name": "听涛景区",
+    "route_type": "one_way",
+    "map_search_keyword": "武汉 武昌 东湖绿道 磨山 听涛",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "绿道沥青"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季",
+      "冬季"
+    ],
+    "beginner_fit_reason": "滨水平坦绿道，零门槛无障碍，徒步骑行皆宜",
+    "summary_short": "城中湖滨绿道，骑行徒步皆宜"
+  },
+  {
+    "route_name": "大蜀山步道",
+    "province_name": "安徽",
+    "city_name": "合肥",
+    "area_name": "蜀山区",
+    "start_point_name": "大蜀山森林公园(西门)",
+    "end_point_name": "大蜀山顶",
+    "route_type": "out_and_back",
+    "map_search_keyword": "合肥 蜀山 大蜀山森林公园",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "石阶",
+      "山径"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "合肥入门必爬，步道清晰约半小时登顶",
+    "summary_short": "合肥城区唯一山地，市民晨练线"
+  },
+  {
+    "route_name": "小昆山步道",
+    "province_name": "上海",
+    "city_name": "上海",
+    "area_name": "松江区",
+    "start_point_name": "小昆山公园",
+    "end_point_name": "小昆山山顶(二陆读书台)",
+    "route_type": "out_and_back",
+    "map_search_keyword": "上海 松江 小昆山",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区步道"
+    ],
+    "season_tags": [
+      "冬季",
+      "春季"
+    ],
+    "beginner_fit_reason": "约3公里微缓坡，是松江冬日轻徒步首选",
+    "summary_short": "松江低丘，文化名山短途线"
+  },
+  {
+    "route_name": "天平山步道",
+    "province_name": "江苏",
+    "city_name": "苏州",
+    "area_name": "吴中区",
+    "start_point_name": "天平山景区大门",
+    "end_point_name": "天平山白云寺",
+    "route_type": "out_and_back",
+    "map_search_keyword": "苏州 吴中 天平山景区",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区石阶"
+    ],
+    "season_tags": [
+      "秋季"
+    ],
+    "beginner_fit_reason": "红枫名山，步道成熟，赏枫季人流密集",
+    "summary_short": "苏州赏枫胜地登山线"
+  },
+  {
+    "route_name": "小鱼山步道",
+    "province_name": "山东",
+    "city_name": "青岛",
+    "area_name": "市南区",
+    "start_point_name": "小鱼山公园门",
+    "end_point_name": "小鱼山顶(览潮阁)",
+    "route_type": "out_and_back",
+    "map_search_keyword": "青岛 市南 小鱼山公园",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区石阶"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "beginner_fit_reason": "老城区制高点，超短缓坡即登顶看海",
+    "summary_short": "青岛老城红瓦绿树观海小山"
+  }
+]

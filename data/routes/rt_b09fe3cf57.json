@@ -1,0 +1,483 @@
+{
+  "schema_version": "1.0",
+  "route_id": "rt_b09fe3cf57",
+  "built_at": "2026-09-15T17:41:48+00:00",
+  "base_facts": {
+    "route_name": "宝石山步道",
+    "province_name": "浙江",
+    "city_name": "杭州",
+    "area_name": "西湖区",
+    "start_point_name": "黄龙洞",
+    "end_point_name": "保俶塔",
+    "route_type": "one_way",
+    "route_type_label": "单向穿越",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "石阶",
+      "山径"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季",
+      "冬季"
+    ],
+    "map_search_keyword": "杭州 西湖 宝石山 黄龙洞 保俶塔"
+  },
+  "narrative": {
+    "summary_short": "西湖边宝石山，登顶看断桥白堤",
+    "beginner_fit_reason": "临湖平缓山径，全程仅1.52公里、耗时约0.34小时，无陡峭路段，串联黄龙洞与保俶塔等成熟地标。",
+    "search_text": "宝石山步道 杭州西湖区 黄龙洞到保俶塔 单向穿越 石阶山径 新手友好 春季秋季冬季适宜 1.52公里 0.34小时 西湖地标 断桥白堤",
+    "description": "宝石山步道是一条轻松宜人的短途徒步线，从黄龙洞出发，沿石阶与自然山径缓步上行，直达西湖畔地标保俶塔，全程约1.5公里，耗时仅20分钟左右。沿途视野开阔，登顶可俯瞰断桥、白堤与西湖全景，春秋季尤为清幽怡人。线路平缓、标识清晰，对新手非常友好。",
+    "source": "agent_prefill_qwen_plus"
+  },
+  "geometry": {
+    "start_point": {
+      "lng": 120.138594,
+      "lat": 30.264511
+    },
+    "end_point": {
+      "lng": 120.148084,
+      "lat": 30.260999
+    },
+    "polyline": [],
+    "geocode_status": "ok",
+    "note": "坐标必须由高德 Web服务 API 回填，禁止在未核验前写入任何坐标",
+    "geocode_detail": {
+      "start": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "西湖区黄龙洞",
+        "matched_name": "杭州西湖风景名胜区-黄龙洞",
+        "matched_address": "黄龙商圈曙光路69号(黄龙洞地铁站C口步行100米)",
+        "poi_type": "风景名胜;风景名胜;风景名胜",
+        "returned_city": "杭州市",
+        "returned_district": "西湖区",
+        "candidate_count": 5
+      },
+      "end": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "西湖区保俶塔",
+        "matched_name": "杭州西湖风景名胜区-保俶塔",
+        "matched_address": "北山路宝石前山路宝石山上(近宝石流霞)",
+        "poi_type": "风景名胜;风景名胜;风景名胜",
+        "returned_city": "杭州市",
+        "returned_district": "西湖区",
+        "candidate_count": 5
+      },
+      "provider": "amap-webservice-geocode-v3",
+      "synced_at": "2026-09-15T17:46:16.831389+00:00"
+    },
+    "amap_walking_path": [
+      {
+        "lng": 120.138442,
+        "lat": 30.264497
+      },
+      {
+        "lng": 120.138498,
+        "lat": 30.263989
+      },
+      {
+        "lng": 120.138498,
+        "lat": 30.263984
+      },
+      {
+        "lng": 120.138559,
+        "lat": 30.26339
+      },
+      {
+        "lng": 120.138559,
+        "lat": 30.263385
+      },
+      {
+        "lng": 120.138589,
+        "lat": 30.262713
+      },
+      {
+        "lng": 120.138589,
+        "lat": 30.262713
+      },
+      {
+        "lng": 120.138607,
+        "lat": 30.2623
+      },
+      {
+        "lng": 120.138672,
+        "lat": 30.262166
+      },
+      {
+        "lng": 120.138741,
+        "lat": 30.262105
+      },
+      {
+        "lng": 120.138828,
+        "lat": 30.261975
+      },
+      {
+        "lng": 120.138828,
+        "lat": 30.261975
+      },
+      {
+        "lng": 120.138915,
+        "lat": 30.261463
+      },
+      {
+        "lng": 120.138915,
+        "lat": 30.261458
+      },
+      {
+        "lng": 120.138915,
+        "lat": 30.261341
+      },
+      {
+        "lng": 120.138919,
+        "lat": 30.261233
+      },
+      {
+        "lng": 120.138941,
+        "lat": 30.261141
+      },
+      {
+        "lng": 120.138971,
+        "lat": 30.261063
+      },
+      {
+        "lng": 120.13918,
+        "lat": 30.260768
+      },
+      {
+        "lng": 120.13918,
+        "lat": 30.260764
+      },
+      {
+        "lng": 120.139227,
+        "lat": 30.260694
+      },
+      {
+        "lng": 120.139457,
+        "lat": 30.260443
+      },
+      {
+        "lng": 120.139514,
+        "lat": 30.26036
+      },
+      {
+        "lng": 120.139514,
+        "lat": 30.260356
+      },
+      {
+        "lng": 120.139826,
+        "lat": 30.260156
+      },
+      {
+        "lng": 120.139961,
+        "lat": 30.260026
+      },
+      {
+        "lng": 120.140091,
+        "lat": 30.259948
+      },
+      {
+        "lng": 120.140234,
+        "lat": 30.259922
+      },
+      {
+        "lng": 120.140369,
+        "lat": 30.259913
+      },
+      {
+        "lng": 120.140508,
+        "lat": 30.259844
+      },
+      {
+        "lng": 120.14059,
+        "lat": 30.25977
+      },
+      {
+        "lng": 120.140712,
+        "lat": 30.259609
+      },
+      {
+        "lng": 120.140794,
+        "lat": 30.25954
+      },
+      {
+        "lng": 120.140855,
+        "lat": 30.259505
+      },
+      {
+        "lng": 120.140911,
+        "lat": 30.259492
+      },
+      {
+        "lng": 120.140955,
+        "lat": 30.259497
+      },
+      {
+        "lng": 120.141102,
+        "lat": 30.259553
+      },
+      {
+        "lng": 120.141189,
+        "lat": 30.259596
+      },
+      {
+        "lng": 120.141189,
+        "lat": 30.259596
+      },
+      {
+        "lng": 120.141198,
+        "lat": 30.259193
+      },
+      {
+        "lng": 120.141198,
+        "lat": 30.259188
+      },
+      {
+        "lng": 120.141497,
+        "lat": 30.259006
+      },
+      {
+        "lng": 120.141936,
+        "lat": 30.258663
+      },
+      {
+        "lng": 120.142005,
+        "lat": 30.258628
+      },
+      {
+        "lng": 120.142053,
+        "lat": 30.258633
+      },
+      {
+        "lng": 120.142266,
+        "lat": 30.258759
+      },
+      {
+        "lng": 120.142266,
+        "lat": 30.258759
+      },
+      {
+        "lng": 120.142504,
+        "lat": 30.258954
+      },
+      {
+        "lng": 120.142674,
+        "lat": 30.259154
+      },
+      {
+        "lng": 120.142878,
+        "lat": 30.259345
+      },
+      {
+        "lng": 120.142878,
+        "lat": 30.259345
+      },
+      {
+        "lng": 120.142752,
+        "lat": 30.25964
+      },
+      {
+        "lng": 120.142747,
+        "lat": 30.25964
+      },
+      {
+        "lng": 120.142921,
+        "lat": 30.259705
+      },
+      {
+        "lng": 120.142921,
+        "lat": 30.259705
+      },
+      {
+        "lng": 120.143589,
+        "lat": 30.259796
+      },
+      {
+        "lng": 120.143589,
+        "lat": 30.259796
+      },
+      {
+        "lng": 120.143707,
+        "lat": 30.259796
+      },
+      {
+        "lng": 120.143828,
+        "lat": 30.259774
+      },
+      {
+        "lng": 120.143971,
+        "lat": 30.259692
+      },
+      {
+        "lng": 120.143971,
+        "lat": 30.259687
+      },
+      {
+        "lng": 120.144045,
+        "lat": 30.259683
+      },
+      {
+        "lng": 120.144666,
+        "lat": 30.259913
+      },
+      {
+        "lng": 120.144666,
+        "lat": 30.259913
+      },
+      {
+        "lng": 120.144883,
+        "lat": 30.259983
+      },
+      {
+        "lng": 120.144883,
+        "lat": 30.259983
+      },
+      {
+        "lng": 120.145334,
+        "lat": 30.260117
+      },
+      {
+        "lng": 120.145334,
+        "lat": 30.260117
+      },
+      {
+        "lng": 120.145929,
+        "lat": 30.260299
+      },
+      {
+        "lng": 120.145929,
+        "lat": 30.260299
+      },
+      {
+        "lng": 120.146445,
+        "lat": 30.260469
+      },
+      {
+        "lng": 120.146445,
+        "lat": 30.260469
+      },
+      {
+        "lng": 120.14648,
+        "lat": 30.260482
+      },
+      {
+        "lng": 120.146606,
+        "lat": 30.260525
+      },
+      {
+        "lng": 120.146606,
+        "lat": 30.260525
+      },
+      {
+        "lng": 120.147079,
+        "lat": 30.260686
+      },
+      {
+        "lng": 120.147079,
+        "lat": 30.260686
+      },
+      {
+        "lng": 120.147795,
+        "lat": 30.260924
+      },
+      {
+        "lng": 120.148043,
+        "lat": 30.260955
+      },
+      {
+        "lng": 120.148082,
+        "lat": 30.260955
+      }
+    ],
+    "amap_walking_note": "高德步行路网轨迹，非实地山野轨迹，仅供示意"
+  },
+  "metrics": {
+    "distance_km": 1.52,
+    "ascent_m": null,
+    "duration_hours": 0.34,
+    "verification_status": "verified_amap_walking",
+    "note": "distance_km/duration_hours 来自高德步行路径规划（单向全程，路网距离，真实可溯源）；ascent_m 高德无高程 API，暂缺，待 GPX/设备轨迹补充"
+  },
+  "provenance": {
+    "base_facts": {
+      "source": "manual_seed",
+      "seed_file": "route-seeds-40.json"
+    },
+    "narrative": {
+      "source": "agent_prefill_qwen_plus",
+      "model": "qwen-plus",
+      "run_id": "20260915T175020",
+      "verified": false,
+      "note": "LLM 扩写描述性文本，未引入新事实；数字仅来自 metrics"
+    },
+    "geometry": {
+      "source": "pending_amap_web_service",
+      "verified": false
+    },
+    "metrics": {
+      "source": "amap_webservice_walking",
+      "verified": true,
+      "note": "单向全程 from amap walking route"
+    }
+  },
+  "route_nodes": [
+    {
+      "node_id": "rtb09fe3cf57-node-01",
+      "node_type": "checkpoint",
+      "node_name": "宝石山步道 进入主线判断点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          120.138915,
+          30.261463
+        ]
+      },
+      "stage_order": 1,
+      "distance_from_start_m": 345,
+      "trigger_radius_m": 36,
+      "navigation_hint": "从 黄龙洞 出发后，优先沿最连续、最明确的主线前进，在这里确认自己仍在主游线上。",
+      "wrong_choice_hint": "如果前方出现明显下切小路、施工便道或回头支线，先停一下再回到最宽主线。",
+      "display_priority": 72
+    },
+    {
+      "node_id": "rtb09fe3cf57-node-02",
+      "node_type": "view",
+      "node_name": "宝石山步道 中段观景停留点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          120.141936,
+          30.258663
+        ]
+      },
+      "stage_order": 2,
+      "distance_from_start_m": 822,
+      "trigger_radius_m": 38,
+      "navigation_hint": "到这里后可短暂停留确认景观参照，再继续沿主游线推进。",
+      "wrong_choice_hint": "不要被临时拍照停留区带入回头流线。",
+      "display_priority": 80
+    },
+    {
+      "node_id": "rtb09fe3cf57-node-03",
+      "node_type": "fork",
+      "node_name": "宝石山步道 关键岔点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          120.145334,
+          30.260117
+        ]
+      },
+      "stage_order": 3,
+      "distance_from_start_m": 1246,
+      "trigger_radius_m": 40,
+      "navigation_hint": "在关键岔点优先保持朝 保俶塔 的主方向推进，按更稳定的主线选路。",
+      "wrong_choice_hint": "景区支路、商业分流线或回头线不要误入。",
+      "display_priority": 88
+    }
+  ],
+  "route_risk_points": [],
+  "route_exit_points": [],
+  "cover_image": "/covers/rt_b09fe3cf57.jpg"
+}

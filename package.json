@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_EXTRA_CA_CERTS=/etc/ssl/cert.pem next dev",
+    "dev:https": "NODE_EXTRA_CA_CERTS=/etc/ssl/cert.pem node scripts/dev-https.mjs",
     "dev:pg": "bash scripts/dev-pg.sh",
-    "build": "next build",
-    "start": "next start",
+    "build": "NODE_EXTRA_CA_CERTS=/etc/ssl/cert.pem next build",
+    "start": "NODE_EXTRA_CA_CERTS=/etc/ssl/cert.pem next start",
     "db:start:local": "bash scripts/start-local-postgres.sh",
     "db:migrate:local": "bash scripts/run-migrations.sh",
+    "db:migrate": "node scripts/migrate-pg.mjs",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "cos-nodejs-sdk-v5": "^3.0.0",
     "dotenv": "^17.4.2",
     "next": "15.5.25",
     "pg": "8.16.3",
@@ -23,6 +26,8 @@
     "@types/pg": "8.15.5",
     "@types/react": "19.1.12",
     "@types/react-dom": "19.1.9",
+    "autoprefixer": "^10.4.20",
+    "tailwindcss": "^3.4.17",
     "typescript": "5.9.2"
   }
 }

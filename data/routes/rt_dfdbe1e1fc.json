@@ -1,0 +1,462 @@
+{
+  "schema_version": "1.0",
+  "route_id": "rt_dfdbe1e1fc",
+  "built_at": "2026-09-15T17:41:48+00:00",
+  "base_facts": {
+    "route_name": "大蜀山步道",
+    "province_name": "安徽",
+    "city_name": "合肥",
+    "area_name": "蜀山区",
+    "start_point_name": "大蜀山森林公园(西门)",
+    "end_point_name": "大蜀山顶",
+    "route_type": "out_and_back",
+    "route_type_label": "往返线",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "石阶",
+      "山径"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "map_search_keyword": "合肥 蜀山 大蜀山森林公园"
+  },
+  "narrative": {
+    "summary_short": "合肥城区唯一山地，市民晨练线",
+    "beginner_fit_reason": "路线明确、坡度平缓、全程约3.8公里仅需0.85小时，适合首次山野体验者。",
+    "search_text": "大蜀山步道 合肥蜀山区 大蜀山森林公园西门起 大蜀山顶止 往返线 石阶山径 新手友好 春季秋季适宜 真实里程3.84公里 真实耗时0.85小时",
+    "description": "大蜀山步道是合肥城区内一条经典新手徒步线，从森林公园西门出发，沿清晰石阶与自然山径缓步上行，约3.8公里即可登顶大蜀山，全程轻松不绕路，春秋季尤为舒适。",
+    "source": "agent_prefill_qwen_plus"
+  },
+  "geometry": {
+    "start_point": {
+      "lng": 117.170897,
+      "lat": 31.84159
+    },
+    "end_point": {
+      "lng": 117.176525,
+      "lat": 31.838875
+    },
+    "polyline": [],
+    "geocode_status": "ok",
+    "note": "坐标必须由高德 Web服务 API 回填，禁止在未核验前写入任何坐标",
+    "geocode_detail": {
+      "start": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "蜀山区大蜀山森林公园(西门)",
+        "matched_name": "蜀山森林公园",
+        "matched_address": "玉兰大道8号",
+        "poi_type": "风景名胜;公园广场;公园",
+        "returned_city": "合肥市",
+        "returned_district": "蜀山区",
+        "candidate_count": 5
+      },
+      "end": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "蜀山区大蜀山顶",
+        "matched_name": "大蜀山山顶",
+        "matched_address": "玉兰大道8号蜀山森林公园",
+        "poi_type": "风景名胜;风景名胜;风景名胜",
+        "returned_city": "合肥市",
+        "returned_district": "蜀山区",
+        "candidate_count": 5
+      },
+      "provider": "amap-webservice-geocode-v3",
+      "synced_at": "2026-09-15T17:47:41.500633+00:00"
+    },
+    "amap_walking_path": [
+      {
+        "lng": 117.170846,
+        "lat": 31.84138
+      },
+      {
+        "lng": 117.170846,
+        "lat": 31.84138
+      },
+      {
+        "lng": 117.170951,
+        "lat": 31.841345
+      },
+      {
+        "lng": 117.171376,
+        "lat": 31.841128
+      },
+      {
+        "lng": 117.171793,
+        "lat": 31.840868
+      },
+      {
+        "lng": 117.171953,
+        "lat": 31.840816
+      },
+      {
+        "lng": 117.172287,
+        "lat": 31.840846
+      },
+      {
+        "lng": 117.173086,
+        "lat": 31.84099
+      },
+      {
+        "lng": 117.173255,
+        "lat": 31.840994
+      },
+      {
+        "lng": 117.173898,
+        "lat": 31.84092
+      },
+      {
+        "lng": 117.174102,
+        "lat": 31.840929
+      },
+      {
+        "lng": 117.174353,
+        "lat": 31.840985
+      },
+      {
+        "lng": 117.17467,
+        "lat": 31.841107
+      },
+      {
+        "lng": 117.174848,
+        "lat": 31.841211
+      },
+      {
+        "lng": 117.174991,
+        "lat": 31.841315
+      },
+      {
+        "lng": 117.175165,
+        "lat": 31.841506
+      },
+      {
+        "lng": 117.175204,
+        "lat": 31.841693
+      },
+      {
+        "lng": 117.175204,
+        "lat": 31.841944
+      },
+      {
+        "lng": 117.175161,
+        "lat": 31.842105
+      },
+      {
+        "lng": 117.175069,
+        "lat": 31.842352
+      },
+      {
+        "lng": 117.175087,
+        "lat": 31.842405
+      },
+      {
+        "lng": 117.175143,
+        "lat": 31.842426
+      },
+      {
+        "lng": 117.175195,
+        "lat": 31.842409
+      },
+      {
+        "lng": 117.175369,
+        "lat": 31.842105
+      },
+      {
+        "lng": 117.175408,
+        "lat": 31.842005
+      },
+      {
+        "lng": 117.175495,
+        "lat": 31.841641
+      },
+      {
+        "lng": 117.175495,
+        "lat": 31.841641
+      },
+      {
+        "lng": 117.175538,
+        "lat": 31.841515
+      },
+      {
+        "lng": 117.175681,
+        "lat": 31.841289
+      },
+      {
+        "lng": 117.175734,
+        "lat": 31.841185
+      },
+      {
+        "lng": 117.175807,
+        "lat": 31.840977
+      },
+      {
+        "lng": 117.175829,
+        "lat": 31.84089
+      },
+      {
+        "lng": 117.175829,
+        "lat": 31.840807
+      },
+      {
+        "lng": 117.175807,
+        "lat": 31.840751
+      },
+      {
+        "lng": 117.175673,
+        "lat": 31.840655
+      },
+      {
+        "lng": 117.175668,
+        "lat": 31.840651
+      },
+      {
+        "lng": 117.175812,
+        "lat": 31.840538
+      },
+      {
+        "lng": 117.175812,
+        "lat": 31.840521
+      },
+      {
+        "lng": 117.174427,
+        "lat": 31.839605
+      },
+      {
+        "lng": 117.174314,
+        "lat": 31.839501
+      },
+      {
+        "lng": 117.174175,
+        "lat": 31.839306
+      },
+      {
+        "lng": 117.173763,
+        "lat": 31.838581
+      },
+      {
+        "lng": 117.173702,
+        "lat": 31.838433
+      },
+      {
+        "lng": 117.173698,
+        "lat": 31.838381
+      },
+      {
+        "lng": 117.173698,
+        "lat": 31.838329
+      },
+      {
+        "lng": 117.173754,
+        "lat": 31.838199
+      },
+      {
+        "lng": 117.173815,
+        "lat": 31.838108
+      },
+      {
+        "lng": 117.17401,
+        "lat": 31.837878
+      },
+      {
+        "lng": 117.174201,
+        "lat": 31.837674
+      },
+      {
+        "lng": 117.174484,
+        "lat": 31.837465
+      },
+      {
+        "lng": 117.174622,
+        "lat": 31.837383
+      },
+      {
+        "lng": 117.174783,
+        "lat": 31.837318
+      },
+      {
+        "lng": 117.175213,
+        "lat": 31.837248
+      },
+      {
+        "lng": 117.17599,
+        "lat": 31.837248
+      },
+      {
+        "lng": 117.176398,
+        "lat": 31.83737
+      },
+      {
+        "lng": 117.176576,
+        "lat": 31.837543
+      },
+      {
+        "lng": 117.176576,
+        "lat": 31.837543
+      },
+      {
+        "lng": 117.177266,
+        "lat": 31.838225
+      },
+      {
+        "lng": 117.177283,
+        "lat": 31.838377
+      },
+      {
+        "lng": 117.177292,
+        "lat": 31.83849
+      },
+      {
+        "lng": 117.177244,
+        "lat": 31.838872
+      },
+      {
+        "lng": 117.177192,
+        "lat": 31.839036
+      },
+      {
+        "lng": 117.177192,
+        "lat": 31.839036
+      },
+      {
+        "lng": 117.177153,
+        "lat": 31.839154
+      },
+      {
+        "lng": 117.177083,
+        "lat": 31.839523
+      },
+      {
+        "lng": 117.177083,
+        "lat": 31.839523
+      },
+      {
+        "lng": 117.177001,
+        "lat": 31.839779
+      },
+      {
+        "lng": 117.177001,
+        "lat": 31.839779
+      },
+      {
+        "lng": 117.176953,
+        "lat": 31.839922
+      },
+      {
+        "lng": 117.176949,
+        "lat": 31.839922
+      },
+      {
+        "lng": 117.176202,
+        "lat": 31.839323
+      },
+      {
+        "lng": 117.176198,
+        "lat": 31.839319
+      },
+      {
+        "lng": 117.176654,
+        "lat": 31.838941
+      },
+      {
+        "lng": 117.176654,
+        "lat": 31.838937
+      },
+      {
+        "lng": 117.176519,
+        "lat": 31.838911
+      }
+    ],
+    "amap_walking_note": "高德步行路网轨迹，非实地山野轨迹，仅供示意"
+  },
+  "metrics": {
+    "distance_km": 3.84,
+    "ascent_m": null,
+    "duration_hours": 0.85,
+    "verification_status": "verified_amap_walking",
+    "note": "distance_km/duration_hours 来自高德步行路径规划（往返全程(2×起终点)，路网距离，真实可溯源）；ascent_m 高德无高程 API，暂缺，待 GPX/设备轨迹补充"
+  },
+  "provenance": {
+    "base_facts": {
+      "source": "manual_seed",
+      "seed_file": "route-seeds-40.json"
+    },
+    "narrative": {
+      "source": "agent_prefill_qwen_plus",
+      "model": "qwen-plus",
+      "run_id": "20260915T175020",
+      "verified": false,
+      "note": "LLM 扩写描述性文本，未引入新事实；数字仅来自 metrics"
+    },
+    "geometry": {
+      "source": "pending_amap_web_service",
+      "verified": false
+    },
+    "metrics": {
+      "source": "amap_webservice_walking",
+      "verified": true,
+      "note": "往返全程(2×起终点) from amap walking route"
+    }
+  },
+  "route_nodes": [
+    {
+      "node_id": "rtdfdbe1e1fc-node-01",
+      "node_type": "checkpoint",
+      "node_name": "大蜀山步道 进入主线判断点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          117.174991,
+          31.841315
+        ]
+      },
+      "stage_order": 1,
+      "distance_from_start_m": 424,
+      "trigger_radius_m": 36,
+      "navigation_hint": "从 大蜀山森林公园(西门) 出发后，优先沿最连续、最明确的主线前进，在这里确认自己仍在主游线上。",
+      "wrong_choice_hint": "如果前方出现明显下切小路、施工便道或回头支线，先停一下再回到最宽主线。",
+      "display_priority": 72
+    },
+    {
+      "node_id": "rtdfdbe1e1fc-node-02",
+      "node_type": "view",
+      "node_name": "大蜀山步道 中段观景停留点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          117.174175,
+          31.839306
+        ]
+      },
+      "stage_order": 2,
+      "distance_from_start_m": 1004,
+      "trigger_radius_m": 38,
+      "navigation_hint": "到这里后可短暂停留确认景观参照，再继续沿主游线推进。",
+      "wrong_choice_hint": "不要被临时拍照停留区带入回头流线。",
+      "display_priority": 80
+    },
+    {
+      "node_id": "rtdfdbe1e1fc-node-03",
+      "node_type": "fork",
+      "node_name": "大蜀山步道 关键岔点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          117.177266,
+          31.838225
+        ]
+      },
+      "stage_order": 3,
+      "distance_from_start_m": 1560,
+      "trigger_radius_m": 40,
+      "navigation_hint": "在关键岔点优先保持朝 大蜀山顶 的主方向推进，按更稳定的主线选路。",
+      "wrong_choice_hint": "景区支路、商业分流线或回头线不要误入。",
+      "display_priority": 88
+    }
+  ],
+  "route_risk_points": [],
+  "route_exit_points": [],
+  "cover_image": "/covers/rt_dfdbe1e1fc.jpg"
+}

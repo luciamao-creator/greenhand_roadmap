@@ -1,0 +1,369 @@
+{
+  "schema_version": "1.0",
+  "route_id": "rt_b10bc91fcd",
+  "built_at": "2026-09-15T17:41:48+00:00",
+  "base_facts": {
+    "route_name": "佘山登山道",
+    "province_name": "上海",
+    "city_name": "上海",
+    "area_name": "松江区",
+    "start_point_name": "东佘山南大门",
+    "end_point_name": "上海天文博物馆",
+    "route_type": "out_and_back",
+    "route_type_label": "往返线",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区步道"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "map_search_keyword": "上海 松江 佘山 天文博物馆"
+  },
+  "narrative": {
+    "summary_short": "爬升极小的入门线路，适合完全没有登山经验的新手",
+    "beginner_fit_reason": "爬升极小、全程仅2.3公里、耗时约30分钟，景区步道平整安全，零经验也可轻松完成。",
+    "search_text": "佘山登山道 上海松江区 东佘山南大门到上海天文博物馆 往返线 景区步道 新手友好 春季秋季适宜 真实里程2.3公里 真实耗时0.51小时 爬升极小 半小时内登顶",
+    "description": "佘山登山道是一条位于上海松江区的轻松入门级徒步线路，从东佘山南大门出发，沿景区步道缓步上行至上海天文博物馆，全程约2.3公里，耗时仅约0.51小时。爬升极小，路况平整，无需专业装备，非常适合零经验的新手或家庭轻徒步。春秋季气候宜人，沿途绿意盎然，登顶后还能顺访天文博物馆，兼具自然与人文体验。",
+    "source": "agent_prefill_qwen_plus"
+  },
+  "geometry": {
+    "start_point": {
+      "lng": 121.1857,
+      "lat": 31.095058
+    },
+    "end_point": {
+      "lng": 121.193605,
+      "lat": 31.094256
+    },
+    "polyline": [],
+    "geocode_status": "ok",
+    "note": "坐标必须由高德 Web服务 API 回填，禁止在未核验前写入任何坐标",
+    "geocode_detail": {
+      "start": {
+        "status": "ok",
+        "method": "geocode",
+        "query": "上海 松江 佘山 天文博物馆",
+        "matched_address": "上海市松江区佘山上海天文博物馆(西北门)",
+        "level": "兴趣点",
+        "returned_province": "上海市",
+        "returned_city": "上海市",
+        "returned_district": "松江区",
+        "candidate_count": 1
+      },
+      "end": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "松江区上海天文博物馆",
+        "matched_name": "上海天文博物馆",
+        "matched_address": "西佘山顶",
+        "poi_type": "科教文化服务;博物馆;博物馆",
+        "returned_city": "上海市",
+        "returned_district": "松江区",
+        "candidate_count": 5
+      },
+      "provider": "amap-webservice-geocode-v3",
+      "synced_at": "2026-09-15T17:46:32.082013+00:00"
+    },
+    "amap_walking_path": [
+      {
+        "lng": 121.185699,
+        "lat": 31.095056
+      },
+      {
+        "lng": 121.185864,
+        "lat": 31.095078
+      },
+      {
+        "lng": 121.186367,
+        "lat": 31.095087
+      },
+      {
+        "lng": 121.187057,
+        "lat": 31.0951
+      },
+      {
+        "lng": 121.187201,
+        "lat": 31.095091
+      },
+      {
+        "lng": 121.187322,
+        "lat": 31.095048
+      },
+      {
+        "lng": 121.187656,
+        "lat": 31.094852
+      },
+      {
+        "lng": 121.187808,
+        "lat": 31.094805
+      },
+      {
+        "lng": 121.187808,
+        "lat": 31.094805
+      },
+      {
+        "lng": 121.18793,
+        "lat": 31.094796
+      },
+      {
+        "lng": 121.188056,
+        "lat": 31.094813
+      },
+      {
+        "lng": 121.188655,
+        "lat": 31.095095
+      },
+      {
+        "lng": 121.188837,
+        "lat": 31.095126
+      },
+      {
+        "lng": 121.188928,
+        "lat": 31.095126
+      },
+      {
+        "lng": 121.189015,
+        "lat": 31.0951
+      },
+      {
+        "lng": 121.189744,
+        "lat": 31.094813
+      },
+      {
+        "lng": 121.190022,
+        "lat": 31.094722
+      },
+      {
+        "lng": 121.190174,
+        "lat": 31.094714
+      },
+      {
+        "lng": 121.190664,
+        "lat": 31.094813
+      },
+      {
+        "lng": 121.190664,
+        "lat": 31.094813
+      },
+      {
+        "lng": 121.190764,
+        "lat": 31.094787
+      },
+      {
+        "lng": 121.190812,
+        "lat": 31.094727
+      },
+      {
+        "lng": 121.190812,
+        "lat": 31.094648
+      },
+      {
+        "lng": 121.19079,
+        "lat": 31.094614
+      },
+      {
+        "lng": 121.190742,
+        "lat": 31.094592
+      },
+      {
+        "lng": 121.190634,
+        "lat": 31.094583
+      },
+      {
+        "lng": 121.189766,
+        "lat": 31.094605
+      },
+      {
+        "lng": 121.189653,
+        "lat": 31.094583
+      },
+      {
+        "lng": 121.189575,
+        "lat": 31.094497
+      },
+      {
+        "lng": 121.189553,
+        "lat": 31.094384
+      },
+      {
+        "lng": 121.189579,
+        "lat": 31.094293
+      },
+      {
+        "lng": 121.190095,
+        "lat": 31.09352
+      },
+      {
+        "lng": 121.190195,
+        "lat": 31.093455
+      },
+      {
+        "lng": 121.19033,
+        "lat": 31.093424
+      },
+      {
+        "lng": 121.190404,
+        "lat": 31.093424
+      },
+      {
+        "lng": 121.191367,
+        "lat": 31.093663
+      },
+      {
+        "lng": 121.191519,
+        "lat": 31.093659
+      },
+      {
+        "lng": 121.192001,
+        "lat": 31.093602
+      },
+      {
+        "lng": 121.192001,
+        "lat": 31.093602
+      },
+      {
+        "lng": 121.192322,
+        "lat": 31.093628
+      },
+      {
+        "lng": 121.192322,
+        "lat": 31.093628
+      },
+      {
+        "lng": 121.192995,
+        "lat": 31.093793
+      },
+      {
+        "lng": 121.192995,
+        "lat": 31.093793
+      },
+      {
+        "lng": 121.193581,
+        "lat": 31.093997
+      },
+      {
+        "lng": 121.193615,
+        "lat": 31.094036
+      },
+      {
+        "lng": 121.193607,
+        "lat": 31.094084
+      },
+      {
+        "lng": 121.193607,
+        "lat": 31.094084
+      },
+      {
+        "lng": 121.193598,
+        "lat": 31.094089
+      },
+      {
+        "lng": 121.193602,
+        "lat": 31.094145
+      },
+      {
+        "lng": 121.193602,
+        "lat": 31.094158
+      },
+      {
+        "lng": 121.193602,
+        "lat": 31.094184
+      },
+      {
+        "lng": 121.193641,
+        "lat": 31.094227
+      }
+    ],
+    "amap_walking_note": "高德步行路网轨迹，非实地山野轨迹，仅供示意"
+  },
+  "metrics": {
+    "distance_km": 2.3,
+    "ascent_m": null,
+    "duration_hours": 0.51,
+    "verification_status": "verified_amap_walking",
+    "note": "distance_km/duration_hours 来自高德步行路径规划（往返全程(2×起终点)，路网距离，真实可溯源）；ascent_m 高德无高程 API，暂缺，待 GPX/设备轨迹补充"
+  },
+  "provenance": {
+    "base_facts": {
+      "source": "manual_seed",
+      "seed_file": "route-seeds-40.json"
+    },
+    "narrative": {
+      "source": "agent_prefill_qwen_plus",
+      "model": "qwen-plus",
+      "run_id": "20260915T175020",
+      "verified": false,
+      "note": "LLM 扩写描述性文本，未引入新事实；数字仅来自 metrics"
+    },
+    "geometry": {
+      "source": "pending_amap_web_service",
+      "verified": false
+    },
+    "metrics": {
+      "source": "amap_webservice_walking",
+      "verified": true,
+      "note": "往返全程(2×起终点) from amap walking route"
+    }
+  },
+  "route_nodes": [
+    {
+      "node_id": "rtb10bc91fcd-node-01",
+      "node_type": "checkpoint",
+      "node_name": "佘山登山道 进入主线判断点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          121.188655,
+          31.095095
+        ]
+      },
+      "stage_order": 1,
+      "distance_from_start_m": 299,
+      "trigger_radius_m": 36,
+      "navigation_hint": "从 东佘山南大门 出发后，优先沿最连续、最明确的主线前进，在这里确认自己仍在主游线上。",
+      "wrong_choice_hint": "如果前方出现明显下切小路、施工便道或回头支线，先停一下再回到最宽主线。",
+      "display_priority": 72
+    },
+    {
+      "node_id": "rtb10bc91fcd-node-02",
+      "node_type": "view",
+      "node_name": "佘山登山道 中段观景停留点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          121.189766,
+          31.094605
+        ]
+      },
+      "stage_order": 2,
+      "distance_from_start_m": 630,
+      "trigger_radius_m": 38,
+      "navigation_hint": "到这里后可短暂停留确认景观参照，再继续沿主游线推进。",
+      "wrong_choice_hint": "不要被临时拍照停留区带入回头流线。",
+      "display_priority": 80
+    },
+    {
+      "node_id": "rtb10bc91fcd-node-03",
+      "node_type": "fork",
+      "node_name": "佘山登山道 关键岔点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          121.192001,
+          31.093602
+        ]
+      },
+      "stage_order": 3,
+      "distance_from_start_m": 964,
+      "trigger_radius_m": 40,
+      "navigation_hint": "在关键岔点优先保持朝 上海天文博物馆 的主方向推进，按更稳定的主线选路。",
+      "wrong_choice_hint": "景区支路、商业分流线或回头线不要误入。",
+      "display_priority": 88
+    }
+  ],
+  "route_risk_points": [],
+  "route_exit_points": [],
+  "cover_image": "/covers/rt_b10bc91fcd.jpg"
+}

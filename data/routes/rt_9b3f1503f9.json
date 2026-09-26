@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0",
+  "route_id": "rt_9b3f1503f9",
+  "built_at": "2026-09-15T17:41:48+00:00",
+  "base_facts": {
+    "route_name": "凤凰岭北线",
+    "province_name": "北京",
+    "city_name": "北京",
+    "area_name": "海淀区",
+    "start_point_name": "凤凰岭公园北门",
+    "end_point_name": "凤凰岭龙泉寺",
+    "route_type": "out_and_back",
+    "route_type_label": "往返线",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区石阶",
+      "山径"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "map_search_keyword": "北京 海淀 凤凰岭 龙泉寺"
+  },
+  "narrative": {
+    "summary_short": "景区三线中最适合新人的一条，以山谷与奇石景观为主",
+    "beginner_fit_reason": "全程仅1.27公里、耗时约17分钟，坡度平缓、指示明确、遮阴良好，对体能要求低。",
+    "search_text": "凤凰岭北线 北京海淀区 凤凰岭公园北门到龙泉寺 往返线 中等强度 石阶山径 春季秋季适宜 1.27公里 0.28小时 新手友好 平缓 遮阴 指示牌清晰 山谷 奇石",
+    "description": "凤凰岭北线是一条适合新手入门的轻量级徒步线路，全程约1.27公里，仅需约17分钟即可走完，沿途以山谷风光与天然奇石为特色，石阶与山径平缓好走，遮阴充足，指示牌清晰易辨。",
+    "source": "agent_prefill_qwen_plus"
+  },
+  "geometry": {
+    "start_point": {
+      "lng": 116.091398,
+      "lat": 40.103297
+    },
+    "end_point": {
+      "lng": 116.097335,
+      "lat": 40.103532
+    },
+    "polyline": [],
+    "geocode_status": "ok",
+    "note": "坐标必须由高德 Web服务 API 回填，禁止在未核验前写入任何坐标",
+    "geocode_detail": {
+      "start": {
+        "status": "ok",
+        "method": "geocode",
+        "query": "北京 海淀 凤凰岭 龙泉寺",
+        "matched_address": "北京市海淀区凤凰岭龙泉寺",
+        "level": "兴趣点",
+        "returned_province": "北京市",
+        "returned_city": "北京市",
+        "returned_district": "海淀区",
+        "candidate_count": 1
+      },
+      "end": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "海淀区凤凰岭龙泉寺",
+        "matched_name": "龙泉寺停车点",
+        "matched_address": "凤凰岭路与凤凰岭东二路交叉口西南220米",
+        "poi_type": "交通设施服务;停车场;公共停车场",
+        "returned_city": "北京市",
+        "returned_district": "海淀区",
+        "candidate_count": 5
+      },
+      "provider": "amap-webservice-geocode-v3",
+      "synced_at": "2026-09-15T17:45:23.861636+00:00"
+    },
+    "amap_walking_path": [
+      {
+        "lng": 116.091033,
+        "lat": 40.103155
+      },
+      {
+        "lng": 116.091141,
+        "lat": 40.10299
+      },
+      {
+        "lng": 116.091181,
+        "lat": 40.102956
+      },
+      {
+        "lng": 116.09122,
+        "lat": 40.10293
+      },
+      {
+        "lng": 116.091341,
+        "lat": 40.102769
+      },
+      {
+        "lng": 116.091341,
+        "lat": 40.10276
+      },
+      {
+        "lng": 116.091771,
+        "lat": 40.102878
+      },
+      {
+        "lng": 116.091771,
+        "lat": 40.102878
+      },
+      {
+        "lng": 116.091905,
+        "lat": 40.102878
+      },
+      {
+        "lng": 116.091905,
+        "lat": 40.102878
+      },
+      {
+        "lng": 116.092231,
+        "lat": 40.102943
+      },
+      {
+        "lng": 116.092574,
+        "lat": 40.103038
+      },
+      {
+        "lng": 116.092574,
+        "lat": 40.103038
+      },
+      {
+        "lng": 116.092973,
+        "lat": 40.103147
+      },
+      {
+        "lng": 116.092969,
+        "lat": 40.103147
+      },
+      {
+        "lng": 116.092995,
+        "lat": 40.103069
+      },
+      {
+        "lng": 116.09306,
+        "lat": 40.103025
+      },
+      {
+        "lng": 116.093121,
+        "lat": 40.102995
+      },
+      {
+        "lng": 116.093186,
+        "lat": 40.102973
+      },
+      {
+        "lng": 116.093993,
+        "lat": 40.10309
+      },
+      {
+        "lng": 116.094596,
+        "lat": 40.103134
+      },
+      {
+        "lng": 116.095425,
+        "lat": 40.103312
+      },
+      {
+        "lng": 116.096081,
+        "lat": 40.103507
+      },
+      {
+        "lng": 116.096081,
+        "lat": 40.103507
+      },
+      {
+        "lng": 116.096085,
+        "lat": 40.103507
+      },
+      {
+        "lng": 116.096259,
+        "lat": 40.103568
+      },
+      {
+        "lng": 116.096259,
+        "lat": 40.103568
+      },
+      {
+        "lng": 116.097257,
+        "lat": 40.103898
+      },
+      {
+        "lng": 116.097257,
+        "lat": 40.103898
+      },
+      {
+        "lng": 116.097344,
+        "lat": 40.103932
+      },
+      {
+        "lng": 116.097344,
+        "lat": 40.103932
+      },
+      {
+        "lng": 116.097413,
+        "lat": 40.103746
+      },
+      {
+        "lng": 116.097413,
+        "lat": 40.103746
+      },
+      {
+        "lng": 116.097478,
+        "lat": 40.103572
+      },
+      {
+        "lng": 116.097478,
+        "lat": 40.103572
+      },
+      {
+        "lng": 116.097483,
+        "lat": 40.103563
+      }
+    ],
+    "amap_walking_note": "高德步行路网轨迹，非实地山野轨迹，仅供示意"
+  },
+  "metrics": {
+    "distance_km": 1.27,
+    "ascent_m": null,
+    "duration_hours": 0.28,
+    "verification_status": "verified_amap_walking",
+    "note": "distance_km/duration_hours 来自高德步行路径规划（往返全程(2×起终点)，路网距离，真实可溯源）；ascent_m 高德无高程 API，暂缺，待 GPX/设备轨迹补充"
+  },
+  "provenance": {
+    "base_facts": {
+      "source": "manual_seed",
+      "seed_file": "route-seeds-40.json"
+    },
+    "narrative": {
+      "source": "agent_prefill_qwen_plus",
+      "model": "qwen-plus",
+      "run_id": "20260915T175020",
+      "verified": false,
+      "note": "LLM 扩写描述性文本，未引入新事实；数字仅来自 metrics"
+    },
+    "geometry": {
+      "source": "pending_amap_web_service",
+      "verified": false
+    },
+    "metrics": {
+      "source": "amap_webservice_walking",
+      "verified": true,
+      "note": "往返全程(2×起终点) from amap walking route"
+    }
+  },
+  "route_nodes": [
+    {
+      "node_id": "rt9b3f1503f9-node-01",
+      "node_type": "checkpoint",
+      "node_name": "凤凰岭北线 进入主线判断点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          116.092574,
+          40.103038
+        ]
+      },
+      "stage_order": 1,
+      "distance_from_start_m": 162,
+      "trigger_radius_m": 36,
+      "navigation_hint": "从 凤凰岭公园北门 出发后，优先沿最连续、最明确的主线前进，在这里确认自己仍在主游线上。",
+      "wrong_choice_hint": "如果前方出现明显下切小路、施工便道或回头支线，先停一下再回到最宽主线。",
+      "display_priority": 72
+    },
+    {
+      "node_id": "rt9b3f1503f9-node-02",
+      "node_type": "view",
+      "node_name": "凤凰岭北线 中段观景停留点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          116.094596,
+          40.103134
+        ]
+      },
+      "stage_order": 2,
+      "distance_from_start_m": 348,
+      "trigger_radius_m": 38,
+      "navigation_hint": "到这里后可短暂停留确认景观参照，再继续沿主游线推进。",
+      "wrong_choice_hint": "不要被临时拍照停留区带入回头流线。",
+      "display_priority": 80
+    },
+    {
+      "node_id": "rt9b3f1503f9-node-03",
+      "node_type": "fork",
+      "node_name": "凤凰岭北线 关键岔点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          116.097257,
+          40.103898
+        ]
+      },
+      "stage_order": 3,
+      "distance_from_start_m": 590,
+      "trigger_radius_m": 40,
+      "navigation_hint": "在关键岔点优先保持朝 凤凰岭龙泉寺 的主方向推进，按更稳定的主线选路。",
+      "wrong_choice_hint": "景区支路、商业分流线或回头线不要误入。",
+      "display_priority": 88
+    }
+  ],
+  "route_risk_points": [],
+  "route_exit_points": [],
+  "cover_image": "/covers/rt_9b3f1503f9.jpg"
+}

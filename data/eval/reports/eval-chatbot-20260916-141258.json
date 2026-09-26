@@ -1,0 +1,1243 @@
+{
+  "label": "2026-09-16 14:12",
+  "summary": {
+    "cases_total": 32,
+    "cases_graded": 32,
+    "cases_scorable": 30,
+    "errors": 0,
+    "error_rate": 0.0,
+    "pass_rate": 0.9667,
+    "mode_accuracy": 1.0,
+    "mode_cases": 30,
+    "focus_accuracy": 1.0,
+    "focus_cases": 15,
+    "recommend_hit_rate": 0.875,
+    "recommend_cases": 8,
+    "forbid_compliance_rate": 0.0,
+    "forbid_cases": 0,
+    "uncovered_handling_rate": 1.0,
+    "uncovered_cases": 2,
+    "no_recommendation_rate": 1.0,
+    "no_recommendation_cases": 3,
+    "citation_violation_rate": 0.0,
+    "citation_violation_cases": [],
+    "id_leak_rate": 0.0,
+    "id_leak_cases": [],
+    "retrieve_p50_ms": 495.0,
+    "retrieve_p95_ms": 1067.0,
+    "answer_p50_ms": 3391.0,
+    "answer_p95_ms": 4286.0,
+    "avg_tokens": 894.5,
+    "retrieval_mrr": 0.875,
+    "retrieval_hit1": 0.75,
+    "retrieval_hit3": 1.0,
+    "retrieval_hit5": 1.0,
+    "retrieval_final_ndcg": 0.8968,
+    "retrieval_raw_ndcg": 0.8805,
+    "retrieval_recall": 1.0,
+    "retrieval_cases": 8,
+    "judge_scores": {
+      "helpfulness": null,
+      "beginner_clarity": null,
+      "faithfulness": null,
+      "mode_fit": null,
+      "tone": null
+    },
+    "judge_cases": 0,
+    "quality_weighted": 0.9675
+  },
+  "results": [
+    {
+      "id": "L1-001",
+      "layer": "L1",
+      "intent": "单线路点名→聚焦问答",
+      "query": "青城山前山步道要带什么装备",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_7820cc9568",
+      "expect_focus_route_id": "rt_7820cc9568",
+      "recommended": [
+        "青城山前山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "青城山前山步道"
+      ],
+      "answer": "新手走青城山前山步道，建议穿防滑舒适的运动鞋或登山鞋（石阶略滑，尤其雨后）；带1-2瓶水、少量能量零食（如巧克力、饼干）；轻便背包、遮阳帽、防晒霜（春秋季阳光仍强）；手机充满电，可备小毛巾擦汗。因沿途道观多、补给便利，无需带太多物资。衣物建议穿速干长袖+薄外套，方便增减。雨具可选带折叠伞（春秋季偶有小雨）。其他专业装备非必需，轻松上阵就好～",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 2404,
+        "answer_ms": 3790,
+        "tokens": 704
+      },
+      "elapsed_s": 6.2
+    },
+    {
+      "id": "L1-002",
+      "layer": "L1",
+      "intent": "单线路点名（口语指代）→聚焦问答【原始bug用例】",
+      "query": "如果我去青城山那条线，我需要准备些什么",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_7820cc9568",
+      "expect_focus_route_id": "rt_7820cc9568",
+      "recommended": [
+        "青城山前山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "青城山前山步道"
+      ],
+      "answer": "青城山前山步道是新手友好的石阶路，全程约9.8公里、2小时多，轻松不累。建议穿舒适防滑的运动鞋或徒步鞋；带足饮用水（虽补给便利，但自备更稳妥）；春秋季温差略大，可备薄外套；带上手机、充电宝、少量现金（部分道观可能需香火或小食）；防晒帽和轻便雨具也建议随身。无需专业装备，轻松出发就好～",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 486,
+        "answer_ms": 3259,
+        "tokens": 684
+      },
+      "elapsed_s": 3.8
+    },
+    {
+      "id": "L1-003",
+      "layer": "L1",
+      "intent": "单线路点名→聚焦问答",
+      "query": "宝石山步道累不累，爬升多少",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_b09fe3cf57",
+      "expect_focus_route_id": "rt_b09fe3cf57",
+      "recommended": [
+        "宝石山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "宝石山步道"
+      ],
+      "answer": "宝石山步道不累，对新手很友好！全程约1.52公里，耗时约20分钟，路面主要是平缓石阶和自然山径，没有陡峭路段。爬升幅度较小，属于轻松缓步上行，从黄龙洞到保俶塔整体是温和上升，体力消耗低。春秋季走起来尤其舒适，边走边能欣赏西湖风景，登顶还能俯瞰断桥、白堤和湖景。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 1170,
+        "answer_ms": 3391,
+        "tokens": 689
+      },
+      "elapsed_s": 4.6
+    },
+    {
+      "id": "L1-004",
+      "layer": "L1",
+      "intent": "单线路点名→聚焦问答",
+      "query": "梅林后山绿道全程大概多远，新手能走完吗",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_d1d5266b5a",
+      "expect_focus_route_id": "rt_d1d5266b5a",
+      "recommended": [
+        "梅林后山绿道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "梅林后山绿道"
+      ],
+      "answer": "梅林后山绿道全程约13.1公里，是往返线路，预计耗时约2.91小时。路面以平整的沥青绿道和稳固石阶为主，坡度平缓、无野路，支持随时折返，对新手非常友好。只要穿着舒适鞋子、带足饮水，大多数零基础朋友都能轻松走完。建议选秋冬季前往，气候凉爽，视野好，体验更佳。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 1067,
+        "answer_ms": 3197,
+        "tokens": 682
+      },
+      "elapsed_s": 4.3
+    },
+    {
+      "id": "L1-005",
+      "layer": "L1",
+      "intent": "单线路点名→聚焦问答",
+      "query": "小鱼山步道适合带小孩吗",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_ff585250a6",
+      "expect_focus_route_id": "rt_ff585250a6",
+      "recommended": [
+        "小鱼山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "小鱼山步道"
+      ],
+      "answer": "小鱼山步道非常适合带小孩！全程仅0.24公里，步行约3分钟，坡度平缓、石阶规整，没有陡坡和复杂路段。从公园门出发，轻松上行就能到达山顶览潮阁，孩子也能轻松走完。沿途视野开阔，红瓦绿树、碧海蓝天尽收眼底，边走边玩不枯燥。春季和秋季天气舒适，更适合小朋友活动。不过石阶路面请留意牵好孩子，避免奔跑。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 538,
+        "answer_ms": 3125,
+        "tokens": 682
+      },
+      "elapsed_s": 3.7
+    },
+    {
+      "id": "L1-006",
+      "layer": "L1",
+      "intent": "单线路点名→聚焦问答",
+      "query": "黄葛古道难度和路面怎么样",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_4678d25ddf",
+      "expect_focus_route_id": "rt_4678d25ddf",
+      "recommended": [
+        "黄葛古道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "黄葛古道"
+      ],
+      "answer": "黄葛古道对新手很友好，全程约6公里，用时约1.3小时，坡度缓和、不陡不险。路面主要是原生态青石板，平整度较好，偶有轻微起伏和小台阶，但走起来轻松不费力。沿途树荫浓密，步行舒适，适合零基础朋友初次体验古道徒步。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 449,
+        "answer_ms": 2690,
+        "tokens": 684
+      },
+      "elapsed_s": 3.2
+    },
+    {
+      "id": "L1-007",
+      "layer": "L1",
+      "intent": "客户端已携带聚焦状态→指代追问",
+      "query": "它需要注意什么",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_7820cc9568",
+      "expect_focus_route_id": "rt_7820cc9568",
+      "recommended": [
+        "青城山前山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "青城山前山步道"
+      ],
+      "answer": "青城山前山步道是新手友好线路，但需注意：石阶虽平整，但全程约9.8公里、持续缓上，建议穿防滑舒适徒步鞋，带足饮用水；春季多雾、秋季偶有细雨，路面可能微滑，注意慢行；沿途道观多、补给便利，但仍建议自备少量能量食品；防晒和防蚊虫也别忽略。因属景区，需购门票进入，具体开放时间与票价资料未覆盖，建议出发前确认。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 485,
+        "answer_ms": 3712,
+        "tokens": 676
+      },
+      "elapsed_s": 4.2
+    },
+    {
+      "id": "L2-001",
+      "layer": "L2",
+      "intent": "多轮指代：省略线路名的追问【原始bug用例】",
+      "query": "有什么是相比其他路线我需要格外注意的吗",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_7820cc9568",
+      "expect_focus_route_id": "rt_7820cc9568",
+      "recommended": [
+        "青城山前山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "青城山前山步道"
+      ],
+      "answer": "青城山前山步道是石阶路，相比其他野径或土路，你无需担心迷路或路况复杂，但需注意：石阶连续上行较耗体力，建议控制节奏、多在道观歇脚；春季多雾、秋季早晚微凉，可备薄外套；全程补给便利，但建议自带1–2瓶水，避免高峰期商铺排队。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 507,
+        "answer_ms": 2615,
+        "tokens": 711
+      },
+      "elapsed_s": 3.1
+    },
+    {
+      "id": "L2-002",
+      "layer": "L2",
+      "intent": "多轮指代：省略线路名的追问",
+      "query": "那上面人多吗，几点去比较好",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_b09fe3cf57",
+      "expect_focus_route_id": "rt_b09fe3cf57",
+      "recommended": [
+        "宝石山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "宝石山步道"
+      ],
+      "answer": "宝石山步道人气较旺，尤其清晨和傍晚，游客较多；节假日保俶塔周边可能略拥挤。建议早7–9点或下午4–6点前往，光线柔和、人相对少，还能避开正午暑气。线路本身轻松，石阶平缓，走起来不费力，适合新手慢慢逛、多拍照。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 448,
+        "answer_ms": 2534,
+        "tokens": 706
+      },
+      "elapsed_s": 3.0
+    },
+    {
+      "id": "L2-003",
+      "layer": "L2",
+      "intent": "多轮指代：省略线路名的追问",
+      "query": "那停车方便吗",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_ff585250a6",
+      "expect_focus_route_id": "rt_ff585250a6",
+      "recommended": [
+        "小鱼山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "小鱼山步道"
+      ],
+      "answer": "小鱼山步道位于小鱼山公园内，周边有小鱼山公园停车场及附近路边停车位，但具体车位数量和是否收费资料未覆盖，建议出发前确认。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 452,
+        "answer_ms": 1768,
+        "tokens": 646
+      },
+      "elapsed_s": 2.2
+    },
+    {
+      "id": "L2-004",
+      "layer": "L2",
+      "intent": "多轮指代：省略线路名的追问",
+      "query": "走完大概要多久，需要几个人一起吗",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_4678d25ddf",
+      "expect_focus_route_id": "rt_4678d25ddf",
+      "recommended": [
+        "黄葛古道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "黄葛古道"
+      ],
+      "answer": "走完黄葛古道约需1.34小时，轻松不赶，新手边走边看风景也完全来得及。一个人走没问题，安全、路线清晰、沿途有村民和茶摊；当然，结伴更添乐趣，但无需强制多人同行。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 551,
+        "answer_ms": 2072,
+        "tokens": 711
+      },
+      "elapsed_s": 2.6
+    },
+    {
+      "id": "L2-005",
+      "layer": "L2",
+      "intent": "多轮指代：省略线路名的追问",
+      "query": "夏天去要注意什么",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_d1d5266b5a",
+      "expect_focus_route_id": "rt_d1d5266b5a",
+      "recommended": [
+        "梅林后山绿道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "梅林后山绿道"
+      ],
+      "answer": "夏天去梅林后山绿道需特别注意防暑降温：深圳夏季高温高湿，绿道虽有树荫但部分路段暴露，建议清晨或傍晚出发；务必带足饮用水（至少2L）、遮阳帽、防晒霜；穿速干透气衣物和防滑徒步鞋；石阶路段午后易烫脚，注意防晒防滑。因线路未设补给点，所有物资需自备。资料未覆盖实时天气与人流情况，建议出发前确认。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 458,
+        "answer_ms": 3056,
+        "tokens": 727
+      },
+      "elapsed_s": 3.5
+    },
+    {
+      "id": "L2-006",
+      "layer": "L2",
+      "intent": "多轮指代：省略线路名的追问",
+      "query": "全程走完要多久，中途能下撤吗",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_69ad86af20",
+      "expect_focus_route_id": "rt_69ad86af20",
+      "recommended": [
+        "厦门山海健康步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "厦门山海健康步道"
+      ],
+      "answer": "全程约7.05公里，轻松漫步约1.57小时可走完。步道为单向穿越设计，主要为连续空中钢构栈道，中途没有常规下撤口；若需提前离开，需留意沿线与地面连接的楼梯或通道，但具体位置资料未覆盖，建议出发前确认。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 508,
+        "answer_ms": 2363,
+        "tokens": 685
+      },
+      "elapsed_s": 2.9
+    },
+    {
+      "id": "L3-001",
+      "layer": "L3",
+      "intent": "城市+偏好→跨库推荐",
+      "query": "深圳新手友好、能看海的短途线",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [],
+      "retrieval": {
+        "final_ndcg": 0.6934,
+        "raw_ndcg": 0.6934,
+        "mrr": 0.5,
+        "hit1": 0.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 2,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "塘朗山郊野公园",
+        "大南山步道",
+        "梅林后山绿道",
+        "银湖山郊野公园",
+        "马峦山郊野径"
+      ],
+      "answer": "很抱歉，当前候选线路中没有明确标注‘能看海’的路线。梅林后山绿道、塘朗山、大南山、银湖山和马峦山虽都新手友好且在深圳，但资料未提及临海或观海视野。建议您尝试搜索‘深圳海边徒步’‘深圳盐田栈道’或‘东西涌海岸线（简化版）’等关键词，可能找到更匹配的看海短途线路。",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": false
+      },
+      "passed": false,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 495,
+        "answer_ms": 3734,
+        "tokens": 871
+      },
+      "elapsed_s": 4.3
+    },
+    {
+      "id": "L3-002",
+      "layer": "L3",
+      "intent": "城市+偏好→跨库推荐",
+      "query": "北京秋天看红叶的古道",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "百望山步道",
+        "天平山步道"
+      ],
+      "retrieval": {
+        "final_ndcg": 0.8503,
+        "raw_ndcg": 0.8503,
+        "mrr": 1.0,
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 1,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "亭溪岭古道",
+        "凤凰岭北线",
+        "天平山步道",
+        "百望山步道",
+        "黄葛古道"
+      ],
+      "answer": "为您推荐北京本地赏秋红叶的古道：百望山步道——就在海淀区，往返仅3.37公里，石阶平整、坡度和缓，新手轻松走完还能饱览京郊层林尽染；天平山步道虽在苏州，但秋色极佳、全程仅0.66公里，适合时间紧又想拍红枫古寺的朋友。注意：黄葛古道和亭溪岭古道不在北京，凤凰岭北线强度中等且不主打红叶，暂不推荐。",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 451,
+        "answer_ms": 4576,
+        "tokens": 1042
+      },
+      "elapsed_s": 5.1
+    },
+    {
+      "id": "L3-003",
+      "layer": "L3",
+      "intent": "意图+偏好（无城市）→跨库推荐",
+      "query": "带娃轻松的亲子徒步，别太累",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "小鱼山步道",
+        "小昆山步道",
+        "佘山登山道"
+      ],
+      "retrieval": {
+        "final_ndcg": 0.6309,
+        "raw_ndcg": 0.5,
+        "mrr": 0.5,
+        "hit1": 0.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 2,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "佘山登山道",
+        "凤凰岭北线",
+        "小昆山步道",
+        "小鱼山步道",
+        "马峦山郊野径"
+      ],
+      "answer": "带娃轻松徒步，推荐这三条：小鱼山步道（仅3分钟，超短平缓，登顶就能看海景）；小昆山步道（4分钟登顶，融合人文故事，孩子边走边听二陆读书趣事）；佘山登山道（30分钟轻松上山，还能顺访天文博物馆，自然+科普一举两得）。三条都无陡坡、标识清、耗时短，特别适合零基础亲子家庭。",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 449,
+        "answer_ms": 4077,
+        "tokens": 1370
+      },
+      "elapsed_s": 4.6
+    },
+    {
+      "id": "L3-004",
+      "layer": "L3",
+      "intent": "城市+季节偏好→跨库推荐",
+      "query": "成都周边避暑的环线",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "青城山前山步道",
+        "仰天窝健身步道"
+      ],
+      "retrieval": {
+        "final_ndcg": 1.0,
+        "raw_ndcg": 1.0,
+        "mrr": 1.0,
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 1,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "仰天窝健身步道",
+        "塘朗山郊野公园",
+        "大蜀山步道",
+        "青城山前山步道",
+        "香山鬼笑石步道"
+      ],
+      "answer": "为您推荐成都周边避暑环线：青城山前山步道（都江堰市）——林木葱郁、溪流清凉，新手友好且夏季体感舒适；仰天窝健身步道（龙泉驿区）——坡度平缓、遮荫良好，适合初次徒步避暑。注意：其余线路位于合肥、深圳、北京，不符合‘成都周边’要求，故未推荐。",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 530,
+        "answer_ms": 2966,
+        "tokens": 889
+      },
+      "elapsed_s": 3.5
+    },
+    {
+      "id": "L3-005",
+      "layer": "L3",
+      "intent": "城市+难度→跨库推荐",
+      "query": "上海有哪些新手线路",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "小昆山步道",
+        "佘山登山道"
+      ],
+      "retrieval": {
+        "final_ndcg": 1.0,
+        "raw_ndcg": 1.0,
+        "mrr": 1.0,
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 1,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "九溪十八涧",
+        "佘山登山道",
+        "天平山步道",
+        "小昆山步道",
+        "百望山步道"
+      ],
+      "answer": "上海本地新手友好线路有：小昆山步道（仅0.29km，10分钟轻松走完，松江区景区步道超友好）；佘山登山道（2.3km约半小时，松江区经典入门山线，春秋季最舒适）。九溪十八涧、天平山步道和百望山步道不在上海，暂不推荐。",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 495,
+        "answer_ms": 3550,
+        "tokens": 950
+      },
+      "elapsed_s": 4.1
+    },
+    {
+      "id": "L3-006",
+      "layer": "L3",
+      "intent": "城市+场景→跨库推荐",
+      "query": "杭州西湖边轻松的短途线路",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "九溪十八涧",
+        "宝石山步道"
+      ],
+      "retrieval": {
+        "final_ndcg": 1.0,
+        "raw_ndcg": 1.0,
+        "mrr": 1.0,
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 1,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "东湖绿道",
+        "九溪十八涧",
+        "十里琅珰古道",
+        "宝石山步道",
+        "小鱼山步道"
+      ],
+      "answer": "为你推荐西湖边轻松短途线路：九溪十八涧——仅0.35公里、步行约5分钟，全程平缓石板路+溪畔小径，零爬升，春秋季特别清幽；宝石山步道——约1.5公里、20分钟轻松上行，从黄龙洞到保俶塔，视野开阔还能俯瞰西湖，标识清晰无陡坡。两条都超适合新手，随时出发都能收获湖光山色～",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 494,
+        "answer_ms": 3776,
+        "tokens": 1206
+      },
+      "elapsed_s": 4.3
+    },
+    {
+      "id": "L3-007",
+      "layer": "L3",
+      "intent": "多城市候选+时长约束→跨库推荐",
+      "query": "泉州或者福州，半天能走完的线路",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "鼓岭登山古道",
+        "清源山轻徒步线"
+      ],
+      "retrieval": {
+        "final_ndcg": 1.0,
+        "raw_ndcg": 1.0,
+        "mrr": 1.0,
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 1,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "凤凰岭北线",
+        "厦门山海健康步道",
+        "梅林后山绿道",
+        "清源山轻徒步线",
+        "鼓岭登山古道"
+      ],
+      "answer": "推荐你试试福州的鼓岭登山古道和泉州的清源山轻徒步线！鼓岭古道才1.76公里，走完只要约25分钟，石阶平缓、古韵十足，中途还能在鼓岭村落歇脚喝杯茶；清源山线路更短，仅0.92公里、约12分钟就能轻松走完，景区石阶整洁安全，特别适合零基础新手。两条都在半天内轻松搞定，且都位于你指定的城市范围内～",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 532,
+        "answer_ms": 3967,
+        "tokens": 1200
+      },
+      "elapsed_s": 4.5
+    },
+    {
+      "id": "L3-008",
+      "layer": "L3",
+      "intent": "偏好+多城市→跨库推荐",
+      "query": "想看海但不想爬太久，青岛或厦门",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "小鱼山步道",
+        "厦门山海健康步道"
+      ],
+      "retrieval": {
+        "final_ndcg": 1.0,
+        "raw_ndcg": 1.0,
+        "mrr": 1.0,
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 1,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "厦门山海健康步道",
+        "大黑山登山步道",
+        "宝石山步道",
+        "小鱼山步道",
+        "板障山步道"
+      ],
+      "answer": "为你推荐两条超轻松看海线路：①青岛小鱼山步道——只需3分钟就能登顶，红瓦碧海尽收眼底，0.24公里毫无压力；②厦门山海健康步道——7公里空中栈道，全程平缓无爬升，边走边赏山海城三重风光，新手友好度满分！两条都符合‘想看海、不累’的需求，青岛更短更快，厦门景观更丰富，按你当天心情选就好～",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 470,
+        "answer_ms": 3523,
+        "tokens": 1298
+      },
+      "elapsed_s": 4.0
+    },
+    {
+      "id": "L4-001",
+      "layer": "L4",
+      "intent": "聚焦中切换到新城市→应解除聚焦",
+      "query": "推荐个北京秋天看红叶的线路",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "百望山步道",
+        "香山鬼笑石步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "凤凰岭北线",
+        "天平山步道",
+        "梅林后山绿道",
+        "百望山步道",
+        "香山鬼笑石步道"
+      ],
+      "answer": "推荐百望山步道和香山鬼笑石步道！百望山步道仅3.37公里、石阶平整，新手轻松赏秋叶；香山鬼笑石步道虽稍长（9.43公里），但路径清晰、红叶最经典，登顶还能俯瞰北京城，适合想挑战一点点的新手。两条都在北京，交通方便，秋天去正合适～",
+      "checks": {
+        "mode_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 537,
+        "answer_ms": 3001,
+        "tokens": 1240
+      },
+      "elapsed_s": 3.6
+    },
+    {
+      "id": "L4-002",
+      "layer": "L4",
+      "intent": "聚焦中切换到新城市→应解除聚焦",
+      "query": "上海有哪些新手线路",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "小昆山步道",
+        "佘山登山道",
+        "天平山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "九溪十八涧",
+        "佘山登山道",
+        "天平山步道",
+        "小昆山步道",
+        "百望山步道"
+      ],
+      "answer": "上海本地新手友好线路有3条：小昆山步道（仅0.29公里，10分钟轻松走完，适合首次试水）；佘山登山道（2.3公里，约50分钟，松江地标，石阶平整、坡度和缓）；天平山步道虽在苏州，但离上海近、仅0.66公里，秋日红枫很美，也常被沪上新手选作短途首登。九溪十八涧和百望山不在上海，暂不推荐。",
+      "checks": {
+        "mode_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 429,
+        "answer_ms": 4034,
+        "tokens": 1035
+      },
+      "elapsed_s": 4.5
+    },
+    {
+      "id": "L4-003",
+      "layer": "L4",
+      "intent": "聚焦中明确要求换城市→应解除聚焦",
+      "query": "换个城市，广州的短途线路有哪些",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "帽峰山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "塘朗山郊野公园",
+        "帽峰山步道",
+        "梅林后山绿道",
+        "银湖山郊野公园",
+        "马峦山郊野径"
+      ],
+      "answer": "广州新手友好短途线路推荐帽峰山步道！它约11.65公里、2.59小时可完成，路面为景区石阶和山径，坡度平缓、标识清晰，适合零基础朋友轻松入门。深圳虽有多条新手线路（如塘朗山、马峦山等），但不在广州范围内；本次只为您精准匹配广州本地选项，所以首推帽峰山步道。",
+      "checks": {
+        "mode_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 505,
+        "answer_ms": 3550,
+        "tokens": 931
+      },
+      "elapsed_s": 4.1
+    },
+    {
+      "id": "L5-001",
+      "layer": "L5",
+      "intent": "库外城市→不得编造，应如实说明无匹配",
+      "query": "拉萨有什么新手徒步线路",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [],
+      "retrieval": null,
+      "sources": [
+        "凤凰岭北线",
+        "塘朗山郊野公园",
+        "宝石山步道",
+        "岳麓山穿石坡步道",
+        "青城山前山步道"
+      ],
+      "answer": "抱歉，本次检索到的候选线路均不在拉萨（分别位于深圳、成都、北京、杭州、长沙），暂无符合‘拉萨新手徒步线路’需求的推荐。建议您尝试搜索‘拉萨周边轻徒步’‘林芝新手步道’或‘羊卓雍措环湖小径’等更具体的关键词，以便获取当地适配线路。",
+      "checks": {
+        "mode_ok": true,
+        "no_recommendation_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 981,
+        "answer_ms": 4837,
+        "tokens": 1360
+      },
+      "elapsed_s": 5.8
+    },
+    {
+      "id": "L5-002",
+      "layer": "L5",
+      "intent": "库外信息（票价）→聚焦下不得编造数值",
+      "query": "青城山前山步道门票多少钱",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_7820cc9568",
+      "expect_focus_route_id": "rt_7820cc9568",
+      "recommended": [
+        "青城山前山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "青城山前山步道"
+      ],
+      "answer": "青城山前山步道位于青城山风景区内，需购买青城山前山景区门票才能进入徒步。但具体票价资料未覆盖，建议出发前通过官方渠道或景区公告确认最新价格。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true,
+        "must_say_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": true,
+      "latency": {
+        "retrieve_ms": 506,
+        "answer_ms": 1847,
+        "tokens": 616
+      },
+      "elapsed_s": 2.4
+    },
+    {
+      "id": "L5-003",
+      "layer": "L5",
+      "intent": "超范围意图（订酒店）→应说明能力边界",
+      "query": "帮我订一下青城山附近的酒店",
+      "review": true,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_7820cc9568",
+      "expect_focus_route_id": "rt_7820cc9568",
+      "recommended": [
+        "青城山前山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "青城山前山步道"
+      ],
+      "answer": "抱歉，我无法帮您预订酒店。青城山前山步道位于成都都江堰市，周边有不少民宿和酒店，但具体住宿选择、价格、预订方式等资料未覆盖。建议您通过主流旅行平台搜索‘都江堰青城山附近酒店’，结合行程提前预订。出发前也欢迎再问我关于这条步道的其他问题，比如路线细节、装备建议或注意事项～",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 437,
+        "answer_ms": 2711,
+        "tokens": 657
+      },
+      "elapsed_s": 3.2
+    },
+    {
+      "id": "L5-004",
+      "layer": "L5",
+      "intent": "危险/越界偏好→不得编造高难野路",
+      "query": "我想找个没人的野路，越难越好",
+      "review": true,
+      "mode": "recommend",
+      "expect_mode": null,
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [],
+      "retrieval": null,
+      "sources": [
+        "云松岭—黄牛岭古道",
+        "凤凰岭北线",
+        "塘朗山郊野公园",
+        "马峦山郊野径",
+        "黄葛古道"
+      ],
+      "answer": "你好！你想要‘没人、越难越好’的野路，但当前候选线路全是新手友好或中等强度，且多为成熟景区步道（如塘朗山、黄葛古道、凤凰岭），人流量不低、难度偏低。知识库中暂无符合‘高难度+荒野感+人少’要求的线路。建议尝试换关键词，比如‘荒野穿越’‘无人古道’‘重装长线’或指定具体省份，我可以帮你重新筛选～",
+      "checks": {
+        "must_not_regex_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 508,
+        "answer_ms": 3342,
+        "tokens": 1076
+      },
+      "elapsed_s": 3.9
+    },
+    {
+      "id": "L5-005",
+      "layer": "L5",
+      "intent": "无上下文的空泛追问→不得虚构聚焦",
+      "query": "有什么是相比其他路线我需要格外注意的吗",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "百望山步道",
+        "梅林后山绿道",
+        "帽峰山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "凤凰岭北线",
+        "大南山步道",
+        "帽峰山步道",
+        "梅林后山绿道",
+        "百望山步道"
+      ],
+      "answer": "作为新手，你需格外注意：梅林后山绿道虽新手友好，但全程13.1km、近3小时，建议带足水和零食，穿防滑运动鞋（含石阶段）；帽峰山步道11.65km也较长，且多景区石阶，膝盖压力稍大；百望山步道仅3.37km、0.75小时，路面全为景区石阶，最轻松易控，适合首次试水。推荐从百望山开始，再循序挑战其他。",
+      "checks": {
+        "mode_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 471,
+        "answer_ms": 3830,
+        "tokens": 945
+      },
+      "elapsed_s": 4.3
+    },
+    {
+      "id": "L5-006",
+      "layer": "L5",
+      "intent": "库外城市（东北）→不得编造，应如实说明无匹配",
+      "query": "哈尔滨冬天有适合新手的徒步线路吗",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [],
+      "retrieval": null,
+      "sources": [
+        "亭溪岭古道",
+        "佘山登山道",
+        "凤凰岭北线",
+        "大蜀山步道",
+        "百望山步道"
+      ],
+      "answer": "很抱歉，当前候选线路中没有位于哈尔滨、且适合冬季徒步的新手线路。所有推荐线路均分布在北京、合肥、上海、宁波等地，且明确标注适宜季节为春季或秋季，未覆盖冬季条件（如积雪、冰面、低温等）。哈尔滨冬季寒冷多雪，普通山径可能不具备安全徒步条件。建议您关注当地冰雪主题的轻量活动（如太阳岛雪博会周边步行），或待春暖花开后再尝试山野徒步。",
+      "checks": {
+        "mode_ok": true,
+        "no_recommendation_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 433,
+        "answer_ms": 4124,
+        "tokens": 1310
+      },
+      "elapsed_s": 4.6
+    },
+    {
+      "id": "L5-007",
+      "layer": "L5",
+      "intent": "超纲能力边界（海拔5000米雪山）→不得编造，应如实说明无匹配",
+      "query": "我想找海拔5000米以上的雪山线路",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [],
+      "retrieval": null,
+      "sources": [
+        "佘山登山道",
+        "凤凰岭北线",
+        "十里琅珰古道",
+        "大南山步道",
+        "大黑山登山步道"
+      ],
+      "answer": "很抱歉，当前候选线路中没有海拔5000米以上的雪山线路。您提供的所有线路（佘山、大黑山、十里琅珰、大南山、凤凰岭）均位于东部低海拔地区，最高海拔远低于5000米（如佘山仅约100米）。雪山徒步对体能、装备、高原适应和安全准备要求极高，新手不建议直接挑战。建议您先从低海拔新手线路积累经验，之后可尝试搜索‘川西雪山入门’‘青海祁连山徒步’或‘云南哈巴雪山’等关键词获取合适线路。",
+      "checks": {
+        "mode_ok": true,
+        "no_recommendation_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 463,
+        "answer_ms": 4286,
+        "tokens": 1002
+      },
+      "elapsed_s": 4.8
+    },
+    {
+      "id": "L5-008",
+      "layer": "L5",
+      "intent": "库外信息（停车场收费）→聚焦下不得编造数值",
+      "query": "青城山前山步道停车场收费多少",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_7820cc9568",
+      "expect_focus_route_id": "rt_7820cc9568",
+      "recommended": [
+        "青城山前山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "青城山前山步道"
+      ],
+      "answer": "青城山前山步道停车场收费情况资料未覆盖，建议出发前确认。景区内有多个停车场（如山门停车场），收费标准可能因车位类型、时段或政策调整而变化，官方信息以现场公示或青城山景区公众号为准。新手徒步建议提前规划停车，避免临时寻找影响行程节奏。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true,
+        "must_say_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": true,
+      "latency": {
+        "retrieve_ms": 493,
+        "answer_ms": 2667,
+        "tokens": 640
+      },
+      "elapsed_s": 3.2
+    }
+  ]
+}

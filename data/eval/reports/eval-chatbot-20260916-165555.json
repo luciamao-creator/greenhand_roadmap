@@ -1,0 +1,425 @@
+{
+  "label": "2026-09-16 16:55",
+  "summary": {
+    "cases_total": 8,
+    "cases_graded": 8,
+    "cases_scorable": 8,
+    "errors": 0,
+    "error_rate": 0.0,
+    "pass_rate": 0.875,
+    "mode_accuracy": 1.0,
+    "mode_cases": 8,
+    "focus_accuracy": 0.0,
+    "focus_cases": 0,
+    "recommend_hit_rate": 0.875,
+    "recommend_cases": 8,
+    "forbid_compliance_rate": 0.0,
+    "forbid_cases": 0,
+    "uncovered_handling_rate": 0.0,
+    "uncovered_cases": 0,
+    "no_recommendation_rate": 0.0,
+    "no_recommendation_cases": 0,
+    "citation_violation_rate": 0.0,
+    "citation_violation_cases": [],
+    "id_leak_rate": 0.0,
+    "id_leak_cases": [],
+    "retrieve_p50_ms": 465.0,
+    "retrieve_p95_ms": 2515.0,
+    "answer_p50_ms": 3833.0,
+    "answer_p95_ms": 4076.0,
+    "avg_tokens": 1226.6,
+    "retrieval_mrr": 0.875,
+    "retrieval_hit1": 0.75,
+    "retrieval_hit3": 1.0,
+    "retrieval_hit5": 1.0,
+    "retrieval_final_ndcg": 0.8968,
+    "retrieval_raw_ndcg": 0.8805,
+    "retrieval_recall": 1.0,
+    "retrieval_cases": 8,
+    "judge_scores": {
+      "helpfulness": null,
+      "beginner_clarity": null,
+      "faithfulness": null,
+      "mode_fit": null,
+      "tone": null
+    },
+    "judge_cases": 0,
+    "quality_weighted": 0.8783
+  },
+  "results": [
+    {
+      "id": "L3-001",
+      "layer": "L3",
+      "intent": "城市+偏好→跨库推荐",
+      "query": "深圳新手友好、能看海的短途线",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [],
+      "retrieval": {
+        "final_ndcg": 0.6934,
+        "raw_ndcg": 0.6934,
+        "mrr": 0.5,
+        "hit1": 0.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 2,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "塘朗山郊野公园",
+        "大南山步道",
+        "梅林后山绿道",
+        "银湖山郊野公园",
+        "马峦山郊野径"
+      ],
+      "answer": "很抱歉，当前候选线路中均未明确提及‘能看海’这一特征（如海景、海岸线、观海视野等），所有线路资料也未标注与海洋相关的景观或地标。梅林后山绿道、塘朗山、大南山、银湖山、马峦山这5条线路虽均为深圳新手友好短途线，但依据现有信息，无法确认哪条可看海。建议您尝试搜索‘深圳海边徒步’‘深圳海岸线步道’或‘深圳天文台/东西涌/较场尾’等关键词，或许能找到更匹配的临海路线。",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": false
+      },
+      "passed": false,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 2515,
+        "answer_ms": 3833,
+        "tokens": 1020
+      },
+      "elapsed_s": 6.4
+    },
+    {
+      "id": "L3-002",
+      "layer": "L3",
+      "intent": "城市+偏好→跨库推荐",
+      "query": "北京秋天看红叶的古道",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "百望山步道",
+        "天平山步道"
+      ],
+      "retrieval": {
+        "final_ndcg": 0.8503,
+        "raw_ndcg": 0.8503,
+        "mrr": 1.0,
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 1,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "亭溪岭古道",
+        "凤凰岭北线",
+        "天平山步道",
+        "百望山步道",
+        "黄葛古道"
+      ],
+      "answer": "为您推荐北京本地、适合新手秋天赏红叶的古道：百望山步道——位于北京海淀，往返3.37公里，石阶平整，秋季正宜；天平山步道虽在苏州，但资料明确标注是‘秋季赏枫的经典轻量路线’，0.66公里超轻松，红枫与古寺相映。黄葛古道在重庆，非北京；亭溪岭古道在宁波；凤凰岭北线强度中等且未提红叶或古道特征，故未推荐。",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 460,
+        "answer_ms": 4076,
+        "tokens": 1157
+      },
+      "elapsed_s": 4.6
+    },
+    {
+      "id": "L3-003",
+      "layer": "L3",
+      "intent": "意图+偏好（无城市）→跨库推荐",
+      "query": "带娃轻松的亲子徒步，别太累",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "小鱼山步道",
+        "小昆山步道",
+        "佘山登山道"
+      ],
+      "retrieval": {
+        "final_ndcg": 0.6309,
+        "raw_ndcg": 0.5,
+        "mrr": 0.5,
+        "hit1": 0.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 2,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "佘山登山道",
+        "凤凰岭北线",
+        "小昆山步道",
+        "小鱼山步道",
+        "马峦山郊野径"
+      ],
+      "answer": "带娃轻松徒步，推荐这三条：小鱼山步道（仅0.24km，3分钟登顶看海景）、小昆山步道（0.29km，4分钟登顶访读书台）、佘山登山道（2.3km，30分钟缓步上山，还能逛天文博物馆）。三者都坡度平缓、路面平整、耗时短，零基础家庭完全无压力～",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 513,
+        "answer_ms": 3562,
+        "tokens": 1477
+      },
+      "elapsed_s": 4.1
+    },
+    {
+      "id": "L3-004",
+      "layer": "L3",
+      "intent": "城市+季节偏好→跨库推荐",
+      "query": "成都周边避暑的环线",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "青城山前山步道",
+        "仰天窝健身步道"
+      ],
+      "retrieval": {
+        "final_ndcg": 1.0,
+        "raw_ndcg": 1.0,
+        "mrr": 1.0,
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 1,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "仰天窝健身步道",
+        "塘朗山郊野公园",
+        "大蜀山步道",
+        "青城山前山步道",
+        "香山鬼笑石步道"
+      ],
+      "answer": "为您推荐成都周边避暑环线：青城山前山步道（都江堰市），路线成熟、新手友好，约9.8公里；仰天窝健身步道（龙泉驿区）也适合初学者，约12公里，林道石阶清凉舒适。两条线路均位于成都，适宜季节含秋季，符合避暑+本地环线需求。大蜀山、塘朗山、鬼笑石分别在合肥、深圳、北京，不在成都周边，故未推荐。",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 465,
+        "answer_ms": 3459,
+        "tokens": 1024
+      },
+      "elapsed_s": 3.9
+    },
+    {
+      "id": "L3-005",
+      "layer": "L3",
+      "intent": "城市+难度→跨库推荐",
+      "query": "上海有哪些新手线路",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "小昆山步道",
+        "佘山登山道"
+      ],
+      "retrieval": {
+        "final_ndcg": 1.0,
+        "raw_ndcg": 1.0,
+        "mrr": 1.0,
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 1,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "九溪十八涧",
+        "佘山登山道",
+        "天平山步道",
+        "小昆山步道",
+        "百望山步道"
+      ],
+      "answer": "上海本地新手友好线路有：小昆山步道（仅0.29km，超短程，松江区景区步道，冬春适宜）；佘山登山道（约2.3km，松江区往返线，春秋季舒适）。九溪十八涧、天平山步道和百望山步道分别位于杭州、苏州和北京，不在上海范围内，暂不推荐。",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 431,
+        "answer_ms": 2899,
+        "tokens": 1069
+      },
+      "elapsed_s": 3.3
+    },
+    {
+      "id": "L3-006",
+      "layer": "L3",
+      "intent": "城市+场景→跨库推荐",
+      "query": "杭州西湖边轻松的短途线路",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "九溪十八涧",
+        "宝石山步道"
+      ],
+      "retrieval": {
+        "final_ndcg": 1.0,
+        "raw_ndcg": 1.0,
+        "mrr": 1.0,
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 1,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "东湖绿道",
+        "九溪十八涧",
+        "十里琅珰古道",
+        "宝石山步道",
+        "小鱼山步道"
+      ],
+      "answer": "为你推荐两条西湖边轻松短途线路：九溪十八涧——仅0.35公里、步行约5分钟，石板路+溪畔小径，全程无爬升，春秋季清幽宜人；宝石山步道——约1.52公里、耗时约20分钟，石阶与山径平缓，直达保俶塔，沿途可俯瞰断桥、白堤与西湖全景。两条都新手友好、紧邻西湖，符合‘轻松短途’需求。",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 464,
+        "answer_ms": 3939,
+        "tokens": 1327
+      },
+      "elapsed_s": 4.4
+    },
+    {
+      "id": "L3-007",
+      "layer": "L3",
+      "intent": "多城市候选+时长约束→跨库推荐",
+      "query": "泉州或者福州，半天能走完的线路",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "鼓岭登山古道",
+        "清源山轻徒步线"
+      ],
+      "retrieval": {
+        "final_ndcg": 1.0,
+        "raw_ndcg": 1.0,
+        "mrr": 1.0,
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 1,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "凤凰岭北线",
+        "厦门山海健康步道",
+        "梅林后山绿道",
+        "清源山轻徒步线",
+        "鼓岭登山古道"
+      ],
+      "answer": "推荐福州的鼓岭登山古道和泉州的清源山轻徒步线！鼓岭古道仅1.76公里、步行约23分钟，石阶与林道交替，坡缓路好，还能逛鼓岭度假村休息；清源山线更短，仅0.92公里、约12分钟，纯景区石阶，轻松无压力。两条都明确标注‘新手友好’，且都在您指定的福州或泉州范围内，半天时间绰绰有余～",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 520,
+        "answer_ms": 3537,
+        "tokens": 1314
+      },
+      "elapsed_s": 4.1
+    },
+    {
+      "id": "L3-008",
+      "layer": "L3",
+      "intent": "偏好+多城市→跨库推荐",
+      "query": "想看海但不想爬太久，青岛或厦门",
+      "review": false,
+      "mode": "recommend",
+      "expect_mode": "recommend",
+      "focus_route_id": null,
+      "expect_focus_route_id": null,
+      "recommended": [
+        "小鱼山步道",
+        "厦门山海健康步道"
+      ],
+      "retrieval": {
+        "final_ndcg": 1.0,
+        "raw_ndcg": 1.0,
+        "mrr": 1.0,
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "expected_rank": 1,
+        "expected_in_sources": true
+      },
+      "sources": [
+        "厦门山海健康步道",
+        "大黑山登山步道",
+        "宝石山步道",
+        "小鱼山步道",
+        "板障山步道"
+      ],
+      "answer": "推荐小鱼山步道和厦门山海健康步道！小鱼山步道在青岛，仅0.24公里、3分钟就能登顶览潮阁，轻松俯瞰红瓦绿树与碧海蓝天，超适合零基础新手。厦门山海健康步道在厦门，7公里空中钢构栈道，全程平缓无爬升，边走边赏山、海、城三重景观，节奏舒缓不累人。两条都符合‘看海+不爬太久’的需求，且分别位于你提到的青岛和厦门。",
+      "checks": {
+        "mode_ok": true,
+        "recommend_hit_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 448,
+        "answer_ms": 3866,
+        "tokens": 1425
+      },
+      "elapsed_s": 4.4
+    }
+  ]
+}

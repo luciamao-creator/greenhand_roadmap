@@ -1,12 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 注意：以下自定义规则写在 @tailwind 之后，同名类以这里的绿森林视觉为准 */
+:root {
+  /* ===== 绿森林设计语言（对齐 frontend-prototype-v1） ===== */
+  --bg: #f3f6f4;
+  --surface: rgba(255, 255, 255, 0.86);
+  --surface-strong: #ffffff;
+  --ink: #122018;
+  --muted: #6b7a70;
+  --line: rgba(18, 32, 24, 0.08);
+  --primary: #1d7c57;
+  --primary-soft: #e6f4ee;
+  --safe: #dff5e8;
+  --warn: #fff3d8;
+  --danger: #ffe6df;
+  --chip: #eef4f0;
+  --shadow: 0 18px 40px rgba(27, 57, 39, 0.08);
+  --radius-xl: 28px;
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+  --font-display: "Songti SC", "Noto Serif SC", "STSong", "Iowan Old Style", "Times New Roman", serif;
+  --font-ui: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
 html, body {
   height: 100%;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f9fafb;
-  color: #111827;
+  font-family: var(--font-ui);
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(126, 192, 156, 0.22), transparent 22%),
+    radial-gradient(circle at right, rgba(101, 134, 199, 0.18), transparent 18%),
+    linear-gradient(180deg, #eef3ef 0%, #e6ede8 100%);
+  background-attachment: fixed;
 }
 
 * {
@@ -22,6 +55,7 @@ button {
   font: inherit;
 }
 
+/* ===== 通用工具类 ===== */
 .block { display: block; }
 .flex { display: flex; }
 .grid { display: grid; }
@@ -42,52 +76,38 @@ button {
 .h-screen { height: 100vh; }
 .h-full { height: 100%; }
 .h-16 { height: 4rem; }
-.h-12 { height: 3rem; }
 .w-full { width: 100%; }
-.w-1\/2 { width: 50%; }
 .w-12 { width: 3rem; }
-.w-64 { width: 16rem; }
 .min-w-full { min-width: 100%; }
 
 .overflow-auto { overflow: auto; }
+.overflow-y-auto { overflow-y: auto; }
 .overflow-hidden { overflow: hidden; }
 
 .relative { position: relative; }
 .absolute { position: absolute; }
 .inset-0 { inset: 0; }
-.inset-6 { inset: 1.5rem; }
 .top-4 { top: 1rem; }
 .left-4 { left: 1rem; }
 .z-10 { z-index: 10; }
 
-.border { border: 1px solid #e5e7eb; }
-.border-b { border-bottom: 1px solid #e5e7eb; }
-.border-r { border-right: 1px solid #e5e7eb; }
-.border-gray-100 { border-color: #f3f4f6; }
-.border-gray-200 { border-color: #e5e7eb; }
-.border-red-300 { border-color: #fca5a5; }
-
 .rounded { border-radius: 0.25rem; }
-.rounded-md { border-radius: 0.375rem; }
-.rounded-lg { border-radius: 0.5rem; }
+.rounded-md { border-radius: var(--radius-sm); }
+.rounded-lg { border-radius: var(--radius-md); }
+.rounded-xl { border-radius: var(--radius-lg); }
+.rounded-2xl { border-radius: 20px; }
 .rounded-full { border-radius: 9999px; }
 
 .bg-white { background: #ffffff; }
 .bg-black { background: #000000; }
-.bg-gray-50 { background: #f9fafb; }
+.bg-gray-50 { background: #f3f4f4; }
 .bg-gray-100 { background: #f3f4f6; }
-.bg-gray-900 { background: #111827; }
-.bg-blue-50 { background: #eff6ff; }
-.bg-green-50 { background: #ecfdf5; }
-.bg-green-100 { background: #dcfce7; }
-.bg-yellow-100 { background: #fef9c3; }
-.bg-white\/90 { background: rgba(255, 255, 255, 0.9); }
-.bg-white\/95 { background: rgba(255, 255, 255, 0.95); }
 
 .text-left { text-align: left; }
 .text-center { text-align: center; }
-.text-xs { font-size: 0.75rem; line-height: 1rem; }
-.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.text-xs { font-size: 0.75rem; line-height: 1.1rem; }
+.text-sm { font-size: 0.875rem; line-height: 1.35rem; }
+.text-base { font-size: 1rem; line-height: 1.5rem; }
 .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
 .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
 .font-medium { font-weight: 500; }
@@ -95,82 +115,154 @@ button {
 .font-bold { font-weight: 700; }
 .uppercase { text-transform: uppercase; }
 .tracking-wider { letter-spacing: 0.05em; }
+.tracking-tight { letter-spacing: -0.03em; }
 .leading-5 { line-height: 1.25rem; }
 .leading-6 { line-height: 1.5rem; }
 
 .text-white { color: #ffffff; }
-.text-gray-400 { color: #9ca3af; }
-.text-gray-500 { color: #6b7280; }
-.text-gray-600 { color: #4b5563; }
-.text-gray-700 { color: #374151; }
-.text-gray-800 { color: #1f2937; }
-.text-gray-900 { color: #111827; }
-.text-red-500 { color: #ef4444; }
-.text-red-600 { color: #dc2626; }
-.text-red-700 { color: #b91c1c; }
-.text-blue-600 { color: #2563eb; }
-.text-blue-700 { color: #1d4ed8; }
-.text-blue-900 { color: #1e3a8a; }
-.text-green-700 { color: #15803d; }
-.text-green-800 { color: #166534; }
-.text-yellow-800 { color: #854d0e; }
+.text-ink { color: var(--ink); }
+.text-muted { color: var(--muted); }
+.text-primary { color: var(--primary); }
 
 .shadow-sm { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
-.shadow-inner { box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06); }
-.shadow-lg { box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); }
+.shadow { box-shadow: var(--shadow); }
+.shadow-lg { box-shadow: 0 20px 50px rgba(27, 57, 39, 0.12); }
 
 .p-3 { padding: 0.75rem; }
 .p-4 { padding: 1rem; }
 .p-5 { padding: 1.25rem; }
-.p-6 { padding: 1.5rem; }
-.p-8 { padding: 2rem; }
-.px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+.px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
 .px-4 { padding-left: 1rem; padding-right: 1rem; }
-.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
-.px-8 { padding-left: 2rem; padding-right: 2rem; }
 .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
 .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.py-2\.5 { padding-top: 0.625rem; padding-bottom: 0.625rem; }
 .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
 .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
-.py-12 { padding-top: 3rem; padding-bottom: 3rem; }
-.pb-2 { padding-bottom: 0.5rem; }
 
 .mt-1 { margin-top: 0.25rem; }
 .mt-2 { margin-top: 0.5rem; }
 .mt-3 { margin-top: 0.75rem; }
+.mt-4 { margin-top: 1rem; }
 .mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 0.75rem; }
 .mb-4 { margin-bottom: 1rem; }
-.mb-6 { margin-bottom: 1.5rem; }
 
+.gap-1 { gap: 0.25rem; }
 .gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 0.75rem; }
 .gap-4 { gap: 1rem; }
 .space-y-2 > * + * { margin-top: 0.5rem; }
+.space-y-3 > * + * { margin-top: 0.75rem; }
 .space-y-4 > * + * { margin-top: 1rem; }
 
 .grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
 .whitespace-nowrap { white-space: nowrap; }
-.opacity-50 { opacity: 0.5; }
+.opacity-60 { opacity: 0.6; }
 .pointer-events-none { pointer-events: none; }
-.backdrop-blur-sm { backdrop-filter: blur(4px); }
-.transition-colors { transition: color 0.15s ease, background-color 0.15s ease; }
+.backdrop-blur { backdrop-filter: blur(18px); }
+.transition { transition: 180ms ease; }
 
-.divide-y > :not([hidden]) ~ :not([hidden]) {
-  border-top: 1px solid #e5e7eb;
+/* ===== 绿森林品牌令牌 ===== */
+.bg-brand { background: var(--primary); }
+.text-brand { color: var(--primary); }
+.border-brand { border-color: rgba(29, 124, 87, 0.28); }
+.bg-brand-soft { background: var(--primary-soft); }
+
+/* 毛玻璃卡片 */
+.frost {
+  background: var(--surface);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+.frost-strong {
+  background: var(--surface-strong);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: var(--radius-md);
+  box-shadow: 0 12px 30px rgba(18, 32, 24, 0.05);
 }
 
-.divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
-  border-color: #e5e7eb;
+/* 衬线标题 */
+.serif { font-family: var(--font-display); }
+
+/* 胶囊标签 */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  line-height: 16px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.chip-brand { background: var(--primary-soft); color: var(--primary); border: 1px solid rgba(29, 124, 87, 0.2); }
+.chip-emerald { background: var(--safe); color: #15803d; border: 1px solid rgba(22, 163, 74, 0.2); }
+.chip-safe { background: var(--safe); color: #15803d; border: 1px solid rgba(22, 163, 74, 0.2); }
+.chip-warn { background: var(--warn); color: #92680a; border: 1px solid rgba(146, 104, 10, 0.18); }
+.chip-blue { background: #e0f2fe; color: #0369a1; border: 1px solid rgba(2, 132, 199, 0.18); }
+.chip-danger { background: var(--danger); color: #b91c1c; border: 1px solid rgba(185, 28, 28, 0.18); }
+.chip-gray { background: var(--chip); color: #4b5563; border: 1px solid transparent; }
+
+/* 按钮 */
+.btn-primary {
+  background: var(--primary);
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  box-shadow: 0 14px 30px rgba(29, 124, 87, 0.22);
+  font-weight: 600;
+}
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  font-weight: 600;
 }
 
-.hover\:bg-gray-50:hover {
-  background: #f9fafb;
+/* eyebrow 小字副标题 */
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
-.hover\:bg-gray-800:hover {
-  background: #1f2937;
+/* 隐藏滚动条（横向滚动容器） */
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.hover\:text-blue-900:hover {
-  color: #1e3a8a;
+/* ===== 移动端适配 ===== */
+:root {
+  color-scheme: light;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+/* 输入框 16px，避免 iOS Safari 聚焦时自动放大 */
+input,
+textarea,
+select {
+  font-size: 16px;
+}
+
+/* 出行清单抽屉上滑动画 */
+@keyframes checklist-up {
+  from { transform: translateY(24%); opacity: 0.6; }
+  to { transform: translateY(0); opacity: 1; }
 }

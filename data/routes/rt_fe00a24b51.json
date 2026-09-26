@@ -1,0 +1,370 @@
+{
+  "schema_version": "1.0",
+  "route_id": "rt_fe00a24b51",
+  "built_at": "2026-09-15T17:41:48+00:00",
+  "base_facts": {
+    "route_name": "抱犊寨登山步道",
+    "province_name": "河北",
+    "city_name": "石家庄",
+    "area_name": "鹿泉区",
+    "start_point_name": "抱犊寨景区入口",
+    "end_point_name": "抱犊寨南天门",
+    "route_type": "out_and_back",
+    "route_type_label": "往返线",
+    "difficulty_band": "moderate",
+    "surface_tags": [
+      "登山石阶"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "map_search_keyword": "石家庄 鹿泉 抱犊寨 南天门"
+  },
+  "narrative": {
+    "summary_short": "台阶密集的太行山前线路，山顶为开阔寨台",
+    "beginner_fit_reason": "台阶蜿蜒可控，全程仅需25分钟，体力不支可原路返回或乘缆车下山",
+    "search_text": "抱犊寨登山步道 石家庄鹿泉区 往返线 登山石阶 中等强度 春季秋季适宜 1.86公里 0.41小时 约25分钟 南天门 景区入口 缆车可选",
+    "description": "抱犊寨登山步道位于石家庄鹿泉区，是一条约1.86公里的往返石阶线路，从景区入口直通南天门，全程约25分钟，适合春秋季轻装徒步。台阶虽密集但走势蜿蜒、坡度可控，沿途有休息点，体力不足时可随时折返或选择缆车下山。山顶寨台开阔，视野极佳，是新手体验太行山前地貌的理想入门线路。",
+    "source": "agent_prefill_qwen_plus"
+  },
+  "geometry": {
+    "start_point": {
+      "lng": 114.277474,
+      "lat": 38.087254
+    },
+    "end_point": {
+      "lng": 114.27072,
+      "lat": 38.091933
+    },
+    "polyline": [],
+    "geocode_status": "ok",
+    "note": "坐标必须由高德 Web服务 API 回填，禁止在未核验前写入任何坐标",
+    "geocode_detail": {
+      "start": {
+        "status": "ok",
+        "method": "geocode",
+        "query": "石家庄鹿泉区抱犊寨景区入口",
+        "matched_address": "河北省石家庄市鹿泉区抱犊寨",
+        "level": "村庄",
+        "returned_province": "河北省",
+        "returned_city": "石家庄市",
+        "returned_district": "鹿泉区",
+        "candidate_count": 1
+      },
+      "end": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "鹿泉区抱犊寨南天门",
+        "matched_name": "抱犊寨风景区-南天门",
+        "matched_address": "抱犊寨风景区内(西北角)",
+        "poi_type": "风景名胜;风景名胜;风景名胜",
+        "returned_city": "石家庄市",
+        "returned_district": "鹿泉区",
+        "candidate_count": 3
+      },
+      "provider": "amap-webservice-geocode-v3",
+      "synced_at": "2026-09-15T17:48:39.349937+00:00"
+    },
+    "amap_walking_path": [
+      {
+        "lng": 114.277313,
+        "lat": 38.087309
+      },
+      {
+        "lng": 114.277357,
+        "lat": 38.087387
+      },
+      {
+        "lng": 114.277357,
+        "lat": 38.087387
+      },
+      {
+        "lng": 114.277626,
+        "lat": 38.087635
+      },
+      {
+        "lng": 114.277721,
+        "lat": 38.087786
+      },
+      {
+        "lng": 114.277721,
+        "lat": 38.087986
+      },
+      {
+        "lng": 114.2777,
+        "lat": 38.088034
+      },
+      {
+        "lng": 114.277483,
+        "lat": 38.088125
+      },
+      {
+        "lng": 114.277431,
+        "lat": 38.088155
+      },
+      {
+        "lng": 114.277405,
+        "lat": 38.08819
+      },
+      {
+        "lng": 114.277431,
+        "lat": 38.088312
+      },
+      {
+        "lng": 114.277413,
+        "lat": 38.088364
+      },
+      {
+        "lng": 114.277344,
+        "lat": 38.088398
+      },
+      {
+        "lng": 114.276827,
+        "lat": 38.08862
+      },
+      {
+        "lng": 114.276532,
+        "lat": 38.088802
+      },
+      {
+        "lng": 114.276324,
+        "lat": 38.088941
+      },
+      {
+        "lng": 114.276276,
+        "lat": 38.089002
+      },
+      {
+        "lng": 114.276133,
+        "lat": 38.089297
+      },
+      {
+        "lng": 114.276029,
+        "lat": 38.089366
+      },
+      {
+        "lng": 114.27549,
+        "lat": 38.089497
+      },
+      {
+        "lng": 114.274874,
+        "lat": 38.089861
+      },
+      {
+        "lng": 114.274874,
+        "lat": 38.089861
+      },
+      {
+        "lng": 114.274544,
+        "lat": 38.090052
+      },
+      {
+        "lng": 114.273806,
+        "lat": 38.090577
+      },
+      {
+        "lng": 114.272496,
+        "lat": 38.091246
+      },
+      {
+        "lng": 114.271931,
+        "lat": 38.09148
+      },
+      {
+        "lng": 114.271931,
+        "lat": 38.09148
+      },
+      {
+        "lng": 114.271914,
+        "lat": 38.091528
+      },
+      {
+        "lng": 114.271871,
+        "lat": 38.091545
+      },
+      {
+        "lng": 114.271654,
+        "lat": 38.09145
+      },
+      {
+        "lng": 114.271563,
+        "lat": 38.091467
+      },
+      {
+        "lng": 114.271558,
+        "lat": 38.091497
+      },
+      {
+        "lng": 114.271589,
+        "lat": 38.091515
+      },
+      {
+        "lng": 114.271654,
+        "lat": 38.091532
+      },
+      {
+        "lng": 114.271654,
+        "lat": 38.091532
+      },
+      {
+        "lng": 114.271563,
+        "lat": 38.091775
+      },
+      {
+        "lng": 114.271563,
+        "lat": 38.091775
+      },
+      {
+        "lng": 114.27148,
+        "lat": 38.091823
+      },
+      {
+        "lng": 114.271402,
+        "lat": 38.091836
+      },
+      {
+        "lng": 114.271385,
+        "lat": 38.091723
+      },
+      {
+        "lng": 114.271385,
+        "lat": 38.091723
+      },
+      {
+        "lng": 114.271372,
+        "lat": 38.091654
+      },
+      {
+        "lng": 114.271302,
+        "lat": 38.091641
+      },
+      {
+        "lng": 114.271089,
+        "lat": 38.091797
+      },
+      {
+        "lng": 114.271089,
+        "lat": 38.091797
+      },
+      {
+        "lng": 114.270829,
+        "lat": 38.091953
+      },
+      {
+        "lng": 114.270829,
+        "lat": 38.091953
+      },
+      {
+        "lng": 114.270747,
+        "lat": 38.09191
+      }
+    ],
+    "amap_walking_note": "高德步行路网轨迹，非实地山野轨迹，仅供示意"
+  },
+  "metrics": {
+    "distance_km": 1.86,
+    "ascent_m": null,
+    "duration_hours": 0.41,
+    "verification_status": "verified_amap_walking",
+    "note": "distance_km/duration_hours 来自高德步行路径规划（往返全程(2×起终点)，路网距离，真实可溯源）；ascent_m 高德无高程 API，暂缺，待 GPX/设备轨迹补充"
+  },
+  "provenance": {
+    "base_facts": {
+      "source": "manual_seed",
+      "seed_file": "route-seeds-40.json"
+    },
+    "narrative": {
+      "source": "agent_prefill_qwen_plus",
+      "model": "qwen-plus",
+      "run_id": "20260915T175020",
+      "verified": false,
+      "note": "LLM 扩写描述性文本，未引入新事实；数字仅来自 metrics"
+    },
+    "geometry": {
+      "source": "pending_amap_web_service",
+      "verified": false
+    },
+    "metrics": {
+      "source": "amap_webservice_walking",
+      "verified": true,
+      "note": "往返全程(2×起终点) from amap walking route"
+    }
+  },
+  "route_nodes": [
+    {
+      "node_id": "rtfe00a24b51-node-01",
+      "node_type": "checkpoint",
+      "node_name": "抱犊寨登山步道 进入主线判断点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          114.276532,
+          38.088802
+        ]
+      },
+      "stage_order": 1,
+      "distance_from_start_m": 235,
+      "trigger_radius_m": 36,
+      "navigation_hint": "从 抱犊寨景区入口 出发后，优先沿最连续、最明确的主线前进，在这里确认自己仍在主游线上。",
+      "wrong_choice_hint": "如果前方出现明显下切小路、施工便道或回头支线，先停一下再回到最宽主线。",
+      "display_priority": 72
+    },
+    {
+      "node_id": "rtfe00a24b51-node-02",
+      "node_type": "view",
+      "node_name": "抱犊寨登山步道 中段观景停留点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          114.273806,
+          38.090577
+        ]
+      },
+      "stage_order": 2,
+      "distance_from_start_m": 554,
+      "trigger_radius_m": 38,
+      "navigation_hint": "到这里后可短暂停留确认景观参照，再继续沿主游线推进。",
+      "wrong_choice_hint": "不要被临时拍照停留区带入回头流线。",
+      "display_priority": 80
+    },
+    {
+      "node_id": "rtfe00a24b51-node-03",
+      "node_type": "fork",
+      "node_name": "抱犊寨登山步道 关键岔点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          114.271931,
+          38.09148
+        ]
+      },
+      "stage_order": 3,
+      "distance_from_start_m": 746,
+      "trigger_radius_m": 40,
+      "navigation_hint": "在关键岔点优先保持朝 抱犊寨南天门 的主方向推进，按更稳定的主线选路。",
+      "wrong_choice_hint": "景区支路、商业分流线或回头线不要误入。",
+      "display_priority": 88
+    }
+  ],
+  "route_risk_points": [],
+  "route_exit_points": [
+    {
+      "exit_point_id": "rtfe00a24b51-exit-01",
+      "exit_type": "return",
+      "exit_name": "抱犊寨景区入口 原路折返点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          114.27549,
+          38.089497
+        ]
+      },
+      "stage_order": 1,
+      "exit_condition_text": "若体力掉速、天气转差或同行人状态不稳，可在这里停止继续压后半程。",
+      "exit_action_text": "沿来线原路返回 抱犊寨景区入口，不要继续消耗后续路线。",
+      "exit_priority": "primary"
+    }
+  ],
+  "cover_image": "/covers/rt_fe00a24b51.jpg"
+}

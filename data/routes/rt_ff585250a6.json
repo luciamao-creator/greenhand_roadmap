@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "route_id": "rt_ff585250a6",
+  "built_at": "2026-09-15T17:41:48+00:00",
+  "base_facts": {
+    "route_name": "小鱼山步道",
+    "province_name": "山东",
+    "city_name": "青岛",
+    "area_name": "市南区",
+    "start_point_name": "小鱼山公园门",
+    "end_point_name": "小鱼山顶(览潮阁)",
+    "route_type": "out_and_back",
+    "route_type_label": "往返线",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区石阶"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "map_search_keyword": "青岛 市南 小鱼山公园"
+  },
+  "narrative": {
+    "summary_short": "青岛老城红瓦绿树观海小山",
+    "beginner_fit_reason": "全程0.24公里、耗时仅0.05小时（约3分钟），坡度平缓、石阶规整，无体能门槛。",
+    "search_text": "小鱼山步道 青岛市南区 小鱼山公园门到览潮阁 往返线 景区石阶 新手友好 春季秋季适宜 0.24公里 0.05小时 红瓦绿树 观海",
+    "description": "小鱼山步道是青岛老城区一条超短而友好的登高观海路线，从公园门出发，沿平缓石阶轻松上行，约2-3分钟即可抵达山顶览潮阁，俯瞰红瓦绿树与碧海蓝天。全程仅0.24公里，无需体力储备，特别适合初次尝试徒步的新手或带老人小孩的家庭。",
+    "source": "agent_prefill_qwen_plus"
+  },
+  "geometry": {
+    "start_point": {
+      "lng": 120.336558,
+      "lat": 36.058765
+    },
+    "end_point": {
+      "lng": 120.33649,
+      "lat": 36.059666
+    },
+    "polyline": [],
+    "geocode_status": "ok",
+    "note": "坐标必须由高德 Web服务 API 回填，禁止在未核验前写入任何坐标",
+    "geocode_detail": {
+      "start": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "市南区小鱼山公园门",
+        "matched_name": "小鱼山",
+        "matched_address": "八大关街道福山支路24号",
+        "poi_type": "风景名胜;风景名胜;国家级景点",
+        "returned_city": "青岛市",
+        "returned_district": "市南区",
+        "candidate_count": 5
+      },
+      "end": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "青岛 市南 小鱼山公园",
+        "matched_name": "小鱼山-售票处",
+        "matched_address": "福山支路24号",
+        "poi_type": "生活服务;售票处;公园景点售票处",
+        "returned_city": "青岛市",
+        "returned_district": "市南区",
+        "candidate_count": 4
+      },
+      "provider": "amap-webservice-geocode-v3",
+      "synced_at": "2026-09-15T17:49:02.247283+00:00"
+    },
+    "amap_walking_path": [
+      {
+        "lng": 120.336497,
+        "lat": 36.058859
+      },
+      {
+        "lng": 120.336519,
+        "lat": 36.058867
+      },
+      {
+        "lng": 120.336701,
+        "lat": 36.059023
+      },
+      {
+        "lng": 120.33671,
+        "lat": 36.059093
+      },
+      {
+        "lng": 120.336706,
+        "lat": 36.059149
+      },
+      {
+        "lng": 120.336667,
+        "lat": 36.059223
+      },
+      {
+        "lng": 120.336667,
+        "lat": 36.059258
+      },
+      {
+        "lng": 120.336641,
+        "lat": 36.05931
+      },
+      {
+        "lng": 120.336641,
+        "lat": 36.05931
+      },
+      {
+        "lng": 120.336641,
+        "lat": 36.05934
+      },
+      {
+        "lng": 120.336641,
+        "lat": 36.059353
+      },
+      {
+        "lng": 120.336641,
+        "lat": 36.059353
+      },
+      {
+        "lng": 120.336636,
+        "lat": 36.059371
+      },
+      {
+        "lng": 120.336606,
+        "lat": 36.059405
+      },
+      {
+        "lng": 120.336445,
+        "lat": 36.059501
+      },
+      {
+        "lng": 120.336441,
+        "lat": 36.059497
+      },
+      {
+        "lng": 120.336502,
+        "lat": 36.059544
+      },
+      {
+        "lng": 120.336545,
+        "lat": 36.059601
+      },
+      {
+        "lng": 120.336545,
+        "lat": 36.059601
+      },
+      {
+        "lng": 120.336602,
+        "lat": 36.059696
+      },
+      {
+        "lng": 120.336602,
+        "lat": 36.059696
+      },
+      {
+        "lng": 120.33651,
+        "lat": 36.059718
+      }
+    ],
+    "amap_walking_note": "高德步行路网轨迹，非实地山野轨迹，仅供示意"
+  },
+  "metrics": {
+    "distance_km": 0.24,
+    "ascent_m": null,
+    "duration_hours": 0.05,
+    "verification_status": "verified_amap_walking",
+    "note": "distance_km/duration_hours 来自高德步行路径规划（往返全程(2×起终点)，路网距离，真实可溯源）；ascent_m 高德无高程 API，暂缺，待 GPX/设备轨迹补充"
+  },
+  "provenance": {
+    "base_facts": {
+      "source": "manual_seed",
+      "seed_file": "route-seeds-40.json"
+    },
+    "narrative": {
+      "source": "agent_prefill_qwen_plus",
+      "model": "qwen-plus",
+      "run_id": "20260915T175020",
+      "verified": false,
+      "note": "LLM 扩写描述性文本，未引入新事实；数字仅来自 metrics"
+    },
+    "geometry": {
+      "source": "pending_amap_web_service",
+      "verified": false
+    },
+    "metrics": {
+      "source": "amap_webservice_walking",
+      "verified": true,
+      "note": "往返全程(2×起终点) from amap walking route"
+    }
+  },
+  "route_nodes": [
+    {
+      "node_id": "rtff585250a6-node-01",
+      "node_type": "checkpoint",
+      "node_name": "小鱼山步道 进入主线判断点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          120.33671,
+          36.059093
+        ]
+      },
+      "stage_order": 1,
+      "distance_from_start_m": 34,
+      "trigger_radius_m": 36,
+      "navigation_hint": "从 小鱼山公园门 出发后，优先沿最连续、最明确的主线前进，在这里确认自己仍在主游线上。",
+      "wrong_choice_hint": "如果前方出现明显下切小路、施工便道或回头支线，先停一下再回到最宽主线。",
+      "display_priority": 72
+    }
+  ],
+  "route_risk_points": [],
+  "route_exit_points": [],
+  "cover_image": "/covers/rt_ff585250a6.jpg"
+}

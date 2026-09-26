@@ -1,0 +1,386 @@
+{
+  "schema_version": "1.0",
+  "route_id": "rt_91c8f35c6f",
+  "built_at": "2026-09-15T17:41:48+00:00",
+  "base_facts": {
+    "route_name": "鼓岭登山古道",
+    "province_name": "福建",
+    "city_name": "福州",
+    "area_name": "晋安区",
+    "start_point_name": "鼓岭旅游度假区游客中心",
+    "end_point_name": "鼓岭柱里步道口",
+    "route_type": "out_and_back",
+    "route_type_label": "往返线",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "古道石阶",
+      "林道"
+    ],
+    "season_tags": [
+      "夏季",
+      "秋季"
+    ],
+    "map_search_keyword": "福州 鼓岭登山古道"
+  },
+  "narrative": {
+    "summary_short": "福州传统避暑徒步线，古道与度假村落交错",
+    "beginner_fit_reason": "路线短、坡度缓、古道维护良好，中途经过鼓岭度假村落可随时补给休息。",
+    "search_text": "鼓岭登山古道 福州晋安区 往返线 新手友好 古道石阶 林道 夏季秋季适宜 1.76公里 0.39小时 鼓岭旅游度假区游客中心起 柱里步道口止",
+    "description": "鼓岭登山古道是一条位于福州晋安区的短途新手徒步线，全程约1.76公里，步行仅需约0.39小时，石阶古道与林道交替，沿途可感受百年避暑胜地的历史气息与山间清凉。",
+    "source": "agent_prefill_qwen_plus"
+  },
+  "geometry": {
+    "start_point": {
+      "lng": 119.396406,
+      "lat": 26.090108
+    },
+    "end_point": {
+      "lng": 119.401917,
+      "lat": 26.089164
+    },
+    "polyline": [],
+    "geocode_status": "ok",
+    "note": "坐标必须由高德 Web服务 API 回填，禁止在未核验前写入任何坐标",
+    "geocode_detail": {
+      "start": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "晋安区鼓岭旅游度假区游客中心",
+        "matched_name": "鼓岭旅游度假区游客服务中心",
+        "matched_address": "宦溪镇宜夏村梁厝2号",
+        "poi_type": "生活服务;信息咨询中心;服务中心",
+        "returned_city": "福州市",
+        "returned_district": "晋安区",
+        "candidate_count": 1
+      },
+      "end": {
+        "status": "ok",
+        "method": "geocode",
+        "query": "福州晋安区鼓岭柱里步道口",
+        "matched_address": "福建省福州市晋安区鼓岭柱里",
+        "level": "村庄",
+        "returned_province": "福建省",
+        "returned_city": "福州市",
+        "returned_district": "晋安区",
+        "candidate_count": 1
+      },
+      "provider": "amap-webservice-geocode-v3",
+      "synced_at": "2026-09-15T17:45:08.416736+00:00"
+    },
+    "amap_walking_path": [
+      {
+        "lng": 119.396293,
+        "lat": 26.089987
+      },
+      {
+        "lng": 119.396311,
+        "lat": 26.089978
+      },
+      {
+        "lng": 119.396311,
+        "lat": 26.089978
+      },
+      {
+        "lng": 119.396489,
+        "lat": 26.089835
+      },
+      {
+        "lng": 119.396749,
+        "lat": 26.089553
+      },
+      {
+        "lng": 119.396806,
+        "lat": 26.08954
+      },
+      {
+        "lng": 119.396918,
+        "lat": 26.08954
+      },
+      {
+        "lng": 119.397079,
+        "lat": 26.089588
+      },
+      {
+        "lng": 119.397079,
+        "lat": 26.089588
+      },
+      {
+        "lng": 119.397166,
+        "lat": 26.089201
+      },
+      {
+        "lng": 119.397166,
+        "lat": 26.089197
+      },
+      {
+        "lng": 119.397257,
+        "lat": 26.08928
+      },
+      {
+        "lng": 119.397348,
+        "lat": 26.089475
+      },
+      {
+        "lng": 119.397348,
+        "lat": 26.089475
+      },
+      {
+        "lng": 119.397461,
+        "lat": 26.08977
+      },
+      {
+        "lng": 119.397483,
+        "lat": 26.089787
+      },
+      {
+        "lng": 119.397483,
+        "lat": 26.089787
+      },
+      {
+        "lng": 119.398034,
+        "lat": 26.090004
+      },
+      {
+        "lng": 119.39819,
+        "lat": 26.090026
+      },
+      {
+        "lng": 119.398286,
+        "lat": 26.090009
+      },
+      {
+        "lng": 119.398464,
+        "lat": 26.089926
+      },
+      {
+        "lng": 119.398555,
+        "lat": 26.089835
+      },
+      {
+        "lng": 119.398585,
+        "lat": 26.089701
+      },
+      {
+        "lng": 119.398585,
+        "lat": 26.08941
+      },
+      {
+        "lng": 119.398585,
+        "lat": 26.089405
+      },
+      {
+        "lng": 119.398611,
+        "lat": 26.089336
+      },
+      {
+        "lng": 119.39872,
+        "lat": 26.089271
+      },
+      {
+        "lng": 119.39872,
+        "lat": 26.089271
+      },
+      {
+        "lng": 119.398832,
+        "lat": 26.08921
+      },
+      {
+        "lng": 119.399392,
+        "lat": 26.088997
+      },
+      {
+        "lng": 119.39941,
+        "lat": 26.088989
+      },
+      {
+        "lng": 119.399939,
+        "lat": 26.088867
+      },
+      {
+        "lng": 119.400087,
+        "lat": 26.088845
+      },
+      {
+        "lng": 119.400087,
+        "lat": 26.088845
+      },
+      {
+        "lng": 119.400295,
+        "lat": 26.088845
+      },
+      {
+        "lng": 119.400295,
+        "lat": 26.088845
+      },
+      {
+        "lng": 119.400473,
+        "lat": 26.088867
+      },
+      {
+        "lng": 119.400577,
+        "lat": 26.088906
+      },
+      {
+        "lng": 119.401133,
+        "lat": 26.089141
+      },
+      {
+        "lng": 119.401628,
+        "lat": 26.089475
+      },
+      {
+        "lng": 119.401628,
+        "lat": 26.089475
+      },
+      {
+        "lng": 119.401827,
+        "lat": 26.08964
+      },
+      {
+        "lng": 119.401827,
+        "lat": 26.08964
+      },
+      {
+        "lng": 119.401953,
+        "lat": 26.089631
+      },
+      {
+        "lng": 119.401953,
+        "lat": 26.089631
+      },
+      {
+        "lng": 119.402409,
+        "lat": 26.089566
+      },
+      {
+        "lng": 119.402457,
+        "lat": 26.089544
+      },
+      {
+        "lng": 119.402457,
+        "lat": 26.08954
+      },
+      {
+        "lng": 119.402487,
+        "lat": 26.089484
+      },
+      {
+        "lng": 119.402474,
+        "lat": 26.089414
+      },
+      {
+        "lng": 119.402457,
+        "lat": 26.089388
+      },
+      {
+        "lng": 119.402292,
+        "lat": 26.089314
+      },
+      {
+        "lng": 119.402161,
+        "lat": 26.089201
+      },
+      {
+        "lng": 119.402161,
+        "lat": 26.089201
+      },
+      {
+        "lng": 119.402062,
+        "lat": 26.089123
+      },
+      {
+        "lng": 119.402062,
+        "lat": 26.089123
+      }
+    ],
+    "amap_walking_note": "高德步行路网轨迹，非实地山野轨迹，仅供示意"
+  },
+  "metrics": {
+    "distance_km": 1.76,
+    "ascent_m": null,
+    "duration_hours": 0.39,
+    "verification_status": "verified_amap_walking",
+    "note": "distance_km/duration_hours 来自高德步行路径规划（往返全程(2×起终点)，路网距离，真实可溯源）；ascent_m 高德无高程 API，暂缺，待 GPX/设备轨迹补充"
+  },
+  "provenance": {
+    "base_facts": {
+      "source": "manual_seed",
+      "seed_file": "route-seeds-40.json"
+    },
+    "narrative": {
+      "source": "agent_prefill_qwen_plus",
+      "model": "qwen-plus",
+      "run_id": "20260915T175020",
+      "verified": false,
+      "note": "LLM 扩写描述性文本，未引入新事实；数字仅来自 metrics"
+    },
+    "geometry": {
+      "source": "pending_amap_web_service",
+      "verified": false
+    },
+    "metrics": {
+      "source": "amap_webservice_walking",
+      "verified": true,
+      "note": "往返全程(2×起终点) from amap walking route"
+    }
+  },
+  "route_nodes": [
+    {
+      "node_id": "rt91c8f35c6f-node-01",
+      "node_type": "checkpoint",
+      "node_name": "鼓岭登山古道 进入主线判断点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          119.397461,
+          26.08977
+        ]
+      },
+      "stage_order": 1,
+      "distance_from_start_m": 216,
+      "trigger_radius_m": 36,
+      "navigation_hint": "从 鼓岭旅游度假区游客中心 出发后，优先沿最连续、最明确的主线前进，在这里确认自己仍在主游线上。",
+      "wrong_choice_hint": "如果前方出现明显下切小路、施工便道或回头支线，先停一下再回到最宽主线。",
+      "display_priority": 72
+    },
+    {
+      "node_id": "rt91c8f35c6f-node-02",
+      "node_type": "key",
+      "node_name": "鼓岭登山古道 中段节奏确认点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          119.399392,
+          26.088997
+        ]
+      },
+      "stage_order": 2,
+      "distance_from_start_m": 481,
+      "trigger_radius_m": 38,
+      "navigation_hint": "到这里确认体力、补水和方向，继续沿主步道推进，不要被次级岔路带偏。",
+      "wrong_choice_hint": "不要追着看起来更近的土路或野路切线走。",
+      "display_priority": 80
+    },
+    {
+      "node_id": "rt91c8f35c6f-node-03",
+      "node_type": "fork",
+      "node_name": "鼓岭登山古道 关键岔点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          119.401628,
+          26.089475
+        ]
+      },
+      "stage_order": 3,
+      "distance_from_start_m": 726,
+      "trigger_radius_m": 40,
+      "navigation_hint": "在关键岔点优先保持朝 鼓岭柱里步道口 的主方向推进，按更稳定的主线选路。",
+      "wrong_choice_hint": "维护便道、下降过快的小路或野路不要贸然进入。",
+      "display_priority": 88
+    }
+  ],
+  "route_risk_points": [],
+  "route_exit_points": [],
+  "cover_image": "/covers/rt_91c8f35c6f.jpg"
+}

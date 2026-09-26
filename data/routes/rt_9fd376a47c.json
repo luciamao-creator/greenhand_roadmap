@@ -1,0 +1,486 @@
+{
+  "schema_version": "1.0",
+  "route_id": "rt_9fd376a47c",
+  "built_at": "2026-09-15T17:41:48+00:00",
+  "base_facts": {
+    "route_name": "塘朗山郊野公园",
+    "province_name": "广东",
+    "city_name": "深圳",
+    "area_name": "南山区",
+    "start_point_name": "塘朗山龙珠门",
+    "end_point_name": "塘朗山极目阁",
+    "route_type": "out_and_back",
+    "route_type_label": "往返线",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "盘山公路",
+      "石阶"
+    ],
+    "season_tags": [
+      "秋季",
+      "冬季"
+    ],
+    "map_search_keyword": "深圳 南山 塘朗山郊野公园 龙珠门"
+  },
+  "narrative": {
+    "summary_short": "成熟郊野公园线路，可俯瞰深圳湾与城市天际线",
+    "beginner_fit_reason": "路线短、坡度平缓，可灵活选择盘山公路降低强度，是深圳本地新手练手首选。",
+    "search_text": "塘朗山郊野公园 往返线 新手友好 龙珠门到极目阁 盘山公路 石阶 秋季冬季适宜 3.11公里 0.69小时 深圳南山区",
+    "description": "这是一条位于深圳南山区塘朗山郊野公园内的经典新手徒步线，从龙珠门出发，沿盘山公路与石阶缓步上行至极目阁，全程约3.11公里，耗时约0.69小时（约41分钟），视野开阔，可俯瞰深圳湾与城市天际线。",
+    "source": "agent_prefill_qwen_plus"
+  },
+  "geometry": {
+    "start_point": {
+      "lng": 113.982175,
+      "lat": 22.564375
+    },
+    "end_point": {
+      "lng": 113.986115,
+      "lat": 22.573356
+    },
+    "polyline": [],
+    "geocode_status": "ok",
+    "note": "坐标必须由高德 Web服务 API 回填，禁止在未核验前写入任何坐标",
+    "geocode_detail": {
+      "start": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "南山区塘朗山龙珠门",
+        "matched_name": "龙珠门",
+        "matched_address": "龙珠六路与龙苑路交叉口北200米",
+        "poi_type": "风景名胜;风景名胜;风景名胜",
+        "returned_city": "深圳市",
+        "returned_district": "南山区",
+        "candidate_count": 5
+      },
+      "end": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "南山区塘朗山极目阁",
+        "matched_name": "塘朗山公园-极目阁",
+        "matched_address": "塘朗山郊野公园山顶",
+        "poi_type": "风景名胜;风景名胜相关;旅游景点",
+        "returned_city": "深圳市",
+        "returned_district": "南山区",
+        "candidate_count": 5
+      },
+      "provider": "amap-webservice-geocode-v3",
+      "synced_at": "2026-09-15T17:45:54.759226+00:00"
+    },
+    "amap_walking_path": [
+      {
+        "lng": 113.982261,
+        "lat": 22.564362
+      },
+      {
+        "lng": 113.982266,
+        "lat": 22.564392
+      },
+      {
+        "lng": 113.982248,
+        "lat": 22.564579
+      },
+      {
+        "lng": 113.982248,
+        "lat": 22.564579
+      },
+      {
+        "lng": 113.982483,
+        "lat": 22.564605
+      },
+      {
+        "lng": 113.982483,
+        "lat": 22.564605
+      },
+      {
+        "lng": 113.982635,
+        "lat": 22.56454
+      },
+      {
+        "lng": 113.982678,
+        "lat": 22.564531
+      },
+      {
+        "lng": 113.98276,
+        "lat": 22.564518
+      },
+      {
+        "lng": 113.982839,
+        "lat": 22.564527
+      },
+      {
+        "lng": 113.983034,
+        "lat": 22.564575
+      },
+      {
+        "lng": 113.983103,
+        "lat": 22.564601
+      },
+      {
+        "lng": 113.983186,
+        "lat": 22.564644
+      },
+      {
+        "lng": 113.983225,
+        "lat": 22.564674
+      },
+      {
+        "lng": 113.983242,
+        "lat": 22.564718
+      },
+      {
+        "lng": 113.983255,
+        "lat": 22.564796
+      },
+      {
+        "lng": 113.983216,
+        "lat": 22.565026
+      },
+      {
+        "lng": 113.98316,
+        "lat": 22.565247
+      },
+      {
+        "lng": 113.983038,
+        "lat": 22.565638
+      },
+      {
+        "lng": 113.983003,
+        "lat": 22.56572
+      },
+      {
+        "lng": 113.98296,
+        "lat": 22.565794
+      },
+      {
+        "lng": 113.982904,
+        "lat": 22.565872
+      },
+      {
+        "lng": 113.982348,
+        "lat": 22.566363
+      },
+      {
+        "lng": 113.982205,
+        "lat": 22.566458
+      },
+      {
+        "lng": 113.982201,
+        "lat": 22.566458
+      },
+      {
+        "lng": 113.982331,
+        "lat": 22.566732
+      },
+      {
+        "lng": 113.982539,
+        "lat": 22.567014
+      },
+      {
+        "lng": 113.983016,
+        "lat": 22.567127
+      },
+      {
+        "lng": 113.983837,
+        "lat": 22.567292
+      },
+      {
+        "lng": 113.983954,
+        "lat": 22.567266
+      },
+      {
+        "lng": 113.984067,
+        "lat": 22.567205
+      },
+      {
+        "lng": 113.984123,
+        "lat": 22.567201
+      },
+      {
+        "lng": 113.984175,
+        "lat": 22.567201
+      },
+      {
+        "lng": 113.984227,
+        "lat": 22.567253
+      },
+      {
+        "lng": 113.984384,
+        "lat": 22.567552
+      },
+      {
+        "lng": 113.98451,
+        "lat": 22.567747
+      },
+      {
+        "lng": 113.984557,
+        "lat": 22.567804
+      },
+      {
+        "lng": 113.984865,
+        "lat": 22.567973
+      },
+      {
+        "lng": 113.985087,
+        "lat": 22.568073
+      },
+      {
+        "lng": 113.985148,
+        "lat": 22.568134
+      },
+      {
+        "lng": 113.985291,
+        "lat": 22.568385
+      },
+      {
+        "lng": 113.985369,
+        "lat": 22.568511
+      },
+      {
+        "lng": 113.985443,
+        "lat": 22.568576
+      },
+      {
+        "lng": 113.985443,
+        "lat": 22.568576
+      },
+      {
+        "lng": 113.985438,
+        "lat": 22.568594
+      },
+      {
+        "lng": 113.985434,
+        "lat": 22.568589
+      },
+      {
+        "lng": 113.985473,
+        "lat": 22.568576
+      },
+      {
+        "lng": 113.985673,
+        "lat": 22.568459
+      },
+      {
+        "lng": 113.985673,
+        "lat": 22.568459
+      },
+      {
+        "lng": 113.985829,
+        "lat": 22.568429
+      },
+      {
+        "lng": 113.985829,
+        "lat": 22.56842
+      },
+      {
+        "lng": 113.985586,
+        "lat": 22.56875
+      },
+      {
+        "lng": 113.985582,
+        "lat": 22.56875
+      },
+      {
+        "lng": 113.985734,
+        "lat": 22.569353
+      },
+      {
+        "lng": 113.985747,
+        "lat": 22.569505
+      },
+      {
+        "lng": 113.98566,
+        "lat": 22.569805
+      },
+      {
+        "lng": 113.985655,
+        "lat": 22.569922
+      },
+      {
+        "lng": 113.985655,
+        "lat": 22.569922
+      },
+      {
+        "lng": 113.985638,
+        "lat": 22.5702
+      },
+      {
+        "lng": 113.985734,
+        "lat": 22.570373
+      },
+      {
+        "lng": 113.985916,
+        "lat": 22.570486
+      },
+      {
+        "lng": 113.985994,
+        "lat": 22.570638
+      },
+      {
+        "lng": 113.985985,
+        "lat": 22.570686
+      },
+      {
+        "lng": 113.985942,
+        "lat": 22.570712
+      },
+      {
+        "lng": 113.985838,
+        "lat": 22.570738
+      },
+      {
+        "lng": 113.985838,
+        "lat": 22.570738
+      },
+      {
+        "lng": 113.985794,
+        "lat": 22.570751
+      },
+      {
+        "lng": 113.985768,
+        "lat": 22.570777
+      },
+      {
+        "lng": 113.98566,
+        "lat": 22.570972
+      },
+      {
+        "lng": 113.985399,
+        "lat": 22.571306
+      },
+      {
+        "lng": 113.985295,
+        "lat": 22.571415
+      },
+      {
+        "lng": 113.985082,
+        "lat": 22.571753
+      },
+      {
+        "lng": 113.984796,
+        "lat": 22.572517
+      },
+      {
+        "lng": 113.984796,
+        "lat": 22.572517
+      },
+      {
+        "lng": 113.984744,
+        "lat": 22.572609
+      },
+      {
+        "lng": 113.984753,
+        "lat": 22.572674
+      },
+      {
+        "lng": 113.984779,
+        "lat": 22.5727
+      },
+      {
+        "lng": 113.98536,
+        "lat": 22.572882
+      },
+      {
+        "lng": 113.985699,
+        "lat": 22.573008
+      },
+      {
+        "lng": 113.986003,
+        "lat": 22.573177
+      },
+      {
+        "lng": 113.986133,
+        "lat": 22.573194
+      }
+    ],
+    "amap_walking_note": "高德步行路网轨迹，非实地山野轨迹，仅供示意"
+  },
+  "metrics": {
+    "distance_km": 3.11,
+    "ascent_m": null,
+    "duration_hours": 0.69,
+    "verification_status": "verified_amap_walking",
+    "note": "distance_km/duration_hours 来自高德步行路径规划（往返全程(2×起终点)，路网距离，真实可溯源）；ascent_m 高德无高程 API，暂缺，待 GPX/设备轨迹补充"
+  },
+  "provenance": {
+    "base_facts": {
+      "source": "manual_seed",
+      "seed_file": "route-seeds-40.json"
+    },
+    "narrative": {
+      "source": "agent_prefill_qwen_plus",
+      "model": "qwen-plus",
+      "run_id": "20260915T175020",
+      "verified": false,
+      "note": "LLM 扩写描述性文本，未引入新事实；数字仅来自 metrics"
+    },
+    "geometry": {
+      "source": "pending_amap_web_service",
+      "verified": false
+    },
+    "metrics": {
+      "source": "amap_webservice_walking",
+      "verified": true,
+      "note": "往返全程(2×起终点) from amap walking route"
+    }
+  },
+  "route_nodes": [
+    {
+      "node_id": "rt9fd376a47c-node-01",
+      "node_type": "checkpoint",
+      "node_name": "塘朗山郊野公园 进入主线判断点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          113.982348,
+          22.566363
+        ]
+      },
+      "stage_order": 1,
+      "distance_from_start_m": 349,
+      "trigger_radius_m": 36,
+      "navigation_hint": "从 塘朗山龙珠门 出发后，优先沿最连续、最明确的主线前进，在这里确认自己仍在主游线上。",
+      "wrong_choice_hint": "如果前方出现明显下切小路、施工便道或回头支线，先停一下再回到最宽主线。",
+      "display_priority": 72
+    },
+    {
+      "node_id": "rt9fd376a47c-node-02",
+      "node_type": "view",
+      "node_name": "塘朗山郊野公园 中段观景停留点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          113.985443,
+          22.568576
+        ]
+      },
+      "stage_order": 2,
+      "distance_from_start_m": 820,
+      "trigger_radius_m": 38,
+      "navigation_hint": "到这里后可短暂停留确认景观参照，再继续沿主游线推进。",
+      "wrong_choice_hint": "不要被临时拍照停留区带入回头流线。",
+      "display_priority": 80
+    },
+    {
+      "node_id": "rt9fd376a47c-node-03",
+      "node_type": "fork",
+      "node_name": "塘朗山郊野公园 关键岔点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          113.985295,
+          22.571415
+        ]
+      },
+      "stage_order": 3,
+      "distance_from_start_m": 1258,
+      "trigger_radius_m": 40,
+      "navigation_hint": "在关键岔点优先保持朝 塘朗山极目阁 的主方向推进，按更稳定的主线选路。",
+      "wrong_choice_hint": "景区支路、商业分流线或回头线不要误入。",
+      "display_priority": 88
+    }
+  ],
+  "route_risk_points": [],
+  "route_exit_points": [],
+  "cover_image": "/covers/rt_9fd376a47c.jpg"
+}

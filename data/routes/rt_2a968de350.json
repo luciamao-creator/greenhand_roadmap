@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "route_id": "rt_2a968de350",
+  "built_at": "2026-09-15T17:41:48+00:00",
+  "base_facts": {
+    "route_name": "小昆山步道",
+    "province_name": "上海",
+    "city_name": "上海",
+    "area_name": "松江区",
+    "start_point_name": "小昆山公园",
+    "end_point_name": "小昆山山顶(二陆读书台)",
+    "route_type": "out_and_back",
+    "route_type_label": "往返线",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "景区步道"
+    ],
+    "season_tags": [
+      "冬季",
+      "春季"
+    ],
+    "map_search_keyword": "上海 松江 小昆山"
+  },
+  "narrative": {
+    "summary_short": "松江低丘，文化名山短途线",
+    "beginner_fit_reason": "全程仅0.29公里、耗时约4分钟，景区步道平坦易行，无爬升压力。",
+    "search_text": "小昆山步道 上海松江区 小昆山公园到二陆读书台 往返线 景区步道 新手友好 冬季春季适宜 真实里程0.29公里 真实耗时0.07小时 约4分钟",
+    "description": "小昆山步道是一条位于上海松江区小昆山公园内的极短途文化徒步线，从山脚直达山顶二陆读书台，全程仅约0.29公里，步行约4分钟，坡度平缓、路面平整，非常适合新手和家庭轻松体验山野与人文。",
+    "source": "agent_prefill_qwen_plus"
+  },
+  "geometry": {
+    "start_point": {
+      "lng": 121.134076,
+      "lat": 31.038327
+    },
+    "end_point": {
+      "lng": 121.133138,
+      "lat": 31.039549
+    },
+    "polyline": [],
+    "geocode_status": "ok",
+    "note": "坐标必须由高德 Web服务 API 回填，禁止在未核验前写入任何坐标",
+    "geocode_detail": {
+      "start": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "松江区小昆山公园",
+        "matched_name": "上海佘山国家森林公园-小昆山园",
+        "matched_address": "山西路4号",
+        "poi_type": "风景名胜;公园广场;公园",
+        "returned_city": "上海市",
+        "returned_district": "松江区",
+        "candidate_count": 5
+      },
+      "end": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "松江区小昆山山顶(二陆读书台)",
+        "matched_name": "二陆读书台",
+        "matched_address": "山西路4号上海佘山国家森林公园-小昆山园(西北角)",
+        "poi_type": "风景名胜;风景名胜;风景名胜",
+        "returned_city": "上海市",
+        "returned_district": "松江区",
+        "candidate_count": 5
+      },
+      "provider": "amap-webservice-geocode-v3",
+      "synced_at": "2026-09-15T17:42:31.425341+00:00"
+    },
+    "amap_walking_path": [
+      {
+        "lng": 121.134102,
+        "lat": 31.038338
+      },
+      {
+        "lng": 121.133976,
+        "lat": 31.038555
+      },
+      {
+        "lng": 121.133971,
+        "lat": 31.03855
+      },
+      {
+        "lng": 121.133581,
+        "lat": 31.038885
+      },
+      {
+        "lng": 121.133581,
+        "lat": 31.038885
+      },
+      {
+        "lng": 121.133472,
+        "lat": 31.038984
+      },
+      {
+        "lng": 121.133472,
+        "lat": 31.038984
+      },
+      {
+        "lng": 121.133294,
+        "lat": 31.039154
+      },
+      {
+        "lng": 121.133294,
+        "lat": 31.039154
+      },
+      {
+        "lng": 121.133095,
+        "lat": 31.039336
+      }
+    ],
+    "amap_walking_note": "高德步行路网轨迹，非实地山野轨迹，仅供示意"
+  },
+  "metrics": {
+    "distance_km": 0.29,
+    "ascent_m": null,
+    "duration_hours": 0.07,
+    "verification_status": "verified_amap_walking",
+    "note": "distance_km/duration_hours 来自高德步行路径规划（往返全程(2×起终点)，路网距离，真实可溯源）；ascent_m 高德无高程 API，暂缺，待 GPX/设备轨迹补充"
+  },
+  "provenance": {
+    "base_facts": {
+      "source": "manual_seed",
+      "seed_file": "route-seeds-40.json"
+    },
+    "narrative": {
+      "source": "agent_prefill_qwen_plus",
+      "model": "qwen-plus",
+      "run_id": "20260915T175020",
+      "verified": false,
+      "note": "LLM 扩写描述性文本，未引入新事实；数字仅来自 metrics"
+    },
+    "geometry": {
+      "source": "pending_amap_web_service",
+      "verified": false
+    },
+    "metrics": {
+      "source": "amap_webservice_walking",
+      "verified": true,
+      "note": "往返全程(2×起终点) from amap walking route"
+    }
+  },
+  "route_nodes": [
+    {
+      "node_id": "rt2a968de350-node-01",
+      "node_type": "checkpoint",
+      "node_name": "小昆山步道 进入主线判断点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          121.133581,
+          31.038885
+        ]
+      },
+      "stage_order": 1,
+      "distance_from_start_m": 80,
+      "trigger_radius_m": 36,
+      "navigation_hint": "从 小昆山公园 出发后，优先沿最连续、最明确的主线前进，在这里确认自己仍在主游线上。",
+      "wrong_choice_hint": "如果前方出现明显下切小路、施工便道或回头支线，先停一下再回到最宽主线。",
+      "display_priority": 72
+    }
+  ],
+  "route_risk_points": [],
+  "route_exit_points": [],
+  "cover_image": "/covers/rt_2a968de350.jpg"
+}

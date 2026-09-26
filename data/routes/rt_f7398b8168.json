@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "route_id": "rt_f7398b8168",
+  "built_at": "2026-09-15T17:41:48+00:00",
+  "base_facts": {
+    "route_name": "十里琅珰古道",
+    "province_name": "浙江",
+    "city_name": "杭州",
+    "area_name": "西湖区",
+    "start_point_name": "龙井村",
+    "end_point_name": "五云山",
+    "route_type": "one_way",
+    "route_type_label": "单向穿越",
+    "difficulty_band": "moderate",
+    "surface_tags": [
+      "古道石阶",
+      "山径"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "map_search_keyword": "杭州 西湖 十里琅珰 龙井村 五云山"
+  },
+  "narrative": {
+    "summary_short": "西湖群山最经典的山脊穿越线，两侧茶园连绵",
+    "beginner_fit_reason": "实际仅0.15公里、耗时约2分钟，石阶山径清晰，无技术难点且岔路有标识。",
+    "search_text": "十里琅珰古道 杭州西湖区 龙井村到五云山 单向穿越 中等强度 古道石阶山径 春季秋季适宜 真实里程0.15公里 真实耗时0.03小时 茶园山脊线",
+    "description": "十里琅珰古道是西湖群山中一条经典山脊穿越线，两侧茶园连绵，春秋季景色尤佳。虽标注为中等强度，但实际仅约0.15公里，步行仅需约2分钟，石阶与山径清晰易行，对新手极为友好。",
+    "source": "agent_prefill_qwen_plus"
+  },
+  "geometry": {
+    "start_point": {
+      "lng": 120.106683,
+      "lat": 30.218481
+    },
+    "end_point": {
+      "lng": 120.107111,
+      "lat": 30.217394
+    },
+    "polyline": [],
+    "geocode_status": "ok",
+    "note": "坐标必须由高德 Web服务 API 回填，禁止在未核验前写入任何坐标",
+    "geocode_detail": {
+      "start": {
+        "status": "ok",
+        "method": "geocode",
+        "query": "杭州西湖区龙井村",
+        "matched_address": "浙江省杭州市西湖区龙井村",
+        "level": "村庄",
+        "returned_province": "浙江省",
+        "returned_city": "杭州市",
+        "returned_district": "西湖区",
+        "candidate_count": 1
+      },
+      "end": {
+        "status": "ambiguous",
+        "method": "geocode",
+        "query": "杭州 西湖 十里琅珰 龙井村 五云山",
+        "matched_address": "浙江省杭州市西湖区西湖十里琅珰龙井村",
+        "level": "村庄",
+        "returned_province": "浙江省",
+        "returned_city": "杭州市",
+        "returned_district": "西湖区",
+        "candidate_count": 2
+      },
+      "provider": "amap-webservice-geocode-v3",
+      "synced_at": "2026-09-15T17:48:04.197076+00:00"
+    },
+    "amap_walking_path": [
+      {
+        "lng": 120.106662,
+        "lat": 30.218507
+      },
+      {
+        "lng": 120.106801,
+        "lat": 30.218581
+      },
+      {
+        "lng": 120.106801,
+        "lat": 30.218585
+      },
+      {
+        "lng": 120.106814,
+        "lat": 30.218277
+      },
+      {
+        "lng": 120.106814,
+        "lat": 30.218277
+      },
+      {
+        "lng": 120.106823,
+        "lat": 30.218025
+      },
+      {
+        "lng": 120.106823,
+        "lat": 30.218025
+      },
+      {
+        "lng": 120.106892,
+        "lat": 30.217847
+      },
+      {
+        "lng": 120.107079,
+        "lat": 30.217635
+      },
+      {
+        "lng": 120.107079,
+        "lat": 30.217635
+      },
+      {
+        "lng": 120.107201,
+        "lat": 30.217496
+      },
+      {
+        "lng": 120.107222,
+        "lat": 30.217431
+      }
+    ],
+    "amap_walking_note": "高德步行路网轨迹，非实地山野轨迹，仅供示意"
+  },
+  "metrics": {
+    "distance_km": 0.15,
+    "ascent_m": null,
+    "duration_hours": 0.03,
+    "verification_status": "verified_amap_walking",
+    "note": "distance_km/duration_hours 来自高德步行路径规划（单向全程，路网距离，真实可溯源）；ascent_m 高德无高程 API，暂缺，待 GPX/设备轨迹补充"
+  },
+  "provenance": {
+    "base_facts": {
+      "source": "manual_seed",
+      "seed_file": "route-seeds-40.json"
+    },
+    "narrative": {
+      "source": "agent_prefill_qwen_plus",
+      "model": "qwen-plus",
+      "run_id": "20260915T175020",
+      "verified": false,
+      "note": "LLM 扩写描述性文本，未引入新事实；数字仅来自 metrics"
+    },
+    "geometry": {
+      "source": "pending_amap_web_service",
+      "verified": false
+    },
+    "metrics": {
+      "source": "amap_webservice_walking",
+      "verified": true,
+      "note": "单向全程 from amap walking route"
+    }
+  },
+  "route_nodes": [
+    {
+      "node_id": "rtf7398b8168-node-01",
+      "node_type": "checkpoint",
+      "node_name": "十里琅珰古道 进入主线判断点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          120.106814,
+          30.218277
+        ]
+      },
+      "stage_order": 1,
+      "distance_from_start_m": 50,
+      "trigger_radius_m": 36,
+      "navigation_hint": "从 龙井村 出发后，优先沿最连续、最明确的主线前进，在这里确认自己仍在主游线上。",
+      "wrong_choice_hint": "如果前方出现明显下切小路、施工便道或回头支线，先停一下再回到最宽主线。",
+      "display_priority": 72
+    }
+  ],
+  "route_risk_points": [
+    {
+      "risk_point_id": "rtf7398b8168-risk-01",
+      "risk_type": "wrong_turn",
+      "risk_level": "medium",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          120.106823,
+          30.218025
+        ]
+      },
+      "stage_order": 1,
+      "risk_title": "岔路判断失误易走偏",
+      "risk_text": "进入岔路或支线较多的路段时，若只凭直觉追求更近路线，容易偏离主步道。",
+      "safe_action_text": "到岔口先停下来确认主方向，再决定是否继续推进。",
+      "trigger_radius_m": 38
+    }
+  ],
+  "route_exit_points": [],
+  "cover_image": "/covers/rt_f7398b8168.jpg"
+}

@@ -1,0 +1,183 @@
+{
+  "label": "2026-09-16 14:10",
+  "summary": {
+    "cases_total": 4,
+    "cases_graded": 4,
+    "cases_scorable": 4,
+    "errors": 0,
+    "error_rate": 0.0,
+    "pass_rate": 1.0,
+    "mode_accuracy": 1.0,
+    "mode_cases": 4,
+    "focus_accuracy": 1.0,
+    "focus_cases": 4,
+    "recommend_hit_rate": 0.0,
+    "recommend_cases": 0,
+    "forbid_compliance_rate": 0.0,
+    "forbid_cases": 0,
+    "uncovered_handling_rate": 0.0,
+    "uncovered_cases": 0,
+    "no_recommendation_rate": 0.0,
+    "no_recommendation_cases": 0,
+    "citation_violation_rate": 0.0,
+    "citation_violation_cases": [],
+    "id_leak_rate": 0.0,
+    "id_leak_cases": [],
+    "retrieve_p50_ms": 534.0,
+    "retrieve_p95_ms": 2502.0,
+    "answer_p50_ms": 3529.0,
+    "answer_p95_ms": 3912.0,
+    "avg_tokens": 691.8,
+    "retrieval_mrr": 0.0,
+    "retrieval_hit1": 0.0,
+    "retrieval_hit3": 0.0,
+    "retrieval_hit5": 0.0,
+    "retrieval_final_ndcg": 0.0,
+    "retrieval_raw_ndcg": 0.0,
+    "retrieval_recall": 0.0,
+    "retrieval_cases": 0,
+    "judge_scores": {
+      "helpfulness": null,
+      "beginner_clarity": null,
+      "faithfulness": null,
+      "mode_fit": null,
+      "tone": null
+    },
+    "judge_cases": 0,
+    "quality_weighted": 1.0
+  },
+  "results": [
+    {
+      "id": "L1-001",
+      "layer": "L1",
+      "intent": "单线路点名→聚焦问答",
+      "query": "青城山前山步道要带什么装备",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_7820cc9568",
+      "expect_focus_route_id": "rt_7820cc9568",
+      "recommended": [
+        "青城山前山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "青城山前山步道"
+      ],
+      "answer": "新手走青城山前山步道，建议穿防滑舒适的运动鞋或登山鞋（石阶略滑，尤其雨后）；带1-2瓶水、少量能量零食（如巧克力、饼干）；轻便背包、遮阳帽、防晒霜（春秋季阳光仍强）；手机充满电，可备小毛巾擦汗。因沿途道观密集、补给便利，无需带太多物资。雨天建议加带雨衣（山上易起雾降雨）。资料未覆盖，建议出发前确认",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 2502,
+        "answer_ms": 3465,
+        "tokens": 685
+      },
+      "elapsed_s": 6.1
+    },
+    {
+      "id": "L1-002",
+      "layer": "L1",
+      "intent": "单线路点名（口语指代）→聚焦问答【原始bug用例】",
+      "query": "如果我去青城山那条线，我需要准备些什么",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_7820cc9568",
+      "expect_focus_route_id": "rt_7820cc9568",
+      "recommended": [
+        "青城山前山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "青城山前山步道"
+      ],
+      "answer": "青城山前山步道是新手友好的石阶路，全程约9.8公里、2小时多，轻松不累。建议穿舒适防滑的运动鞋或徒步鞋；带足饮用水（虽补给便利，但自备更稳妥）；春秋季温差略大，可备薄外套；轻便背包、遮阳帽、防晒霜也实用。手机充满电，方便拍照和查看路线标识。因全程在景区内，无需专业装备，也不用担心迷路——指示清晰、道观密集，随时可歇脚。资料未覆盖具体开放时间、票价和停车信息，建议出发前确认。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 490,
+        "answer_ms": 3912,
+        "tokens": 712
+      },
+      "elapsed_s": 4.4
+    },
+    {
+      "id": "L1-003",
+      "layer": "L1",
+      "intent": "单线路点名→聚焦问答",
+      "query": "宝石山步道累不累，爬升多少",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_b09fe3cf57",
+      "expect_focus_route_id": "rt_b09fe3cf57",
+      "recommended": [
+        "宝石山步道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "宝石山步道"
+      ],
+      "answer": "宝石山步道不累，对新手很友好！全程约1.52公里，爬升平缓，没有陡峭路段，主要为石阶和自然山径，耗时仅约20分钟（0.34小时）。从黄龙洞走到保俶塔，一路缓步上行，视野开阔，登顶就能看到西湖全景。春、秋、冬季走都特别舒服，轻松又惬意～",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 534,
+        "answer_ms": 2821,
+        "tokens": 680
+      },
+      "elapsed_s": 3.4
+    },
+    {
+      "id": "L1-004",
+      "layer": "L1",
+      "intent": "单线路点名→聚焦问答",
+      "query": "梅林后山绿道全程大概多远，新手能走完吗",
+      "review": false,
+      "mode": "focus",
+      "expect_mode": "focus",
+      "focus_route_id": "rt_d1d5266b5a",
+      "expect_focus_route_id": "rt_d1d5266b5a",
+      "recommended": [
+        "梅林后山绿道"
+      ],
+      "retrieval": null,
+      "sources": [
+        "梅林后山绿道"
+      ],
+      "answer": "梅林后山绿道全程约13.1公里，是往返线路，预计耗时约2.91小时。路面以平整的沥青绿道和稳固石阶为主，坡度平缓、无野路，对新手非常友好。只要穿着舒适鞋子、带足水和简单补给，大多数新手都能轻松走完。途中可随时折返，体能压力小。建议选秋冬季前往，气候凉爽，视野好，体验更佳。",
+      "checks": {
+        "mode_ok": true,
+        "focus_ok": true
+      },
+      "passed": true,
+      "citation_violation": [],
+      "id_leak": false,
+      "must_say_hit": null,
+      "latency": {
+        "retrieve_ms": 487,
+        "answer_ms": 3529,
+        "tokens": 690
+      },
+      "elapsed_s": 4.0
+    }
+  ]
+}

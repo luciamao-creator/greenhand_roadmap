@@ -1,0 +1,47 @@
+# 依赖与构建产物
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# 环境变量与密钥（.env.example 作为模板需要提交）
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# 日志
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 本地自签 HTTPS 证书（仅开发环境用）
+certificates/
+
+# 运行时产物
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+
+# 本地工具目录（Postgres 数据目录等）
+.tools/
+
+# 部署产物（standalone 自包含目录，内含依赖，勿提交）
+.deploy-dist/
+.deploy/
+
+# IDE 本地凭证（含云 API 密钥/连接令牌，勿提交）
+.codebuddy/integration/
+.codebuddy/sandbox/
+
+# 运行时账号数据（本地测试账号，勿提交）
+data/user-data/
+
+# 对话追踪（含真实用户提问原文，勿提交）
+data/rag/chat-trace.jsonl
+
+# IDE 项目记忆（含环境标识与排查记录，勿提交）
+.codebuddy/memory/

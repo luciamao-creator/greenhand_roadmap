@@ -1,0 +1,490 @@
+{
+  "schema_version": "1.0",
+  "route_id": "rt_466f2b8fa1",
+  "built_at": "2026-09-15T17:41:48+00:00",
+  "base_facts": {
+    "route_name": "东湖绿道",
+    "province_name": "湖北",
+    "city_name": "武汉",
+    "area_name": "武昌区",
+    "start_point_name": "东湖绿道(磨山入口)",
+    "end_point_name": "听涛景区",
+    "route_type": "one_way",
+    "route_type_label": "单向穿越",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "绿道沥青"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季",
+      "冬季"
+    ],
+    "map_search_keyword": "武汉 武昌 东湖绿道 磨山 听涛"
+  },
+  "narrative": {
+    "summary_short": "城中湖滨绿道，骑行徒步皆宜",
+    "beginner_fit_reason": "全程滨水平坦沥青路，零爬升、无障碍，1.66公里仅需22分钟，新手可轻松完成。",
+    "search_text": "东湖绿道 武汉武昌区 磨山入口到听涛景区 单向穿越 新手友好 滨湖沥青绿道 春季秋季冬季适宜 步行1.66公里 耗时0.37小时",
+    "description": "东湖绿道（磨山入口至听涛景区段）是一条位于武汉武昌区的城中湖滨休闲步道，全程约1.66公里，仅需约22分钟轻松步行即可完成。路面为平整沥青绿道，紧邻东湖水岸，视野开阔，四季皆宜，尤以春、秋、冬三季最为舒适。线路单向穿越，无爬升，标识清晰，是城市轻徒步的理想入门选择。",
+    "source": "agent_prefill_qwen_plus"
+  },
+  "geometry": {
+    "start_point": {
+      "lng": 114.374989,
+      "lat": 30.574625
+    },
+    "end_point": {
+      "lng": 114.372502,
+      "lat": 30.562274
+    },
+    "polyline": [],
+    "geocode_status": "ok",
+    "note": "坐标必须由高德 Web服务 API 回填，禁止在未核验前写入任何坐标",
+    "geocode_detail": {
+      "start": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "武昌区东湖绿道(磨山入口)",
+        "matched_name": "东湖绿道",
+        "matched_address": "沿湖大道16号东湖生态旅游风景区附近",
+        "poi_type": "风景名胜;风景名胜;风景名胜",
+        "returned_city": "武汉市",
+        "returned_district": "武昌区",
+        "candidate_count": 5
+      },
+      "end": {
+        "status": "ok",
+        "method": "geocode",
+        "query": "武汉武昌区听涛景区",
+        "matched_address": "湖北省武汉市武昌区听涛景区(西北门)",
+        "level": "兴趣点",
+        "returned_province": "湖北省",
+        "returned_city": "武汉市",
+        "returned_district": "武昌区",
+        "candidate_count": 1
+      },
+      "provider": "amap-webservice-geocode-v3",
+      "synced_at": "2026-09-15T17:43:45.653425+00:00"
+    },
+    "amap_walking_path": [
+      {
+        "lng": 114.374978,
+        "lat": 30.574627
+      },
+      {
+        "lng": 114.3749,
+        "lat": 30.574536
+      },
+      {
+        "lng": 114.3749,
+        "lat": 30.574536
+      },
+      {
+        "lng": 114.374653,
+        "lat": 30.574058
+      },
+      {
+        "lng": 114.374653,
+        "lat": 30.574058
+      },
+      {
+        "lng": 114.374314,
+        "lat": 30.573464
+      },
+      {
+        "lng": 114.374314,
+        "lat": 30.573464
+      },
+      {
+        "lng": 114.374167,
+        "lat": 30.572743
+      },
+      {
+        "lng": 114.374167,
+        "lat": 30.572743
+      },
+      {
+        "lng": 114.374136,
+        "lat": 30.572305
+      },
+      {
+        "lng": 114.374158,
+        "lat": 30.572014
+      },
+      {
+        "lng": 114.37424,
+        "lat": 30.571788
+      },
+      {
+        "lng": 114.37434,
+        "lat": 30.571623
+      },
+      {
+        "lng": 114.37434,
+        "lat": 30.571623
+      },
+      {
+        "lng": 114.374501,
+        "lat": 30.571363
+      },
+      {
+        "lng": 114.374536,
+        "lat": 30.571263
+      },
+      {
+        "lng": 114.374536,
+        "lat": 30.57115
+      },
+      {
+        "lng": 114.374536,
+        "lat": 30.57115
+      },
+      {
+        "lng": 114.374497,
+        "lat": 30.571063
+      },
+      {
+        "lng": 114.374457,
+        "lat": 30.571016
+      },
+      {
+        "lng": 114.374332,
+        "lat": 30.570929
+      },
+      {
+        "lng": 114.374045,
+        "lat": 30.570794
+      },
+      {
+        "lng": 114.373572,
+        "lat": 30.570612
+      },
+      {
+        "lng": 114.373572,
+        "lat": 30.570612
+      },
+      {
+        "lng": 114.373194,
+        "lat": 30.570477
+      },
+      {
+        "lng": 114.373025,
+        "lat": 30.570404
+      },
+      {
+        "lng": 114.372587,
+        "lat": 30.570113
+      },
+      {
+        "lng": 114.372387,
+        "lat": 30.569931
+      },
+      {
+        "lng": 114.372387,
+        "lat": 30.569931
+      },
+      {
+        "lng": 114.372075,
+        "lat": 30.569475
+      },
+      {
+        "lng": 114.372005,
+        "lat": 30.569353
+      },
+      {
+        "lng": 114.371957,
+        "lat": 30.569219
+      },
+      {
+        "lng": 114.371927,
+        "lat": 30.569089
+      },
+      {
+        "lng": 114.371923,
+        "lat": 30.568976
+      },
+      {
+        "lng": 114.37194,
+        "lat": 30.568832
+      },
+      {
+        "lng": 114.372031,
+        "lat": 30.568555
+      },
+      {
+        "lng": 114.372031,
+        "lat": 30.568555
+      },
+      {
+        "lng": 114.372218,
+        "lat": 30.568173
+      },
+      {
+        "lng": 114.372383,
+        "lat": 30.567878
+      },
+      {
+        "lng": 114.372383,
+        "lat": 30.567878
+      },
+      {
+        "lng": 114.372448,
+        "lat": 30.567786
+      },
+      {
+        "lng": 114.372448,
+        "lat": 30.567786
+      },
+      {
+        "lng": 114.372569,
+        "lat": 30.567635
+      },
+      {
+        "lng": 114.372569,
+        "lat": 30.567635
+      },
+      {
+        "lng": 114.372765,
+        "lat": 30.567444
+      },
+      {
+        "lng": 114.37316,
+        "lat": 30.567122
+      },
+      {
+        "lng": 114.37316,
+        "lat": 30.567122
+      },
+      {
+        "lng": 114.373359,
+        "lat": 30.566953
+      },
+      {
+        "lng": 114.373472,
+        "lat": 30.566832
+      },
+      {
+        "lng": 114.373511,
+        "lat": 30.566732
+      },
+      {
+        "lng": 114.373516,
+        "lat": 30.566658
+      },
+      {
+        "lng": 114.37349,
+        "lat": 30.566519
+      },
+      {
+        "lng": 114.37349,
+        "lat": 30.566519
+      },
+      {
+        "lng": 114.373446,
+        "lat": 30.566419
+      },
+      {
+        "lng": 114.373247,
+        "lat": 30.566081
+      },
+      {
+        "lng": 114.373247,
+        "lat": 30.566081
+      },
+      {
+        "lng": 114.37303,
+        "lat": 30.56566
+      },
+      {
+        "lng": 114.37303,
+        "lat": 30.56566
+      },
+      {
+        "lng": 114.372956,
+        "lat": 30.565443
+      },
+      {
+        "lng": 114.37293,
+        "lat": 30.565256
+      },
+      {
+        "lng": 114.37293,
+        "lat": 30.565256
+      },
+      {
+        "lng": 114.372869,
+        "lat": 30.564861
+      },
+      {
+        "lng": 114.372869,
+        "lat": 30.564861
+      },
+      {
+        "lng": 114.372812,
+        "lat": 30.564622
+      },
+      {
+        "lng": 114.372765,
+        "lat": 30.564523
+      },
+      {
+        "lng": 114.372365,
+        "lat": 30.563967
+      },
+      {
+        "lng": 114.372222,
+        "lat": 30.563772
+      },
+      {
+        "lng": 114.372222,
+        "lat": 30.563772
+      },
+      {
+        "lng": 114.371701,
+        "lat": 30.563051
+      },
+      {
+        "lng": 114.371701,
+        "lat": 30.563051
+      },
+      {
+        "lng": 114.371589,
+        "lat": 30.562899
+      },
+      {
+        "lng": 114.371528,
+        "lat": 30.562873
+      },
+      {
+        "lng": 114.371528,
+        "lat": 30.562873
+      },
+      {
+        "lng": 114.371532,
+        "lat": 30.562839
+      },
+      {
+        "lng": 114.371532,
+        "lat": 30.562834
+      },
+      {
+        "lng": 114.371649,
+        "lat": 30.562687
+      },
+      {
+        "lng": 114.371649,
+        "lat": 30.562687
+      },
+      {
+        "lng": 114.371966,
+        "lat": 30.562509
+      },
+      {
+        "lng": 114.372261,
+        "lat": 30.562405
+      },
+      {
+        "lng": 114.372361,
+        "lat": 30.562352
+      },
+      {
+        "lng": 114.372361,
+        "lat": 30.562352
+      },
+      {
+        "lng": 114.3725,
+        "lat": 30.562279
+      }
+    ],
+    "amap_walking_note": "高德步行路网轨迹，非实地山野轨迹，仅供示意"
+  },
+  "metrics": {
+    "distance_km": 1.66,
+    "ascent_m": null,
+    "duration_hours": 0.37,
+    "verification_status": "verified_amap_walking",
+    "note": "distance_km/duration_hours 来自高德步行路径规划（单向全程，路网距离，真实可溯源）；ascent_m 高德无高程 API，暂缺，待 GPX/设备轨迹补充"
+  },
+  "provenance": {
+    "base_facts": {
+      "source": "manual_seed",
+      "seed_file": "route-seeds-40.json"
+    },
+    "narrative": {
+      "source": "agent_prefill_qwen_plus",
+      "model": "qwen-plus",
+      "run_id": "20260915T175020",
+      "verified": false,
+      "note": "LLM 扩写描述性文本，未引入新事实；数字仅来自 metrics"
+    },
+    "geometry": {
+      "source": "pending_amap_web_service",
+      "verified": false
+    },
+    "metrics": {
+      "source": "amap_webservice_walking",
+      "verified": true,
+      "note": "单向全程 from amap walking route"
+    }
+  },
+  "route_nodes": [
+    {
+      "node_id": "rt466f2b8fa1-node-01",
+      "node_type": "checkpoint",
+      "node_name": "东湖绿道 进入主线判断点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          114.374501,
+          30.571363
+        ]
+      },
+      "stage_order": 1,
+      "distance_from_start_m": 387,
+      "trigger_radius_m": 36,
+      "navigation_hint": "从 东湖绿道(磨山入口) 出发后，优先沿最连续、最明确的主线前进，在这里确认自己仍在主游线上。",
+      "wrong_choice_hint": "如果前方出现明显下切小路、施工便道或回头支线，先停一下再回到最宽主线。",
+      "display_priority": 72
+    },
+    {
+      "node_id": "rt466f2b8fa1-node-02",
+      "node_type": "view",
+      "node_name": "东湖绿道 中段观景停留点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          114.372218,
+          30.568173
+        ]
+      },
+      "stage_order": 2,
+      "distance_from_start_m": 873,
+      "trigger_radius_m": 38,
+      "navigation_hint": "到这里后可短暂停留确认景观参照，再继续沿主游线推进。",
+      "wrong_choice_hint": "不要被临时拍照停留区带入回头流线。",
+      "display_priority": 80
+    },
+    {
+      "node_id": "rt466f2b8fa1-node-03",
+      "node_type": "fork",
+      "node_name": "东湖绿道 关键岔点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          114.372365,
+          30.563967
+        ]
+      },
+      "stage_order": 3,
+      "distance_from_start_m": 1410,
+      "trigger_radius_m": 40,
+      "navigation_hint": "在关键岔点优先保持朝 听涛景区 的主方向推进，按更稳定的主线选路。",
+      "wrong_choice_hint": "景区支路、商业分流线或回头线不要误入。",
+      "display_priority": 88
+    }
+  ],
+  "route_risk_points": [],
+  "route_exit_points": [],
+  "cover_image": "/covers/rt_466f2b8fa1.jpg"
+}

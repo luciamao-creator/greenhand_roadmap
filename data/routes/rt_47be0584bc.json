@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "route_id": "rt_47be0584bc",
+  "built_at": "2026-09-15T17:41:48+00:00",
+  "base_facts": {
+    "route_name": "大南山步道",
+    "province_name": "广东",
+    "city_name": "深圳",
+    "area_name": "南山区",
+    "start_point_name": "大南山别墅登山口",
+    "end_point_name": "大南山龟山阁",
+    "route_type": "out_and_back",
+    "route_type_label": "往返线",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "台阶",
+      "林道"
+    ],
+    "season_tags": [
+      "秋季",
+      "冬季"
+    ],
+    "map_search_keyword": "深圳 南山 大南山 龟山阁 观景台"
+  },
+  "narrative": {
+    "summary_short": "蛇口片区的经典成熟台阶线路，观海视野极佳",
+    "beginner_fit_reason": "全程树荫良好，单程仅需约1小时，台阶平缓、路线成熟，无复杂地形。",
+    "search_text": "大南山步道 深圳南山区 大南山别墅登山口到龟山阁 往返线 新手友好 台阶林道 秋季冬季适宜 单程约1小时 观海",
+    "description": "大南山步道是深圳南山区蛇口片区一条经典成熟的新手友好徒步线路，全程以台阶和林道为主，树荫覆盖良好，秋季与冬季气候宜人。从大南山别墅登山口出发，登顶龟山阁即可饱览开阔海景，单程约1小时，轻松不疲惫。",
+    "source": "agent_prefill_qwen_plus"
+  },
+  "geometry": {
+    "start_point": {
+      "lng": 113.90546,
+      "lat": 22.494093
+    },
+    "end_point": {
+      "lng": 113.964432,
+      "lat": 22.564055
+    },
+    "polyline": [],
+    "geocode_status": "ok",
+    "note": "坐标必须由高德 Web服务 API 回填，禁止在未核验前写入任何坐标",
+    "geocode_detail": {
+      "start": {
+        "status": "ambiguous",
+        "method": "geocode",
+        "query": "深圳南山区大南山别墅登山口",
+        "matched_address": "广东省深圳市南山区南山公园",
+        "level": "兴趣点",
+        "returned_province": "广东省",
+        "returned_city": "深圳市",
+        "returned_district": "南山区",
+        "candidate_count": 3
+      },
+      "end": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "南山区大南山龟山阁",
+        "matched_name": "南山睿园",
+        "matched_address": "龙珠三路",
+        "poi_type": "商务住宅;楼宇;商务写字楼",
+        "returned_city": "深圳市",
+        "returned_district": "南山区",
+        "candidate_count": 5
+      },
+      "provider": "amap-webservice-geocode-v3",
+      "synced_at": "2026-09-15T17:44:00.369659+00:00"
+    }
+  },
+  "metrics": {
+    "distance_km": null,
+    "ascent_m": null,
+    "duration_hours": null,
+    "verification_status": "far_review",
+    "note": "路网往返 26.2km 超出新手线护栏(20km)，疑似公路长途错引，置空待人工"
+  },
+  "provenance": {
+    "base_facts": {
+      "source": "manual_seed",
+      "seed_file": "route-seeds-40.json"
+    },
+    "narrative": {
+      "source": "agent_prefill_qwen_plus",
+      "model": "qwen-plus",
+      "run_id": "20260915T175020",
+      "verified": false,
+      "note": "LLM 扩写描述性文本，未引入新事实；数字仅来自 metrics"
+    },
+    "geometry": {
+      "source": "pending_amap_web_service",
+      "verified": false
+    },
+    "metrics": {
+      "source": "amap_webservice_walking",
+      "verified": false,
+      "note": "road detour exceeds guard"
+    }
+  },
+  "cover_image": "/covers/rt_47be0584bc.jpg"
+}

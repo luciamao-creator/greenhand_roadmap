@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "route_id": "rt_9eefe157ad",
+  "built_at": "2026-09-15T17:41:48+00:00",
+  "base_facts": {
+    "route_name": "云松岭—黄牛岭古道",
+    "province_name": "浙江",
+    "city_name": "绍兴",
+    "area_name": "越城区",
+    "start_point_name": "云松村古道口",
+    "end_point_name": "黄牛岭古道口",
+    "route_type": "one_way",
+    "route_type_label": "单向穿越",
+    "difficulty_band": "moderate",
+    "surface_tags": [
+      "古道石阶",
+      "山径"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "map_search_keyword": "绍兴 越城 云松岭 黄牛岭古道"
+  },
+  "narrative": {
+    "summary_short": "村落串联型古道穿越，适合体验越野跑与徒步结合",
+    "beginner_fit_reason": "全程仅0.32公里、耗时约4分钟，石阶平缓、无复杂地形，新手可零压力完成。",
+    "search_text": "浙江绍兴越城区云松岭—黄牛岭古道 徒步线路 单向穿越 古道石阶 山径 春季秋季适宜 新手友好 0.32公里 约4分钟 云松村古道口起点 黄牛岭古道口终点",
+    "description": "这是一条连接云松村与黄牛岭的短途古道穿越线，全程仅约320米，步行约4分钟即可完成，石阶与山径交错，节奏轻快，非常适合新手快速体验古道韵味。虽为单向穿越需提前安排接驳，但路线极短、无显著爬升，对体能和经验要求很低。春季山色清润、秋季天光通透，是绍兴近郊轻松入坑徒步的理想选择。",
+    "source": "agent_prefill_qwen_plus"
+  },
+  "geometry": {
+    "start_point": {
+      "lng": 120.541353,
+      "lat": 29.906777
+    },
+    "end_point": {
+      "lng": 120.53946,
+      "lat": 29.906801
+    },
+    "polyline": [],
+    "geocode_status": "ok",
+    "note": "坐标必须由高德 Web服务 API 回填，禁止在未核验前写入任何坐标",
+    "geocode_detail": {
+      "start": {
+        "status": "ok",
+        "method": "geocode",
+        "query": "绍兴越城区云松村古道口",
+        "matched_address": "浙江省绍兴市越城区云松村",
+        "level": "村庄",
+        "returned_province": "浙江省",
+        "returned_city": "绍兴市",
+        "returned_district": "越城区",
+        "candidate_count": 1
+      },
+      "end": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "越城区黄牛岭古道口",
+        "matched_name": "黄牛岭步道",
+        "matched_address": "南山小筑西南侧120米",
+        "poi_type": "风景名胜;风景名胜;风景名胜",
+        "returned_city": "绍兴市",
+        "returned_district": "越城区",
+        "candidate_count": 5
+      },
+      "provider": "amap-webservice-geocode-v3",
+      "synced_at": "2026-09-15T17:45:35.300546+00:00"
+    },
+    "amap_walking_path": [
+      {
+        "lng": 120.541411,
+        "lat": 29.906884
+      },
+      {
+        "lng": 120.540755,
+        "lat": 29.907157
+      },
+      {
+        "lng": 120.540065,
+        "lat": 29.90763
+      },
+      {
+        "lng": 120.539826,
+        "lat": 29.907891
+      },
+      {
+        "lng": 120.539822,
+        "lat": 29.907891
+      },
+      {
+        "lng": 120.539883,
+        "lat": 29.907378
+      },
+      {
+        "lng": 120.539874,
+        "lat": 29.907257
+      },
+      {
+        "lng": 120.539848,
+        "lat": 29.90717
+      },
+      {
+        "lng": 120.539653,
+        "lat": 29.906736
+      }
+    ],
+    "amap_walking_note": "高德步行路网轨迹，非实地山野轨迹，仅供示意"
+  },
+  "metrics": {
+    "distance_km": 0.32,
+    "ascent_m": null,
+    "duration_hours": 0.07,
+    "verification_status": "verified_amap_walking",
+    "note": "distance_km/duration_hours 来自高德步行路径规划（单向全程，路网距离，真实可溯源）；ascent_m 高德无高程 API，暂缺，待 GPX/设备轨迹补充"
+  },
+  "provenance": {
+    "base_facts": {
+      "source": "manual_seed",
+      "seed_file": "route-seeds-40.json"
+    },
+    "narrative": {
+      "source": "agent_prefill_qwen_plus",
+      "model": "qwen-plus",
+      "run_id": "20260915T175020",
+      "verified": false,
+      "note": "LLM 扩写描述性文本，未引入新事实；数字仅来自 metrics"
+    },
+    "geometry": {
+      "source": "pending_amap_web_service",
+      "verified": false
+    },
+    "metrics": {
+      "source": "amap_webservice_walking",
+      "verified": true,
+      "note": "单向全程 from amap walking route"
+    }
+  },
+  "route_nodes": [
+    {
+      "node_id": "rt9eefe157ad-node-01",
+      "node_type": "checkpoint",
+      "node_name": "云松岭—黄牛岭古道 进入主线判断点",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          120.540065,
+          29.90763
+        ]
+      },
+      "stage_order": 1,
+      "distance_from_start_m": 155,
+      "trigger_radius_m": 36,
+      "navigation_hint": "从 云松村古道口 出发后，优先沿最连续、最明确的主线前进，在这里确认自己仍在主游线上。",
+      "wrong_choice_hint": "如果前方出现明显下切小路、施工便道或回头支线，先停一下再回到最宽主线。",
+      "display_priority": 72
+    }
+  ],
+  "route_risk_points": [],
+  "route_exit_points": [],
+  "cover_image": "/covers/rt_9eefe157ad.jpg"
+}

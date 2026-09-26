@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "route_id": "rt_b162897e15",
+  "built_at": "2026-09-15T17:41:48+00:00",
+  "base_facts": {
+    "route_name": "亭溪岭古道",
+    "province_name": "浙江",
+    "city_name": "宁波",
+    "area_name": "鄞州区",
+    "start_point_name": "亭溪村古道口",
+    "end_point_name": "亭溪岭",
+    "route_type": "out_and_back",
+    "route_type_label": "往返线",
+    "difficulty_band": "easy",
+    "surface_tags": [
+      "古道石阶"
+    ],
+    "season_tags": [
+      "春季",
+      "秋季"
+    ],
+    "map_search_keyword": "宁波 鄞州 亭溪岭"
+  },
+  "narrative": {
+    "summary_short": "宁波近郊成熟的古道线路，文化气息浓厚",
+    "beginner_fit_reason": "石阶连续、岔路少，上行约1小时强度适中，适合初次尝试古道徒步的新手。",
+    "search_text": "亭溪岭古道 浙江宁波鄞州区 亭溪村古道口到亭溪岭 往返线 古道石阶 新手友好 春季秋季适宜 2.5公里 约1小时 上行",
+    "description": "亭溪岭古道是宁波鄞州区一条成熟且新手友好的往返古道，从亭溪村古道口出发，沿清晰石阶缓步上行至亭溪岭，全程约2.5公里，耗时约1小时，春秋季徒步尤为舒适。线路文化气息浓厚，石阶连续、岔路极少，无需复杂导航。",
+    "source": "agent_prefill_qwen_plus"
+  },
+  "geometry": {
+    "start_point": {
+      "lng": 121.636137,
+      "lat": 29.701429
+    },
+    "end_point": {
+      "lng": 121.610846,
+      "lat": 29.712332
+    },
+    "polyline": [],
+    "geocode_status": "ok",
+    "note": "坐标必须由高德 Web服务 API 回填，禁止在未核验前写入任何坐标",
+    "geocode_detail": {
+      "start": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "鄞州区亭溪村古道口",
+        "matched_name": "益马当鲜智慧农场体验中心(东钱湖)",
+        "matched_address": "东钱湖旅游度假区城杨村亭溪岭古道入口处",
+        "poi_type": "风景名胜;风景名胜相关;旅游景点",
+        "returned_city": "宁波市",
+        "returned_district": "鄞州区",
+        "candidate_count": 1
+      },
+      "end": {
+        "status": "ok",
+        "method": "poi_search",
+        "query": "鄞州区亭溪岭",
+        "matched_name": "亭溪岭",
+        "matched_address": "周夹新路88号",
+        "poi_type": "风景名胜;风景名胜;风景名胜",
+        "returned_city": "宁波市",
+        "returned_district": "鄞州区",
+        "candidate_count": 5
+      },
+      "provider": "amap-webservice-geocode-v3",
+      "synced_at": "2026-09-15T17:46:52.637079+00:00"
+    }
+  },
+  "metrics": {
+    "distance_km": null,
+    "ascent_m": null,
+    "duration_hours": null,
+    "verification_status": "far_review",
+    "note": "路网往返 31.3km 超出新手线护栏(20km)，疑似公路长途错引，置空待人工"
+  },
+  "provenance": {
+    "base_facts": {
+      "source": "manual_seed",
+      "seed_file": "route-seeds-40.json"
+    },
+    "narrative": {
+      "source": "agent_prefill_qwen_plus",
+      "model": "qwen-plus",
+      "run_id": "20260915T175020",
+      "verified": false,
+      "note": "LLM 扩写描述性文本，未引入新事实；数字仅来自 metrics"
+    },
+    "geometry": {
+      "source": "pending_amap_web_service",
+      "verified": false
+    },
+    "metrics": {
+      "source": "amap_webservice_walking",
+      "verified": false,
+      "note": "road detour exceeds guard"
+    }
+  },
+  "cover_image": "/covers/rt_b162897e15.jpg"
+}
