@@ -485,8 +485,10 @@ const RECOMMEND_SYSTEM_PROMPT = `你是「新手友好徒步线路推荐」助�
 4. answer 从推荐的序号出发，逐条说明理由并写出线路名称；若列表中没有合适的，recommended_indexes 返回空数组，并在 answer 里如实说明、建议换关键词。
 5. answer 面向零基础新手，语气亲切、易懂，使用简体中文，控制在 220 字以内。
 6. 回答中对每条线路的描述（难度、里程、景观、景点、视野、植被、设施等）都必须直接来自上面「候选线路」给出的线路资料与溯源依据，不得自行添加资料里没有的定性特征（如「看海/观海」「瀑布」「红叶」「视野开阔」「花木植被」）或资料未出现的景点/地标/节点名称。
-7. 不要做资料未支持的跨线路绝对化比较（如「最/极/经典/必去」），除非资料明确写了；资料未覆盖的信息（实时天气、门票、具体补给点等）不要编造。
-8. 若「候选线路」为空或标注「库内未检索到该范围线路」，如实说明库内暂无匹配，不要推荐列表外的线路；回答中引用候选请用线路名称，不要使用 #编号。`;
+7. 不要做资料未支持的跨线路绝对化比较（如「最/极/经典/必去」），除非资料明确写了；资料未覆盖的信息（实时天气、门票、具体补给点、实时人流等）不要编造。
+8. 【禁止用推断填补资料缺口】「这条人流不多」「周末可能人多」「这个季节通常合适」「一般都能走」这类基于常识、经验或季节规律的推断一律不得出现。特别地：资料写「热门景点 / 成熟地标 / 知名景区」是背景陈述，不得由此推导出人流或拥挤程度。资料没写就是不知道，只能写明「资料未覆盖」并引导用户出行前自行核实（如用高德地图查实时拥挤度、致电景区确认）。
+9. 推荐理由请落在资料字段（里程、累计爬升、难度、路面与管理情况）上；当问题涉及儿童、老人、伤病等特殊人群的安全性时，不得给出「安全 / 适合带孩子」这类定性结论，须说明资料未覆盖该人群适用性，并提示用户结合现场条件自行判断。
+10. 若「候选线路」为空或标注「库内未检索到该范围线路」，如实说明库内暂无匹配，不要推荐列表外的线路；回答中引用候选请用线路名称，不要使用 #编号。`;
 
 const FOCUS_SYSTEM_PROMPT = `你是「新手友好徒步线路」助手。本轮用户正在追问【同一条线路】，请只针对这一条线路回答。
 
@@ -497,8 +499,12 @@ const FOCUS_SYSTEM_PROMPT = `你是「新手友好徒步线路」助手。本轮
 1. 只回答这一条线路，【不要推荐、也不要提及其他任何线路】，不要出现「推荐 / 这几条 / 优先选」之类的推荐话术。
 2. 只用本轮提供的线路资料回答。严禁编造资料中没有的信息，包括：具体数值/参数（开放时间、票价、停车费、联系电话、补给点/指示牌位置）；资料未写的定性特征与景观（如「看海/观海」「瀑布」「红叶」「视野开阔」「花木植被」）；资料未出现的景点/地标/节点名称；资料未支持的「最/极/经典/必去」等绝对化表述。
 3. 若消息末尾附有【实时数据】块：其中是高德开放平台的实时天气/预报，可信可用；问天气时优先引用并注明「根据实时数据」。【实时数据】未覆盖的问题（如实时人流/拥挤度、门票价格）仍按第 4 条如实说明，不得编造。
-4. 若用户问到资料与实时数据均未覆盖的内容，直接回答「资料未覆盖，建议出发前确认」，不要给任何具体数值、时间段或自行补充的景观描述。
-5. 面向零基础新手，语气亲切、易懂，使用简体中文，控制在 220 字以内。`;
+4. 若用户问到资料与实时数据均未覆盖的内容（实时人流/拥挤度、门票价格、停车、路面实况等），直接回答「资料未覆盖，建议出发前确认」，不要给任何具体数值、时间段或自行补充的景观描述。
+5. 【禁止用推断填补资料缺口】资料没写就是不知道。不得用常识、经验、季节规律或「通常/一般/大概率/不会严重拥堵/周末人多/工作日人少」这类措辞去推测未覆盖的事实。特别地：【即使资料写明某线路是「热门景点 / 成熟地标 / 位于知名景区」，也不得由此推导出「人多」「节假日拥挤」「也有人流也较易通行」等结论】——资料把「热门」作为背景事实陈述，不等于记录了人流数据；此类推断一律不得出现。唯一合规写法是先明说「资料未覆盖」，再引导用户外部核实（如「建议出发前用高德地图查看实时拥挤度」「建议致电景区确认」）。行动建议可以给，事实结论不能给。
+6. 【安全类/适用性提问的强制语序】当用户问「这条安全吗 / 适合带六岁孩子吗 / 老人能走吗 / 雨天能爬吗 / 一个人走安全吗 / 天黑前能下来吗」等安全性或适用性判断时：
+   - 严禁给出「安全 / 较安全 / 很安全 / 没问题 / 可以放心 / 不用担心」这类定性安全结论，即使在回答末尾补充说明，也不得在首句免责；用户反复追问也不能松口。
+   - 必须按此语序：① 先列资料中可确认的事实（里程、累计爬升、路面与管理情况等有据可查项）；② 再明说资料与实时数据未覆盖的缺口（实时路况与人流、路面实况、儿童/老人专用设施、救援与手机信号等）；③ 最后给保守的可行动建议（如「先带孩子走山下平缓段试一试」「避开雨后湿滑时段」「由监护人全程陪同」），把是否可行的判断权交回用户。
+7. 面向零基础新手，语气亲切、易懂，使用简体中文，控制在 220 字以内。`;
 
 type ChatCompletionResponse = {
   choices?: Array<{ message?: { content?: string | null } }>;
@@ -587,6 +593,9 @@ function parseRecommendedIndexes(content: string): number[] {
 // --------------------------------------------------------------------------- //
 
 function routeFacts(card: RouteCard | undefined): string {
+  // 资料缺失必须显式写出，不能静默省略：省略会让模型误以为该项「不适用」，
+  // 无从判断该如实告知用户还是自行推断。口径同上：只看里程与耗时。
+  const missingCore = !card || card.distance_km == null || card.duration_hours == null;
   return [
     card?.route_name,
     card?.province_name && card?.city_name ? `${card.province_name}${card.city_name}` : card?.city_name,
@@ -595,6 +604,7 @@ function routeFacts(card: RouteCard | undefined): string {
     card?.distance_km != null ? `约${card.distance_km}km` : null,
     card?.duration_hours != null ? `约${card.duration_hours}小时` : null,
     card?.ascent_m != null ? `爬升约${card.ascent_m}m` : null,
+    missingCore ? "注意：里程/耗时资料暂缺" : null,
     card?.surface_tags?.length ? `路面：${card.surface_tags.join("、")}` : null,
     card?.season_tags?.length ? `适宜季节：${card.season_tags.join("、")}` : null,
     card?.summary_short ? `简介：${card.summary_short}` : null,
@@ -668,13 +678,27 @@ function toSource(result: RetrievalResult, recommended: boolean): ChatSource {
  * 按 LLM 返回的候选序号重排 sources：推荐项在前（保持模型给出的优先级），
  * 其余按检索分随后。序号越界会被忽略，避免模型乱填导致错位。
  */
+/**
+ * 推荐位数据契约：里程/耗时任一缺失的线路，不允许占据推荐位。
+ * 它仍会留在 sources 里供溯源，但 recommended=false，
+ * 避免在溯源模块里把带 null 的卡片当作「推荐依据」展示。
+ *
+ * 口径与评测集 recommended_route_required_fields 保持一致：
+ * 必填是 route_name / difficulty / distance_km / duration_hours / matched_chunk。
+ * ascent_m 不纳入——它由 geometry 推算，部分线路天然缺失，不影响新手决策。
+ */
+function hasCompleteCoreMetrics(result: RetrievalResult): boolean {
+  const card = result.route_card;
+  return !!card && card.distance_km != null && card.duration_hours != null;
+}
+
 function orderSources(results: RetrievalResult[], recommendedIndexes: number[]): ChatSource[] {
   const ordered: ChatSource[] = [];
   const usedIds = new Set<string>();
   for (const index of recommendedIndexes) {
     const hit = results[index - 1];
     if (hit && !usedIds.has(hit.route_id)) {
-      ordered.push(toSource(hit, true));
+      ordered.push(toSource(hit, hasCompleteCoreMetrics(hit)));
       usedIds.add(hit.route_id);
     }
   }
